@@ -1,0 +1,12 @@
+diff --git a/src/Monolog/DateTimeImmutable.php b/src/Monolog/DateTimeImmutable.php
+index 6a1ba9b2..539048cc 100644
+--- a/src/Monolog/DateTimeImmutable.php
++++ b/src/Monolog/DateTimeImmutable.php
+@@ -33,6 +33,7 @@ class DateTimeImmutable extends \DateTimeImmutable implements \JsonSerializable
+         parent::__construct('now', $timezone);
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize(): string
+     {
+         if ($this->useMicroseconds) {

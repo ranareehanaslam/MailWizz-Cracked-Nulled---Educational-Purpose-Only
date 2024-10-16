@@ -1,0 +1,42 @@
+[
+  {
+    "category": "sending_domains",
+    "message": "Send customer notification"
+  },
+  {
+    "category": "sending_domains",
+    "message": "Whether to send an email to the customer with the DNS records to be added."
+  },
+  {
+    "category": "sending_domains",
+    "message": "Email me the information"
+  },
+  {
+    "category": "sending_domains",
+    "message": "Whether to send you an email with the DNS records to be added."
+  },
+  {
+    "category": "sending_domains",
+    "message": "Send notification"
+  },
+  {
+    "category": "sending_domains",
+    "message": "Please add the following DNS records to the [DOMAIN_NAME] domain"
+  },
+  {
+    "category": "transactional_emails",
+    "message": "Failed"
+  },
+  {
+    "category": "settings",
+    "message": "Transactional emails attachments"
+  },
+  {
+    "category": "settings",
+    "message": "Transactional emails"
+  },
+  {
+    "category": "settings",
+    "message": "Transactional email attachments"
+  }
+]

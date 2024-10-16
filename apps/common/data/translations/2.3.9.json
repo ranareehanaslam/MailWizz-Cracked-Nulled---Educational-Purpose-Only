@@ -1,0 +1,1762 @@
+[
+  {
+    "category": "app",
+    "message": "Toggle dark mode"
+  },
+  {
+    "category": "favorite_pages",
+    "message": "Favorite pages"
+  },
+  {
+    "category": "app",
+    "message": "Warmup plans"
+  },
+  {
+    "category": "app",
+    "message": "Reverse proxy"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "AI Assistant"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Topics"
+  },
+  {
+    "category": "app",
+    "message": "add this page to"
+  },
+  {
+    "category": "favorite_pages",
+    "message": "Are you sure you want to {action} favorites?"
+  },
+  {
+    "category": "favorite_pages",
+    "message": "Please click here to {action} favorites"
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Email template builder"
+  },
+  {
+    "category": "email_template_builder",
+    "message": " Current builder"
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Please select the builder that you want to use"
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Stripo settings"
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Plugin ID"
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Secret Key"
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Your Stripo Plugin ID"
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Your Stripo Secret Key"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "hourly"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "daily"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "monthly"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "linear"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "exponential"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "total"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "targeted"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "View plans"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Warmup plans"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Delivery server warmup plan"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Customer"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Name"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Description"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Sending limit"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Sendings count"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Sending quota type"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Sending increment percentage"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Sending strategy"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Sending limit type"
+  },
+  {
+    "category": "app",
+    "message": "active"
+  },
+  {
+    "category": "app",
+    "message": "draft"
+  },
+  {
+    "category": "app",
+    "message": "Activate plan"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Are you sure you want to run this action? After you activate the plan, you will be able to edit only its name and description"
+  },
+  {
+    "category": "app",
+    "message": "Draft"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Update plan"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Active"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "The warmup plan name"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "The warmup plan description"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "The warmup plan sending limit, meaning the number of emails to be sent. Based on the limit type chosen this number can be the total number of emails sent throughout all the sendings, or the last sending will have that exact number"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "The warmup plan sendings count. This is the number of generated schedules, based on which the delivery server quota will apply."
+  },
+  {
+    "category": "warmup_plans",
+    "message": "The warmup plan sending quota type. The kind of quota against which the generated schedule quota value will be applied. If hourly, we will take into consideration applying the delivery server hourly quota"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "The warmup plan sending increment ratio. If the sending strategy is exponential, this values represents the increment percentage from a schedule to another."
+  },
+  {
+    "category": "warmup_plans",
+    "message": "The warmup plan sending strategy. Can be exponential or incremental. For incremental we will use the ratio between sending_limit and sendings_count to calculate the growth factor. Depending on the sending limit type chosen we can send maximum the value of the growth factor per sending (for total) or the growth factor added to the previous sending value per sending (for targeted)."
+  },
+  {
+    "category": "warmup_plans",
+    "message": "The warmup plan sending limit type. Based on this selection, we will send either a number of emails calculated throughout all the schedules (total) equal with the sending limit, or the last of the sendings will reach the sending limit value."
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Generated warmup plan"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Schedule"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Increment"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Quota"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Warmup plan"
+  },
+  {
+    "category": "warmup_plans",
+    "message": "Please note that the last schedule from the series might be the subject to roundings."
+  },
+  {
+    "category": "ai_assistant",
+    "message": "View topics"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Topic"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Subject"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Prompt"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Create new topic"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "The subject will appear when starting a new conversation."
+  },
+  {
+    "category": "ai_assistant",
+    "message": "This is the prompt that will always be sent as context for the conversation."
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Chat GPT 3.5 turbo"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Chat GPT 4"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Text completion DaVinci 003"
+  },
+  {
+    "category": "app",
+    "message": "yes"
+  },
+  {
+    "category": "app",
+    "message": "no"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Enabled for customers"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Customers use system OpenAI account"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Customers add own OpenAI account"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Provide AI Assistant only for these customer groups"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Secret key"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Model"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Max tokens"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Temperature"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Frequency penalty"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Presence penalty"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Stop"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "The access secret key for OpenAI API"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Whether the customers can use this feature"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Whether customer can use the system OpenAI account if they don't have their own account"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Whether customer can add their own OpenAI account"
+  },
+  {
+    "category": "ai_assistant",
+    "message": "The maximum number of tokens to generate in the completion. The token count of your prompt plus max_tokens cannot exceed the models context length. Most models have a context length of 2048 tokens (except for the newest models, which support 4096). We limited this to 2000 to make sure there are enough tokens for the response."
+  },
+  {
+    "category": "ai_assistant",
+    "message": "What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. We generally recommend altering this or top_p but not both."
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the models likelihood to repeat the same line verbatim. See more information about frequency and presence penalties."
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the models likelihood to talk about new topics. See more information about frequency and presence penalties."
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence."
+  },
+  {
+    "category": "ai_assistant",
+    "message": "Customers"
+  },
+  {
+    "category": "settings",
+    "message": "License settings"
+  },
+  {
+    "category": "content_builder",
+    "message": "Insert email list subscribe form"
+  },
+  {
+    "category": "content_builder",
+    "message": "Insert subscribe form from the block settings"
+  },
+  {
+    "category": "app",
+    "message": "Double click to edit"
+  },
+  {
+    "category": "app",
+    "message": "inactive"
+  },
+  {
+    "category": "app",
+    "message": "disabled"
+  },
+  {
+    "category": "app",
+    "message": "Blacklist"
+  },
+  {
+    "category": "campaigns",
+    "message": "sent"
+  },
+  {
+    "category": "campaigns",
+    "message": "Daily sending window - Start hour"
+  },
+  {
+    "category": "campaigns",
+    "message": "Daily sending window - Interval"
+  },
+  {
+    "category": "campaigns",
+    "message": "Recipients"
+  },
+  {
+    "category": "campaigns",
+    "message": "AFTER-PROFILE-UPDATE"
+  },
+  {
+    "category": "messages",
+    "message": "Sync list custom fields"
+  },
+  {
+    "category": "messages",
+    "message": "Completed the sync custom fields process for the \"{list}\" list"
+  },
+  {
+    "category": "messages",
+    "message": "Started the sync custom fields process for the \"{list}\" list"
+  },
+  {
+    "category": "app",
+    "message": "View notes"
+  },
+  {
+    "category": "notes",
+    "message": "View notes for {name}"
+  },
+  {
+    "category": "notes",
+    "message": "Notes"
+  },
+  {
+    "category": "notes",
+    "message": "Note"
+  },
+  {
+    "category": "notes",
+    "message": "Created by"
+  },
+  {
+    "category": "notes",
+    "message": "Customer"
+  },
+  {
+    "category": "notes",
+    "message": "Title"
+  },
+  {
+    "category": "settings",
+    "message": "Api"
+  },
+  {
+    "category": "settings",
+    "message": "Landing pages"
+  },
+  {
+    "category": "settings",
+    "message": "Disabled"
+  },
+  {
+    "category": "settings",
+    "message": "Daily"
+  },
+  {
+    "category": "settings",
+    "message": "Weekly"
+  },
+  {
+    "category": "settings",
+    "message": "Monthly"
+  },
+  {
+    "category": "settings",
+    "message": "Unread messages reminder frequency"
+  },
+  {
+    "category": "settings",
+    "message": "If the customer disables their account, how many days we should keep it in the system until we remove it for good. Set to -1 for unlimited"
+  },
+  {
+    "category": "settings",
+    "message": "How often should the customer be notified they have unread messages. The notification will be sent only if there are unread messages"
+  },
+  {
+    "category": "settings",
+    "message": "Max. tracking domains"
+  },
+  {
+    "category": "settings",
+    "message": "Max number of tracking domains a customer is allowed to add. Set to -1 for unlimited."
+  },
+  {
+    "category": "settings",
+    "message": "Whether missing subscriber optin history can be updated when the subscriber will update their profile"
+  },
+  {
+    "category": "app",
+    "message": "minute"
+  },
+  {
+    "category": "app",
+    "message": "hour"
+  },
+  {
+    "category": "settings",
+    "message": "If waiting is enabled and the customer sends all emails in an hour, they will wait 23 more hours until the specified action is taken."
+  },
+  {
+    "category": "settings",
+    "message": "Max. landing pages"
+  },
+  {
+    "category": "settings",
+    "message": "Maximum number of landing pages the customers can create, set to -1 for unlimited"
+  },
+  {
+    "category": "notes",
+    "message": "View notes"
+  },
+  {
+    "category": "notes",
+    "message": "Create new note"
+  },
+  {
+    "category": "notes",
+    "message": "Your note contents. Please keep in mind that it will be encrypted"
+  },
+  {
+    "category": "notes",
+    "message": "Update note"
+  },
+  {
+    "category": "servers",
+    "message": "ID"
+  },
+  {
+    "category": "servers",
+    "message": "Warmup plan"
+  },
+  {
+    "category": "servers",
+    "message": "Force FROM email"
+  },
+  {
+    "category": "servers",
+    "message": "Force FROM name"
+  },
+  {
+    "category": "servers",
+    "message": "All"
+  },
+  {
+    "category": "servers",
+    "message": "Campaigns"
+  },
+  {
+    "category": "servers",
+    "message": "Transactional emails"
+  },
+  {
+    "category": "servers",
+    "message": "The warmup plan that is attached to this delivery server. The quota of this server will be calculated based on the warmup plan. This is an autocomplete field, start typing the plan name to get suggestions."
+  },
+  {
+    "category": "servers",
+    "message": "When to force the FROM name"
+  },
+  {
+    "category": "app",
+    "message": "Completed"
+  },
+  {
+    "category": "app",
+    "message": "Not completed yet"
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Toggle {name} template builder"
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Are you sure you want to load the default template? All your previous work will be lost."
+  },
+  {
+    "category": "email_template_builder",
+    "message": "Load default template"
+  },
+  {
+    "category": "list_subscribers",
+    "message": "Ip Address"
+  },
+  {
+    "category": "lists",
+    "message": "Public campaigns history"
+  },
+  {
+    "category": "app",
+    "message": "Accessing this resource require to impersonate its owner. Proceed?"
+  },
+  {
+    "category": "lists",
+    "message": "List growth"
+  },
+  {
+    "category": "lists",
+    "message": "Tracking stats averages"
+  },
+  {
+    "category": "lists",
+    "message": "Opens"
+  },
+  {
+    "category": "lists",
+    "message": "Clicks"
+  },
+  {
+    "category": "lists",
+    "message": "Unsubscribes"
+  },
+  {
+    "category": "lists",
+    "message": "Complaints"
+  },
+  {
+    "category": "lists",
+    "message": "Bounces"
+  },
+  {
+    "category": "menus",
+    "message": "Update menu"
+  },
+  {
+    "category": "messages",
+    "message": "A subscriber has been rejected from joining the {list} list because the system was not able to find a suitable delivery server to send the email"
+  },
+  {
+    "category": "campaigns",
+    "message": "Blocked"
+  },
+  {
+    "category": "campaigns",
+    "message": "Handled by other send group campaign"
+  },
+  {
+    "category": "app",
+    "message": "system"
+  },
+  {
+    "category": "promo_codes",
+    "message": "i.e: 2023-11-17"
+  },
+  {
+    "category": "promo_codes",
+    "message": "i.e: 2023-12-17"
+  },
+  {
+    "category": "sending_domains",
+    "message": "Domain ID"
+  },
+  {
+    "category": "settings",
+    "message": "Version {n}"
+  },
+  {
+    "category": "mailer",
+    "message": "Next generation mailer."
+  },
+  {
+    "category": "settings",
+    "message": "GA version"
+  },
+  {
+    "category": "settings",
+    "message": "The version of GA your tracking code is meant for."
+  },
+  {
+    "category": "settings",
+    "message": "Email templates settings"
+  },
+  {
+    "category": "settings",
+    "message": "Max. internal bounce"
+  },
+  {
+    "category": "settings",
+    "message": "Maximum allowed number of internal bounces a subscriber is allowed to have after we delivered the email."
+  },
+  {
+    "category": "settings",
+    "message": "Internal bounce"
+  },
+  {
+    "category": "settings",
+    "message": "Internal bounces generally happen only because of your sending infrastructure and they should be safe to retry sending to.<br \/> - you should keep this option set to a high number."
+  },
+  {
+    "category": "settings",
+    "message": "Campaigns attachments settings"
+  },
+  {
+    "category": "settings",
+    "message": "Campaigns template tags settings"
+  },
+  {
+    "category": "settings",
+    "message": "IPs list, separated by a comma, to exclude from open tracking. IP ranges accepted"
+  },
+  {
+    "category": "settings",
+    "message": "IPs list, separated by a comma, to exclude from url tracking. IP ranges accepted"
+  },
+  {
+    "category": "settings",
+    "message": "Template engine settings"
+  },
+  {
+    "category": "settings",
+    "message": "Campaigns webhooks settings"
+  },
+  {
+    "category": "settings",
+    "message": "Campaigns miscellaneous"
+  },
+  {
+    "category": "settings",
+    "message": "List of regex patterns that are not allowed to be used in the campaign FROM email address. Add each pattern on its own line. Please make sure your patterns are valid!"
+  },
+  {
+    "category": "settings",
+    "message": "Customers common settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers server settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers domains settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers lists settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers campaigns settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers surveys settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers quota counters settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers sending settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers CDN settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers registration settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customers API settings"
+  },
+  {
+    "category": "settings",
+    "message": "Ip access"
+  },
+  {
+    "category": "settings",
+    "message": "List of IPs allowed to access the api. Separate multiple IPs by a comma. IP ranges accepted"
+  },
+  {
+    "category": "settings",
+    "message": "List of IPs denied to access the api. Separate multiple IPs by a comma. IP ranges accepted"
+  },
+  {
+    "category": "settings",
+    "message": "Monetization settings"
+  },
+  {
+    "category": "settings",
+    "message": "Monetization orders settings"
+  },
+  {
+    "category": "settings",
+    "message": "Monetization invoices settings"
+  },
+  {
+    "category": "settings",
+    "message": "Customization settings"
+  },
+  {
+    "category": "settings",
+    "message": "CDN settings"
+  },
+  {
+    "category": "settings",
+    "message": "Spf\/Dkim Settings"
+  },
+  {
+    "category": "settings",
+    "message": "SPF\/Dkim"
+  },
+  {
+    "category": "settings",
+    "message": "Social links settings"
+  },
+  {
+    "category": "tracking_domains",
+    "message": "Domain ID"
+  },
+  {
+    "category": "user_groups",
+    "message": "Import new bounce servers"
+  },
+  {
+    "category": "user_groups",
+    "message": "Run a bulk action against the campaign abuse reports"
+  },
+  {
+    "category": "user_groups",
+    "message": "Counter boxes"
+  },
+  {
+    "category": "user_groups",
+    "message": "Rate boxes"
+  },
+  {
+    "category": "user_groups",
+    "message": "Daily performance"
+  },
+  {
+    "category": "user_groups",
+    "message": "Top domains opens clicks graph"
+  },
+  {
+    "category": "user_groups",
+    "message": "Geo opens"
+  },
+  {
+    "category": "user_groups",
+    "message": "Open user agents"
+  },
+  {
+    "category": "user_groups",
+    "message": "Tracking top clicked links"
+  },
+  {
+    "category": "user_groups",
+    "message": "Tracking latest clicked links"
+  },
+  {
+    "category": "user_groups",
+    "message": "Tracking subscribers with most opens"
+  },
+  {
+    "category": "user_groups",
+    "message": "Tracking latest opens"
+  },
+  {
+    "category": "user_groups",
+    "message": "Campaign overview widgets"
+  },
+  {
+    "category": "user_groups",
+    "message": "Grid view stats"
+  },
+  {
+    "category": "user_groups",
+    "message": "List customer notes"
+  },
+  {
+    "category": "user_groups",
+    "message": "Create a new note"
+  },
+  {
+    "category": "user_groups",
+    "message": "Update existing note"
+  },
+  {
+    "category": "user_groups",
+    "message": "View note"
+  },
+  {
+    "category": "user_groups",
+    "message": "Delete existing customer note"
+  },
+  {
+    "category": "user_groups",
+    "message": "Customer notes"
+  },
+  {
+    "category": "user_groups",
+    "message": "Handles the actions for customer notes related tasks"
+  },
+  {
+    "category": "user_groups",
+    "message": "Customers notes"
+  },
+  {
+    "category": "user_groups",
+    "message": "List delivery server warmup plans"
+  },
+  {
+    "category": "user_groups",
+    "message": "Create a new delivery server warmup plan"
+  },
+  {
+    "category": "user_groups",
+    "message": "Update existing delivery server warmup plan"
+  },
+  {
+    "category": "user_groups",
+    "message": "Delete existing delivery server warmup plan"
+  },
+  {
+    "category": "user_groups",
+    "message": "Activate"
+  },
+  {
+    "category": "user_groups",
+    "message": "Activate existing delivery server warmup plan"
+  },
+  {
+    "category": "user_groups",
+    "message": "Delivery server warmup plans"
+  },
+  {
+    "category": "user_groups",
+    "message": "Handles the actions for delivery servers warmup plans related tasks"
+  },
+  {
+    "category": "user_groups",
+    "message": "Warmup plan schedules"
+  },
+  {
+    "category": "user_groups",
+    "message": "Get the server warmup plan schedules"
+  },
+  {
+    "category": "user_groups",
+    "message": "Import new email box monitors"
+  },
+  {
+    "category": "user_groups",
+    "message": "Show available favorite pages"
+  },
+  {
+    "category": "user_groups",
+    "message": "Update existing favorite page"
+  },
+  {
+    "category": "user_groups",
+    "message": "Delete existing favorite page"
+  },
+  {
+    "category": "user_groups",
+    "message": "Redirect to page"
+  },
+  {
+    "category": "user_groups",
+    "message": "Redirect to the page route after counting the click"
+  },
+  {
+    "category": "user_groups",
+    "message": "Run a bulk action against the favorite pages"
+  },
+  {
+    "category": "user_groups",
+    "message": "Add remove"
+  },
+  {
+    "category": "user_groups",
+    "message": "Add or remove user favorite pages"
+  },
+  {
+    "category": "user_groups",
+    "message": "Favorite pages"
+  },
+  {
+    "category": "user_groups",
+    "message": "Handles the actions for favorite pages related tasks"
+  },
+  {
+    "category": "user_groups",
+    "message": "Import new feedback loop servers"
+  },
+  {
+    "category": "user_groups",
+    "message": "Weekly activity"
+  },
+  {
+    "category": "user_groups",
+    "message": "Subscribers growth"
+  },
+  {
+    "category": "user_groups",
+    "message": "Counter boxes averages"
+  },
+  {
+    "category": "user_groups",
+    "message": "List overview widgets"
+  },
+  {
+    "category": "user_groups",
+    "message": "List growth export"
+  },
+  {
+    "category": "user_groups",
+    "message": "Export reports related to a certain list growth"
+  },
+  {
+    "category": "user_groups",
+    "message": "List growth"
+  },
+  {
+    "category": "user_groups",
+    "message": "Display subscribers growth for a certain list"
+  },
+  {
+    "category": "user_groups",
+    "message": "Export campaigns bounce logs"
+  },
+  {
+    "category": "user_groups",
+    "message": "Customer landing pages"
+  },
+  {
+    "category": "user_groups",
+    "message": "Handle the settings for customer landing pages options"
+  },
+  {
+    "category": "user_groups",
+    "message": "Transactional email attachments"
+  },
+  {
+    "category": "user_groups",
+    "message": "Reverse proxy"
+  },
+  {
+    "category": "user_groups",
+    "message": "Handle the settings for reverse proxy"
+  },
+  {
+    "category": "user_groups",
+    "message": "Common settings for OpenAI"
+  },
+  {
+    "category": "user_groups",
+    "message": "Handle AI Assistant settings"
+  },
+  {
+    "category": "user_groups",
+    "message": "List all available topics"
+  },
+  {
+    "category": "user_groups",
+    "message": "Create a new topic"
+  },
+  {
+    "category": "user_groups",
+    "message": "Update existing topic"
+  },
+  {
+    "category": "user_groups",
+    "message": "Delete an existing topic"
+  },
+  {
+    "category": "user_groups",
+    "message": "Handles the actions for topics related tasks"
+  },
+  {
+    "category": "user_groups",
+    "message": "Get all conversations, should accept GET"
+  },
+  {
+    "category": "user_groups",
+    "message": "Creates a conversation, should accept POST"
+  },
+  {
+    "category": "user_groups",
+    "message": "Create message"
+  },
+  {
+    "category": "user_groups",
+    "message": "Get messages"
+  },
+  {
+    "category": "user_groups",
+    "message": "Topics"
+  },
+  {
+    "category": "user_groups",
+    "message": "Customer lists forms"
+  },
+  {
+    "category": "user_groups",
+    "message": "Get list subscribe form"
+  },
+  {
+    "category": "user_groups",
+    "message": "Email template settings"
+  },
+  {
+    "category": "user_groups",
+    "message": "Token"
+  },
+  {
+    "category": "user_groups",
+    "message": "Common settings for Amazon S3"
+  },
+  {
+    "category": "user_groups",
+    "message": "Settings for Amazon S3"
+  },
+  {
+    "category": "user_groups",
+    "message": "Default action"
+  },
+  {
+    "category": "user_groups",
+    "message": "Controller file"
+  },
+  {
+    "category": "app",
+    "message": "IP blacklist"
+  },
+  {
+    "category": "app",
+    "message": "Landing pages"
+  },
+  {
+    "category": "payment_gateway_stripe_subscriptions",
+    "message": "Subscriptions"
+  },
+  {
+    "category": "api_keys",
+    "message": "Enable permissions"
+  },
+  {
+    "category": "api_keys",
+    "message": "123.123.123.123, 111.111.111.111, 10.0.0.0\/16"
+  },
+  {
+    "category": "api_keys",
+    "message": "231.231.231.231, 222.222.222.222, 10.0.0.0\/16"
+  },
+  {
+    "category": "app",
+    "message": "Once permissions are enabled, you need to explicitly select which permissions are assigned to this key. If you wish to allow all permissions, simply disable this option. If you wish to only allow a few permissions, enable this option, then select them from the list below."
+  },
+  {
+    "category": "app",
+    "message": "List of IPs allowed to access the API using this key. Separate multiple IPs by a comma. IP ranges accepted"
+  },
+  {
+    "category": "app",
+    "message": "List of IPs denied to access the API using this key. Separate multiple IPs by a comma. IP ranges accepted"
+  },
+  {
+    "category": "api_keys",
+    "message": "Permissions"
+  },
+  {
+    "category": "app",
+    "message": "Select none"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns - View all"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns - View one"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns - Create"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns - Update"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns - Copy"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns - Pause\/Unpause"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns - Mark as sent"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns - Delete"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns - View stats"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaign Bounces - View logs"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaign Bounces - Create logs"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaign Delivery Logs - View"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaign Delivery Logs - View by email message id"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaign Unsubscribes - View"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns Tracking - Track url"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns Tracking - Track unsubscribe"
+  },
+  {
+    "category": "api_keys",
+    "message": "Countries - View all"
+  },
+  {
+    "category": "api_keys",
+    "message": "Country - View zones"
+  },
+  {
+    "category": "api_keys",
+    "message": "Delivery Servers - View all"
+  },
+  {
+    "category": "api_keys",
+    "message": "Delivery Servers - View one"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Fields - View all"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Segments - View all"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - View all"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - View one"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - Create"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - Create bulk"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - Update"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - Unsubscribe"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - Delete"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - Search by email"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - Search by email in all lists"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - Unsubscribe by email from all lists"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Subscribers - Search by custom fields"
+  },
+  {
+    "category": "api_keys",
+    "message": "Lists - View all"
+  },
+  {
+    "category": "api_keys",
+    "message": "Lists - View one"
+  },
+  {
+    "category": "api_keys",
+    "message": "Lists - Create"
+  },
+  {
+    "category": "api_keys",
+    "message": "Lists - Update"
+  },
+  {
+    "category": "api_keys",
+    "message": "Lists - Copy"
+  },
+  {
+    "category": "api_keys",
+    "message": "Lists - Delete"
+  },
+  {
+    "category": "api_keys",
+    "message": "Templates - View all"
+  },
+  {
+    "category": "api_keys",
+    "message": "Templates - View one"
+  },
+  {
+    "category": "api_keys",
+    "message": "Templates - Create"
+  },
+  {
+    "category": "api_keys",
+    "message": "Templates - Update"
+  },
+  {
+    "category": "api_keys",
+    "message": "Templates - Delete"
+  },
+  {
+    "category": "api_keys",
+    "message": "Transactional Emails - View all"
+  },
+  {
+    "category": "api_keys",
+    "message": "Transactional Emails - View one"
+  },
+  {
+    "category": "api_keys",
+    "message": "Transactional Emails - Create"
+  },
+  {
+    "category": "api_keys",
+    "message": "Transactional Emails - Delete"
+  },
+  {
+    "category": "api_keys",
+    "message": "Campaigns Tracking - Track open"
+  },
+  {
+    "category": "campaigns",
+    "message": "Campaigns share code"
+  },
+  {
+    "category": "campaigns",
+    "message": "Allowed usages"
+  },
+  {
+    "category": "campaigns",
+    "message": "Use 0 for unlimited."
+  },
+  {
+    "category": "campaigns",
+    "message": "Share"
+  },
+  {
+    "category": "lists",
+    "message": "Optionally, a url to redirect the visitor if the subscriber hasn't been found in the list or they aren't valid anymore."
+  },
+  {
+    "category": "lists",
+    "message": "Daily to"
+  },
+  {
+    "category": "lists",
+    "message": "Subscribe to"
+  },
+  {
+    "category": "lists",
+    "message": "Unsubscribe to"
+  },
+  {
+    "category": "lists",
+    "message": "When a subscriber will subscribe to this list, if they exists in any of the lists below, unsubscribe them from those lists as well. Please note that the unsubscribe from the lists below is silent, no email is sent to the subscriber."
+  },
+  {
+    "category": "lists",
+    "message": "When a subscriber will unsubscribe from this list, if they exists in any of the lists below, unsubscribe them from those lists as well. Please note that the unsubscribe from the lists below is silent, no email is sent to the subscriber."
+  },
+  {
+    "category": "campaigns",
+    "message": "Start sending the campaign at this hour"
+  },
+  {
+    "category": "campaigns",
+    "message": "Only for this amount of hours"
+  },
+  {
+    "category": "app",
+    "message": "copy"
+  },
+  {
+    "category": "campaigns",
+    "message": "Open tracking from url tracking"
+  },
+  {
+    "category": "campaigns",
+    "message": "Open tracking - Exclude crawlers"
+  },
+  {
+    "category": "campaigns",
+    "message": "Url tracking - Exclude crawlers"
+  },
+  {
+    "category": "campaigns",
+    "message": "Email stats delay days"
+  },
+  {
+    "category": "campaigns",
+    "message": "Whether to enable url tracking. If your click rates are too high, you might try to set the \"Url tracking - Exclude crawlers\" option to Yes"
+  },
+  {
+    "category": "campaigns",
+    "message": "Whether to enable opens tracking. If your open rates are too high, you might try to disable this option and use the \"Open tracking from url tracking\" option, and\/or set the \"Open tracking - Exclude crawlers\" option to Yes"
+  },
+  {
+    "category": "campaigns",
+    "message": "In case open tracking is disabled, or the open tracking pixel cannot be loaded, we can try to record the open when one of the links inside the campaign is clicked. This only works if url tracking is enabled. We only track unique opens this way, one open per subscriber"
+  },
+  {
+    "category": "campaigns",
+    "message": "Whether to exclude crawlers\/bots\/proxies when tracking opens. This will try to record opens done by the subscribers themselves, which mean your open rates will be much lower than usual, but most likely more accurate"
+  },
+  {
+    "category": "campaigns",
+    "message": "Whether to exclude crawlers\/bots\/proxies when tracking urls. This will try to record clicks done by the subscribers themselves, which mean your click rates will be much lower than usual, but most likely more accurate"
+  },
+  {
+    "category": "campaigns",
+    "message": "How many days to wait to send second email with campaign stats. First one is sent right after the campaign finishes sending"
+  },
+  {
+    "category": "campaigns",
+    "message": "Campaign tracking options"
+  },
+  {
+    "category": "campaigns",
+    "message": "Increment the value by X where X is an integer. Only once"
+  },
+  {
+    "category": "campaigns",
+    "message": "Decrement the value by X where X is an integer. Only once"
+  },
+  {
+    "category": "campaigns",
+    "message": "Multiply the value by X where X is an integer. Only once"
+  },
+  {
+    "category": "app",
+    "message": "name"
+  },
+  {
+    "category": "campaigns",
+    "message": "Set the {attr} of the delivery server used to send the email which lead to this action"
+  },
+  {
+    "category": "servers",
+    "message": "hostname"
+  },
+  {
+    "category": "servers",
+    "message": "type"
+  },
+  {
+    "category": "app",
+    "message": "ID"
+  },
+  {
+    "category": "servers",
+    "message": "From Name"
+  },
+  {
+    "category": "servers",
+    "message": "From Email"
+  },
+  {
+    "category": "servers",
+    "message": "Reply-To Email"
+  },
+  {
+    "category": "campaigns",
+    "message": "What action to take against the subscriber when they open the campaign"
+  },
+  {
+    "category": "campaigns",
+    "message": "Reset selection"
+  },
+  {
+    "category": "campaigns",
+    "message": "Optionally, this campaign can send each day, starting with the selected hour, for the given interval of time, using your account timezone."
+  },
+  {
+    "category": "campaigns",
+    "message": "Please note that using this option will result in much slower delivery as a campaign sending can span multiple days."
+  },
+  {
+    "category": "campaigns",
+    "message": "Attachments"
+  },
+  {
+    "category": "campaigns",
+    "message": "Schedule campaign"
+  },
+  {
+    "category": "campaigns",
+    "message": "Emails"
+  },
+  {
+    "category": "campaigns",
+    "message": "Email above info to below email addresses (comma separated email list accepted)"
+  },
+  {
+    "category": "app",
+    "message": "Currently, there is no data to be shown."
+  },
+  {
+    "category": "campaigns",
+    "message": "Unable to delete the campaign!"
+  },
+  {
+    "category": "ip_blacklist",
+    "message": "IP address"
+  },
+  {
+    "category": "ip_blacklist",
+    "message": "Customer"
+  },
+  {
+    "category": "dashboard",
+    "message": "Are you sure you want to remove all suppressed IPs?"
+  },
+  {
+    "category": "ip_blacklist",
+    "message": "Import from CSV file"
+  },
+  {
+    "category": "ip_blacklist",
+    "message": "Please note, the csv file must contain a header with at least the ip_address column."
+  },
+  {
+    "category": "ip_blacklist",
+    "message": "Add a new IP to blacklist"
+  },
+  {
+    "category": "ip_blacklist",
+    "message": "Please enter a valid IP address!"
+  },
+  {
+    "category": "ip_blacklist",
+    "message": "Update blacklisted IP"
+  },
+  {
+    "category": "list_subscribers",
+    "message": "Blacklist IPs"
+  },
+  {
+    "category": "list_subscribers",
+    "message": "Blacklist IP"
+  },
+  {
+    "category": "list_subscribers",
+    "message": "Are you sure you want to blacklist this subscriber's IP?"
+  },
+  {
+    "category": "list_subscribers",
+    "message": "confirmed"
+  },
+  {
+    "category": "list_subscribers",
+    "message": "unsubscribed"
+  },
+  {
+    "category": "list_fields",
+    "message": "Allow A to Z. Case insensitive"
+  },
+  {
+    "category": "list_fields",
+    "message": "Allow A to Z and 0 to 9. Case insensitive"
+  },
+  {
+    "category": "list_fields",
+    "message": "Allow A to Z, 0 to 9, dots, spaces, dashes, underscores, new lines, question and exclamation marks. Case insensitive"
+  },
+  {
+    "category": "list_fields",
+    "message": "Minimum length"
+  },
+  {
+    "category": "list_fields",
+    "message": "Maximum length"
+  },
+  {
+    "category": "list_fields",
+    "message": "Content rule"
+  },
+  {
+    "category": "list_fields",
+    "message": "Content regex"
+  },
+  {
+    "category": "list_fields",
+    "message": "Minimum length of the text"
+  },
+  {
+    "category": "list_fields",
+    "message": "Maximum length of the text"
+  },
+  {
+    "category": "list_fields",
+    "message": "Decides which rule applies to the content. If you need more flexibility, try the regular expressions field"
+  },
+  {
+    "category": "list_fields",
+    "message": "Advanced usage. Filter the content of the field using regular expressions. For example, following case insensitive regex, \/^([a-z0-9\\s\\.]+)$\/i will only allow letters from A to Z, numbers from 0 to 9, spaces and dots, as many times as needed. Use with care and make sure you test the subscription form afterwards"
+  },
+  {
+    "category": "list_fields",
+    "message": "Default country"
+  },
+  {
+    "category": "default_country",
+    "message": "Default selected country"
+  },
+  {
+    "category": "list_fields",
+    "message": "Any scheme"
+  },
+  {
+    "category": "list_fields",
+    "message": "HTTPS and HTTP"
+  },
+  {
+    "category": "list_fields",
+    "message": "HTTPS only"
+  },
+  {
+    "category": "list_fields",
+    "message": "HTTP only"
+  },
+  {
+    "category": "list_fields",
+    "message": "Allowed scheme"
+  },
+  {
+    "category": "list_fields",
+    "message": "Whitelist domains"
+  },
+  {
+    "category": "list_fields",
+    "message": "Blacklist domains"
+  },
+  {
+    "category": "list_fields",
+    "message": "Allow only domains in this list. Separate multiple domains with a comma. Use only the domain name, i.e: example1.com, example2.com"
+  },
+  {
+    "category": "list_fields",
+    "message": "Allow all domains except domains in this list. Separate multiple domains with a comma. Use only the domain name, i.e: example1.com, example2.com"
+  },
+  {
+    "category": "payment_gateway_stripe_subscriptions",
+    "message": "Stripe subscriptions"
+  },
+  {
+    "category": "settings",
+    "message": "Manage landing pages"
+  },
+  {
+    "category": "settings",
+    "message": "Whether this subaccount can manage all operations related to landing pages. Assign with care!"
+  },
+  {
+    "category": "app",
+    "message": "remove this page from"
+  },
+  {
+    "category": "servers",
+    "message": "smtp-greenarrow"
+  },
+  {
+    "category": "servers",
+    "message": "This attribute must be an array"
+  },
+  {
+    "category": "settings",
+    "message": "Max. custom fields per list"
+  },
+  {
+    "category": "settings",
+    "message": "Maximum number of custom fields per list a customer can have, set to -1 for unlimited"
+  },
+  {
+    "category": "list_subscribers",
+    "message": "List growth"
+  },
+  {
+    "category": "list_fields",
+    "message": "Your list has {current} custom fields, but you are allowed only {max} custom fields"
+  },
+  {
+    "category": "list_fields",
+    "message": "You have reached the maximum number of allowed custom fields. Your list has {current} custom fields, but you are allowed only {max} custom fields"
+  },
+  {
+    "category": "list_fields",
+    "message": "You have reached the maximum number of allowed custom fields."
+  },
+  {
+    "category": "list_fields",
+    "message": "You have reached the maximum number of allowed custom fields. Your list has {current} custom fields and you are allowed only {max} custom fields."
+  },
+  {
+    "category": "list_import",
+    "message": "The import process will start shortly. <br \/> While the import is running it is recommended you leave this page as it is and wait for the import to finish.<br \/> The importer runs in batches of {subscribersPerBatch} subscribers with a pause of {pause} seconds between the batches, therefore the import process might take a while depending on your file size and number of subscribers to import.<br \/> Please note, the subscribers number is aproximate if your CSV has empty lines or ends with an empty line or it has duplicate emails(case in which the subscriber will be updated).<br \/> This is a tedious process, so sit tight and wait for it to finish."
+  },
+  {
+    "category": "list_import",
+    "message": "From a total of {total} possible subscribers, so far {totalProcessed} have been processed, {successfullyProcessed} successfully and {errorProcessing} with errors. {percentage} completed."
+  },
+  {
+    "category": "list_import",
+    "message": "Your list already contains {currentFieldsCount} custom fields, the import process cannot create new custom fields({newFieldsCount}), it would go above the list custom fields limit which is currently set to {maxFieldsCount}."
+  },
+  {
+    "category": "list_import",
+    "message": "The import process for list \"{listName}\" has successfully started, counting {rowsCount} records!"
+  }
+]

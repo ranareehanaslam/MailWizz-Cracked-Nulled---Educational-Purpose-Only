@@ -1,0 +1,74 @@
+[
+  {
+    "category": "app",
+    "message": "Toggle status"
+  },
+  {
+    "category": "app",
+    "message": "View campaigns tracking ignore list"
+  },
+  {
+    "category": "list_subscribers",
+    "message": "The subscriber having the email address \"{email}\" has been successfully updated in the \"{listName}\" list!"
+  },
+  {
+    "category": "campaigns",
+    "message": "Smart open tracking"
+  },
+  {
+    "category": "campaigns",
+    "message": "Smart click tracking"
+  },
+  {
+    "category": "campaigns",
+    "message": "Whether to enable smart opens tracking. The system will learn based on various rule sets and will not record actions matching these rules. Works only when open tracking is enabled."
+  },
+  {
+    "category": "campaigns",
+    "message": "Whether to enable smart click tracking. The system will learn based on various rule sets and will not record actions matching these rules. Works only when click tracking is enabled."
+  },
+  {
+    "category": "app",
+    "message": "The subscriber executed too many actions in a short period of time, after email delivery"
+  },
+  {
+    "category": "campaigns",
+    "message": "Less than a minute"
+  },
+  {
+    "category": "app",
+    "message": "Found in the campaign ignore list"
+  },
+  {
+    "category": "app",
+    "message": "The item has been successfully updated!"
+  },
+  {
+    "category": "campaigns",
+    "message": "Click"
+  },
+  {
+    "category": "campaigns",
+    "message": "Open"
+  },
+  {
+    "category": "app",
+    "message": "click"
+  },
+  {
+    "category": "list_subscribers",
+    "message": "Update subscriber"
+  },
+  {
+    "category": "campaign_reports",
+    "message": "This report shows the unique opens for this campaign, if a subscriber opens the email twice, you will see it only once and you also will see how many times it was opened.<br \/> If you need to see all the opens please click <a href=\"{href}\">here<\/a>."
+  },
+  {
+    "category": "app",
+    "message": "The subscriber executed too many actions in a short period of time"
+  },
+  {
+    "category": "app",
+    "message": "open"
+  }
+]

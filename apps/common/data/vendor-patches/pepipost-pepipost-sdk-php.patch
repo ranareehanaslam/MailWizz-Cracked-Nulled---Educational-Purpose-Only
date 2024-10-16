@@ -1,0 +1,84 @@
+diff --git a/src/Models/Attachments.php b/src/Models/Attachments.php
+index bd6c02d..cd8fb56 100644
+--- a/src/Models/Attachments.php
++++ b/src/Models/Attachments.php
+@@ -43,6 +43,7 @@ class Attachments implements JsonSerializable
+     /**
+      * Encode this object to JSON
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         $json = array();
+diff --git a/src/Models/Content.php b/src/Models/Content.php
+index 0c875f9..7a63c52 100644
+--- a/src/Models/Content.php
++++ b/src/Models/Content.php
+@@ -43,6 +43,7 @@ class Content implements JsonSerializable
+     /**
+      * Encode this object to JSON
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         $json = array();
+diff --git a/src/Models/EmailStruct.php b/src/Models/EmailStruct.php
+index d5b7e26..8fcefc2 100644
+--- a/src/Models/EmailStruct.php
++++ b/src/Models/EmailStruct.php
+@@ -43,6 +43,7 @@ class EmailStruct implements JsonSerializable
+     /**
+      * Encode this object to JSON
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         $json = array();
+diff --git a/src/Models/From.php b/src/Models/From.php
+index 2e264ed..354341b 100644
+--- a/src/Models/From.php
++++ b/src/Models/From.php
+@@ -43,6 +43,7 @@ class From implements JsonSerializable
+     /**
+      * Encode this object to JSON
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         $json = array();
+diff --git a/src/Models/Personalizations.php b/src/Models/Personalizations.php
+index 9a87eb5..9eba0a5 100644
+--- a/src/Models/Personalizations.php
++++ b/src/Models/Personalizations.php
+@@ -103,6 +103,7 @@ class Personalizations implements JsonSerializable
+     /**
+      * Encode this object to JSON
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         $json = array();
+diff --git a/src/Models/Send.php b/src/Models/Send.php
+index 1c6bcfd..c7b8f80 100644
+--- a/src/Models/Send.php
++++ b/src/Models/Send.php
+@@ -130,6 +130,7 @@ class Send implements JsonSerializable
+     /**
+      * Encode this object to JSON
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         $json = array();
+diff --git a/src/Models/Settings.php b/src/Models/Settings.php
+index 3022f5c..a10d8f1 100644
+--- a/src/Models/Settings.php
++++ b/src/Models/Settings.php
+@@ -70,6 +70,7 @@ class Settings implements JsonSerializable
+     /**
+      * Encode this object to JSON
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         $json = array();

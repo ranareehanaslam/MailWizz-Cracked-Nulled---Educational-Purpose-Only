@@ -1,0 +1,10 @@
+[
+  {
+    "category": "servers",
+    "message": "IP Pool name"
+  },
+  {
+    "category": "servers",
+    "message": "The name of the IP Pool this server is going to use, if any. Leave empty if unsure."
+  }
+]

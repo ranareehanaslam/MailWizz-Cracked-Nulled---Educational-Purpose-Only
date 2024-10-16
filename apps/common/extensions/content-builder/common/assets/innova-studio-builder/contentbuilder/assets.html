@@ -1,0 +1,237 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""> 
+    <style>
+        body {
+            font-family:sans-serif;
+            font-weight: 300;
+            font-size:13px;
+            color:#111;
+        }
+        #files {
+            opacity:0;
+            margin:0;
+            display: flex;
+            flex-flow: wrap;
+            overflow: auto;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+        }
+        #files > * {cursor: pointer; border:none; background:transparent;margin:20px; width:150px;height:150px;display:flex;align-items:center;justify-content:center;flex-direction:column;}
+        #files > * > img {max-width: 100%;max-height: 100%;}
+        #files > * > svg {
+            width:50px;height:50px;margin-bottom:8px;
+            fill:#111;
+        }
+    </style> 
+</head>
+<body>
+
+<div id="files">
+    <button data-href="uploads/bg.mp4">
+        <svg><use xlink:href="#ion-ios-film-outline"></use></svg>
+        <span>bg.mp4</span>
+    </button>
+    <button data-href="uploads/person1.mp4">
+        <svg><use xlink:href="#ion-ios-film-outline"></use></svg>
+        <span>person1.mp4</span>
+    </button>
+    <button data-href="uploads/balloon.mp4">
+        <svg><use xlink:href="#ion-ios-film-outline"></use></svg>
+        <span>balloon.mp4</span>
+    </button>
+    <button data-href="uploads/intro.mp3">
+        <svg><use xlink:href="#ion-volume-medium"></use></svg>
+        <span>intro.mp3</span>
+    </button>
+
+    <button><img src="uploads/food.png" /></button>
+    <button><img src="uploads/office1.png" /></button>
+    <button><img src="uploads/office2.png" /></button>
+    <button><img src="uploads/office3.png" /></button>
+    <button><img src="uploads/person1.png" /></button>
+    <button><img src="uploads/person2.png" /></button>
+    <button><img src="uploads/person3.png" /></button>
+    <button><img src="uploads/person4.png" /></button>
+    <button><img src="uploads/person5.png" /></button>
+    <button><img src="uploads/lamp.png" /></button>
+    <button><img src="uploads/flower.png" /></button>
+    <button><img src="uploads/travel.png" /></button>
+    <button><img src="uploads/travel2.png" /></button>
+    <button><img src="uploads/travel3.png" /></button>
+    
+    <!-- <button data-href="uploads/file1.pdf">
+        <svg><use xlink:href="#ion-document"></use></svg>
+        file1.pdf
+    </button>
+    <button data-href="uploads/file2.zip">
+        <svg><use xlink:href="#ion-document"></use></svg>
+        file2.zip
+    </button>
+    <button data-href="uploads/file3.txt">
+        <svg><use xlink:href="#ion-document"></use></svg>
+        file3.txt
+    </button> -->
+</div>
+
+<svg width="0" height="0" style="position:absolute;display:none;">
+    <defs>
+        <symbol viewBox="0 0 512 512" id="ion-document"><path d="M399.3 168.9c-.7-2.9-2-5-3.5-6.8l-83.7-91.7c-1.9-2.1-4.1-3.1-6.6-4.4-2.9-1.5-6.1-1.6-9.4-1.6H136.2c-12.4 0-23.7 9.6-23.7 22.9v335.2c0 13.4 11.3 25.9 23.7 25.9h243.1c12.4 0 21.2-12.5 21.2-25.9V178.4c0-3.6-.4-6.2-1.2-9.5zM305.5 111l58 63.5h-58V111zm-161 305.5v-320h129v81.7c0 14.8 13.4 28.3 28.1 28.3h66.9v210h-224z"></path></symbol>
+        <symbol viewBox="0 0 512 512" id="ion-ios-film-outline"><path d="M56 88v336h400V88H56zm72 320H72v-48h56v48zm0-64H72v-48h56v48zm0-64H72v-48h56v48zm0-64H72v-48h56v48zm0-64H72v-48h56v48zm240 256H144V264h224v144zm0-160H144V104h224v144zm72 160h-56v-48h56v48zm0-64h-56v-48h56v48zm0-64h-56v-48h56v48zm0-64h-56v-48h56v48zm0-64h-56v-48h56v48z"></path></symbol>
+        <symbol viewBox="0 0 512 512" id="ion-volume-medium">
+            <path d="M270 407.7V104.4L175.3 192H71v128h104.3zm56.3-52.1c20.5-27.8 32.8-62.3 32.8-99.6 0-37.4-12.3-71.8-32.8-99.6l-20.4 15.3c17.4 23.6 27.8 52.7 27.8 84.3 0 31.6-10.4 60.7-27.8 84.3l20.4 15.3zm66.5 46c30-40.7 48-91 48-145.6s-18-104.9-48-145.6l-20.4 15.3c26.9 36.4 43 81.4 43 130.3 0 48.9-16.1 93.8-43 130.3l20.4 15.3z"/>
+        </symbol>
+    </defs>
+</svg>
+
+<script>
+    var elms = document.querySelectorAll('#files button');
+    [].forEach.call(elms, function(elm) {
+        
+        // Get selected asset Url
+        var url = elm.getAttribute('data-href'); //for a video
+        if(!url) url = elm.getAttribute('href'); //for a file
+        if(!url) {
+            var img = elm.querySelector('img'); //for an image
+            if(img) url = img.getAttribute('src'); 
+        }
+
+        if(url) {
+            elm.addEventListener('click', function(e){
+                
+                /* 
+                USE selectAsset() method to select an asset and return the url back to ContentBuilder.js
+                */
+                parent.selectAsset(url);
+                parent.focus(); // so that document.click on parent works without have to click to focus
+                
+                e.preventDefault();
+                return false;
+            });
+        } 
+
+    });
+
+    // ----------- Do Not Remove -------------
+    // Style stuff
+    function applyParentStyles() {
+        var cssString = `
+            body {
+                background: ${parent._cb.styleModalBackground};
+                color: ${parent._cb.styleModalColor};
+                margin: 0;
+            }
+            #files button {
+                text-decoration:none;
+                color: ${parent._cb.styleModalColor};
+            }
+            #files button svg {
+                width:50px;height:50px;margin-bottom:8px;
+                fill: ${parent._cb.styleModalColor};
+            }
+
+            /* Scrollbar for modal */
+
+            /* Darker color, because background for snippet thumbnails is always light. */
+            .dark * {
+                scrollbar-width: thin;
+                scrollbar-color: rgb(78 78 78 / 62%) auto;
+            }
+            .dark *::-webkit-scrollbar {
+                width: 12px;
+            }
+            .dark *::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .dark *::-webkit-scrollbar-thumb {
+                background-color:rgb(78 78 78 / 62%);
+            } 
+
+            .colored-dark * {
+                scrollbar-width: thin;
+                scrollbar-color: rgb(100, 100, 100) auto;
+            }
+            .colored-dark *::-webkit-scrollbar {
+                width: 12px;
+            }
+            .colored-dark *::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .colored-dark *::-webkit-scrollbar-thumb {
+                background-color:rgb(100, 100, 100);
+            } 
+
+            .colored * {
+                scrollbar-width: thin;
+                scrollbar-color: rgba(0, 0, 0, 0.4) auto;
+            }
+            .colored *::-webkit-scrollbar {
+                width: 12px;
+            }
+            .colored *::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .colored *::-webkit-scrollbar-thumb {
+                background-color: rgba(0, 0, 0, 0.4);
+            } 
+
+            .light * {
+                scrollbar-width: thin;
+                scrollbar-color: rgba(0, 0, 0, 0.4) auto;
+            }
+            .light *::-webkit-scrollbar {
+                width: 12px;
+            }
+            .light *::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .light *::-webkit-scrollbar-thumb {
+                background-color: rgba(0, 0, 0, 0.4);
+            } 
+        `;
+        
+        let themestyle = document.querySelector('[data-theme-style]');
+        if(themestyle) themestyle.parentNode.removeChild(themestyle);
+        
+        var style = document.createElement("style");
+        style.setAttribute('data-theme-style','');
+        style.type = "text/css";
+        style.innerHTML = cssString;
+        document.getElementsByTagName("head")[0].appendChild(style);
+
+        if(parent._cb.styleDark) {
+            document.body.setAttribute('class', 'dark');
+        } else if(parent._cb.styleColored) {
+            document.body.setAttribute('class', 'colored');
+        } else if(parent._cb.styleColoredDark) {
+            document.body.setAttribute('class', 'colored-dark');
+        } else if(parent._cb.styleLight) {
+            document.body.setAttribute('class', 'light');
+        } else {
+            document.body.setAttribute('class', '');
+        }
+    }
+
+    applyParentStyles();
+
+    const handleKeyDown = (e) => {
+        if(e.keyCode === 27) { // escape key
+            var iframe = frameElement;
+            const modal = iframe.closest('.is-modal');
+            parent.hideModal(modal);
+        }
+    }
+    document.addEventListener('keydown', handleKeyDown);
+    // ----------- /Do Not Remove -------------
+
+    document.querySelector('#files').style.opacity = '1';
+</script>
+</body>
+</html>

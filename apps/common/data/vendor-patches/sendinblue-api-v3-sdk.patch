@@ -1,0 +1,36 @@
+diff --git a/lib/Model/ErrorModel.php b/lib/Model/ErrorModel.php
+index d63e6f9..1c7889b 100644
+--- a/lib/Model/ErrorModel.php
++++ b/lib/Model/ErrorModel.php
+@@ -328,6 +328,7 @@ class ErrorModel implements ModelInterface, ArrayAccess
+      *
+      * @return boolean
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetExists($offset)
+     {
+         return isset($this->container[$offset]);
+@@ -340,6 +341,7 @@ class ErrorModel implements ModelInterface, ArrayAccess
+      *
+      * @return mixed
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetGet($offset)
+     {
+         return isset($this->container[$offset]) ? $this->container[$offset] : null;
+@@ -353,6 +355,7 @@ class ErrorModel implements ModelInterface, ArrayAccess
+      *
+      * @return void
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetSet($offset, $value)
+     {
+         if (is_null($offset)) {
+@@ -369,6 +372,7 @@ class ErrorModel implements ModelInterface, ArrayAccess
+      *
+      * @return void
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetUnset($offset)
+     {
+         unset($this->container[$offset]);

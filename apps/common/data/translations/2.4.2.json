@@ -1,0 +1,38 @@
+[
+  {
+    "category": "list_segments",
+    "message": "Not Open"
+  },
+  {
+    "category": "list_segments",
+    "message": "Not Click"
+  },
+  {
+    "category": "app",
+    "message": "Archived campaigns"
+  },
+  {
+    "category": "campaigns",
+    "message": "View archived campaigns"
+  },
+  {
+    "category": "app",
+    "message": "Archive\/Unarchive"
+  },
+  {
+    "category": "campaigns",
+    "message": "While parsing your email template, we encountered following error: {error}"
+  },
+  {
+    "category": "campaigns",
+    "message": "Please note, once you select a template, the existing content of the campaign template will be overridden by the one you have selected.<br \/> If you don't want this, then just click on the cancel button and you will be redirect back to the inital template page."
+  },
+  {
+    "category": "servers",
+    "message": "brevo-web-api"
+  },
+  {
+    "category": "servers",
+    "message": "Your Brevo api key"
+  }
+]

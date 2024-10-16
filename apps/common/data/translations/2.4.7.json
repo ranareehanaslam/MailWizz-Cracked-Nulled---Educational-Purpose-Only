@@ -1,0 +1,42 @@
+[
+  {
+    "category": "api_keys",
+    "message": "List Fields - Create"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Fields - Delete"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Fields - Update"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Fields - View list field types"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Fields - View one"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Segments - Condition operators"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Segments - Create"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Segments - Delete"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Segments - Update"
+  },
+  {
+    "category": "api_keys",
+    "message": "List Segments - View one"
+  }
+]

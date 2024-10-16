@@ -1,0 +1,27 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Phemail\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phemail\\Tests\\": "tests/"
+    }
+  },
+  "description": "MIME parser written in pure PHP for parsing raw emails (.eml) files.",
+  "homepage": "https://github.com/francescogabbrielli/phemail",
+  "keywords": ["mime", "email", "parser"],
+  "license": "MIT",
+  "name": "vaibhavpandeyvpz/phemail",
+  "require": {
+    "php": "^5.4 || ^7.0 || ^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "suggest": {
+    "pear/mail": ""
+  },
+  "type": "library"
+}

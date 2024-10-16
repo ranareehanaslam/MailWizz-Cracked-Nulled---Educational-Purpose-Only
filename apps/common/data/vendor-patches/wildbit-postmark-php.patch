@@ -1,0 +1,108 @@
+diff --git a/src/Postmark/Models/PostmarkAttachment.php b/src/Postmark/Models/PostmarkAttachment.php
+index 85226bd..05a60f5 100644
+--- a/src/Postmark/Models/PostmarkAttachment.php
++++ b/src/Postmark/Models/PostmarkAttachment.php
+@@ -21,6 +21,7 @@ class PostmarkAttachment implements \JsonSerializable {
+ 		return new PostmarkAttachment(base64_encode(file_get_contents($filePath)), $attachmentName, $mimeType, $contentId);
+ 	}
+ 
++	#[\ReturnTypeWillChange]
+ 	function jsonSerialize() {
+ 
+ 		$retval = array(
+diff --git a/src/Postmark/Models/Suppressions/SuppressionChangeRequest.php b/src/Postmark/Models/Suppressions/SuppressionChangeRequest.php
+index d307775..19686cd 100644
+--- a/src/Postmark/Models/Suppressions/SuppressionChangeRequest.php
++++ b/src/Postmark/Models/Suppressions/SuppressionChangeRequest.php
+@@ -17,6 +17,7 @@ class SuppressionChangeRequest implements \JsonSerializable {
+         $this->emailAddress = $emailAddress;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize() {
+         $retval = array(
+             "EmailAddress" => $this->emailAddress
+diff --git a/src/Postmark/Models/Webhooks/HttpAuth.php b/src/Postmark/Models/Webhooks/HttpAuth.php
+index 45e31e4..4fba839 100644
+--- a/src/Postmark/Models/Webhooks/HttpAuth.php
++++ b/src/Postmark/Models/Webhooks/HttpAuth.php
+@@ -20,6 +20,7 @@ class HttpAuth implements \JsonSerializable {
+         $this->password = $password;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize() {
+         $retval = array(
+             "Username" => $this->username,
+diff --git a/src/Postmark/Models/Webhooks/WebhookConfigurationBounceTrigger.php b/src/Postmark/Models/Webhooks/WebhookConfigurationBounceTrigger.php
+index 3f1ad58..e94097c 100644
+--- a/src/Postmark/Models/Webhooks/WebhookConfigurationBounceTrigger.php
++++ b/src/Postmark/Models/Webhooks/WebhookConfigurationBounceTrigger.php
+@@ -20,6 +20,7 @@ class WebhookConfigurationBounceTrigger implements \JsonSerializable {
+         $this->includeContent = $includeContent;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize() {
+         $retval = array(
+             "Enabled" => $this->enabled,
+diff --git a/src/Postmark/Models/Webhooks/WebhookConfigurationClickTrigger.php b/src/Postmark/Models/Webhooks/WebhookConfigurationClickTrigger.php
+index 35b3857..0a39488 100644
+--- a/src/Postmark/Models/Webhooks/WebhookConfigurationClickTrigger.php
++++ b/src/Postmark/Models/Webhooks/WebhookConfigurationClickTrigger.php
+@@ -17,6 +17,7 @@ class WebhookConfigurationClickTrigger implements \JsonSerializable {
+         $this->enabled = $enabled;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize() {
+         $retval = array(
+             "Enabled" => $this->enabled
+diff --git a/src/Postmark/Models/Webhooks/WebhookConfigurationDeliveryTrigger.php b/src/Postmark/Models/Webhooks/WebhookConfigurationDeliveryTrigger.php
+index 0c3f3e8..cd4a863 100644
+--- a/src/Postmark/Models/Webhooks/WebhookConfigurationDeliveryTrigger.php
++++ b/src/Postmark/Models/Webhooks/WebhookConfigurationDeliveryTrigger.php
+@@ -17,6 +17,7 @@ class WebhookConfigurationDeliveryTrigger implements \JsonSerializable {
+         $this->enabled = $enabled;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize() {
+         $retval = array(
+             "Enabled" => $this->enabled
+diff --git a/src/Postmark/Models/Webhooks/WebhookConfigurationOpenTrigger.php b/src/Postmark/Models/Webhooks/WebhookConfigurationOpenTrigger.php
+index 8746a2d..39ff037 100644
+--- a/src/Postmark/Models/Webhooks/WebhookConfigurationOpenTrigger.php
++++ b/src/Postmark/Models/Webhooks/WebhookConfigurationOpenTrigger.php
+@@ -20,6 +20,7 @@ class WebhookConfigurationOpenTrigger implements \JsonSerializable {
+         $this->postFirstOpenOnly = $postFirstOpenOnly;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize() {
+         $retval = array(
+             "Enabled" => $this->enabled,
+diff --git a/src/Postmark/Models/Webhooks/WebhookConfigurationSpamComplaintTrigger.php b/src/Postmark/Models/Webhooks/WebhookConfigurationSpamComplaintTrigger.php
+index c99f429..17289e4 100644
+--- a/src/Postmark/Models/Webhooks/WebhookConfigurationSpamComplaintTrigger.php
++++ b/src/Postmark/Models/Webhooks/WebhookConfigurationSpamComplaintTrigger.php
+@@ -20,6 +20,7 @@ class WebhookConfigurationSpamComplaintTrigger implements \JsonSerializable {
+         $this->includeContent = $includeContent;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize() {
+         $retval = array(
+             "Enabled" => $this->enabled,
+diff --git a/src/Postmark/Models/Webhooks/WebhookConfigurationTriggers.php b/src/Postmark/Models/Webhooks/WebhookConfigurationTriggers.php
+index 1d1aad5..768f607 100644
+--- a/src/Postmark/Models/Webhooks/WebhookConfigurationTriggers.php
++++ b/src/Postmark/Models/Webhooks/WebhookConfigurationTriggers.php
+@@ -29,6 +29,7 @@ class WebhookConfigurationTriggers implements \JsonSerializable {
+         $this->spamComplaint = $spamComplaint;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize() {
+         $retval = array();
+ 

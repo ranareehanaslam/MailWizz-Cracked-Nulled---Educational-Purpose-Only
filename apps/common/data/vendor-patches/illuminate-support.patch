@@ -1,0 +1,88 @@
+diff --git a/Collection.php b/Collection.php
+index 87b5058..e7f623a 100644
+--- a/Collection.php
++++ b/Collection.php
+@@ -1230,6 +1230,7 @@ class Collection implements ArrayAccess, Enumerable
+      *
+      * @return \ArrayIterator
+      */
++    #[\ReturnTypeWillChange]
+     public function getIterator()
+     {
+         return new ArrayIterator($this->items);
+@@ -1240,6 +1241,7 @@ class Collection implements ArrayAccess, Enumerable
+      *
+      * @return int
+      */
++    #[\ReturnTypeWillChange]
+     public function count()
+     {
+         return count($this->items);
+@@ -1274,6 +1276,7 @@ class Collection implements ArrayAccess, Enumerable
+      * @param  mixed  $key
+      * @return bool
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetExists($key)
+     {
+         return array_key_exists($key, $this->items);
+@@ -1285,6 +1288,7 @@ class Collection implements ArrayAccess, Enumerable
+      * @param  mixed  $key
+      * @return mixed
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetGet($key)
+     {
+         return $this->items[$key];
+@@ -1297,6 +1301,7 @@ class Collection implements ArrayAccess, Enumerable
+      * @param  mixed  $value
+      * @return void
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetSet($key, $value)
+     {
+         if (is_null($key)) {
+@@ -1312,6 +1317,7 @@ class Collection implements ArrayAccess, Enumerable
+      * @param  string  $key
+      * @return void
+      */
++    #[\ReturnTypeWillChange]
+     public function offsetUnset($key)
+     {
+         unset($this->items[$key]);
+diff --git a/Fluent.php b/Fluent.php
+index e02fa94..5ea478a 100755
+--- a/Fluent.php
++++ b/Fluent.php
+@@ -70,6 +70,7 @@ class Fluent implements Arrayable, ArrayAccess, Jsonable, JsonSerializable
+      *
+      * @return array
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return $this->toArray();
+diff --git a/MessageBag.php b/MessageBag.php
+index 1fb862a..38ac9ab 100755
+--- a/MessageBag.php
++++ b/MessageBag.php
+@@ -376,6 +376,7 @@ class MessageBag implements Arrayable, Countable, Jsonable, JsonSerializable, Me
+      *
+      * @return array
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return $this->toArray();
+diff --git a/Traits/EnumeratesValues.php b/Traits/EnumeratesValues.php
+index f7e9bfc..cadf418 100644
+--- a/Traits/EnumeratesValues.php
++++ b/Traits/EnumeratesValues.php
+@@ -724,6 +724,7 @@ trait EnumeratesValues
+      *
+      * @return array
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_map(function ($value) {

@@ -1,0 +1,969 @@
+--- -------------------------------------------
+--- Version 2.5.5 - 2024-06-17
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.5.4 - 2024-06-17
+--- -------------------------------------------
+[CHG] - Loading only the announcements last updated after the user has been created
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.5.3 - 2024-06-17
+--- -------------------------------------------
+[ADD] - Added announcements in the app so MailWizz team can announce various upcoming large changes so you have time to prepare accordingly
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.5.2 - 2024-06-13
+--- -------------------------------------------
+[ENH] - When using double opt-in, you can now have the subscribers confirm their email address after they click the confirmation link in the email, to prevent them from being confirmed by spam filters
+[BUG] - RedisCache error because the RedisCacheInterface was not found
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.5.1 - 2024-06-11
+--- -------------------------------------------
+[ENH] - Improvements for the Smart Tracking feature (https://www.mailwizz.com/kb/smart-tracking/)
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.5.0 - 2024-06-10
+--- -------------------------------------------
+[ENH] - AFTER-PROFILE-UPDATE will now trigger from API updates as well
+[BUG] - Under certain conditions, we'd record more than one unsubscribe log per subscriber, per campaign. Now it is fixed
+[ADD] - Added Smart Tracking for campaigns. A set of rules to detect and leave out clicks and opens that are not legit
+
+--- -------------------------------------------
+--- Version 2.4.9 - 2024-05-24
+--- -------------------------------------------
+[CHG] - We're not going to try to fix URLs in email templates anymore, please make sure you insert properly formatted URLs
+[CHG] - Replaced the package querypath/querypath with gravitypdf/querypath to make it compatible with PHP 8.2
+[ENH] - Redis Cache/Mutex now accept username for connection as well
+[ENH] - Importing from the web interface will retry up to 5 consecutive times, one at each 5 seconds, if the server returns an error
+[ENH] - The confirmation step of the campaign will now show the from email as well
+[CHG] - We will not use tracking domain for a delivery server when validating the server, because we do not want users to be forced to login again
+[BUG] - Inserting UTM Tags in the campaign template step will now work for all email templates builders.
+[BUG] - The customer campaign reports controller will now load only campaigns belonging to the logged in customer
+
+--- -------------------------------------------
+--- Version 2.4.8 - 2024-04-29
+--- -------------------------------------------
+[BUG] - Fix API Key permissions for List Segments
+
+--- -------------------------------------------
+--- Version 2.4.7 - 2024-04-29
+--- -------------------------------------------
+[ADD] - Added a new API endpoint that fetches the subscribers details of a segment (lists/LIST_UID/segments/SEGMENT_UID/subscribers).
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.4.6 - 2024-04-03
+--- -------------------------------------------
+[ENH] - The queue command can now take following params(defaults shown): --pcntl=0 --pcntl_processes=10 --messages_limit=10 --memory_limit=2048 --time_limit=60
+[ENH] - URLs from XML/JSON feed are now available for selection in the list of URLs used to take action against subscribers and/or to change subscribers custom fields on click
+[ENH] - List import/export/sync can now properly handle multi-value fields and allow you to define your custom separator for multi-values. You can also define the action to take when importing and values already exists, either replace existing values or merge them
+[CHG] - Warmup plans will not set the second_quota on delivery servers as this can cause them to stall
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.4.5 - 2024-03-18
+--- -------------------------------------------
+[BUG] - REMOTE_CONTENT tag would not parse DS_* tags
+[ENH] - Pass the server to all parsing functions that can make use of it
+[ADD] - Added campaign_remote_content_tag_fetch_content_cache_key filter hook to set the cache key for when fetching the content of REMOTE_CONTENT tag
+[ADD] - Added campaign_remote_content_tag_fetch_content_use_cache filter hook to decide if the content fetched from the remote url will be CACHED or not
+[CHG] - Headers for bounces, complaints, etc, will now be html decoded during the parsing process by the bounce handler
+[ENH] - Add support for PKCS#8 beside PKCS#1 BUT force PKCS#1 for compatibility reasons
+[BUG] - Fix for gmail unsubscribe request due to the fact that it is not following redirects
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.4.4 - 2024-02-13
+--- -------------------------------------------
+[ADD] - Add ability for customers to select if they want to receive DNS details via email for Sending Domains
+[ADD] - Added the ability to restrict the number of the responses per responder for a survey.
+[BUG] - Fixed a bug preventing subscriber values to be set on copy/move actions
+
+--- -------------------------------------------
+--- Version 2.4.3 - 2024-02-05
+--- -------------------------------------------
+[ADD] - Added the new interactive command named delete-email-blacklist-by-criteria that deletes the email blacklists based on a date range and reason criteria
+[ADD] - Added ability to set the IP Pool for Sendgrid delivery servers
+[BUG] - The campaigns could not be deleted in the backend and cli if the customer owning it would have "Can delete own campaigns" set to No. This was corrected
+[BUG] - The campaigns share stats were sent only to the first email address from the comma separated list. This was corrected
+[BUG] - Cancelling bulk deletion in the customer area is still deleting the campaigns
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.4.2 - 2024-01-29
+--- -------------------------------------------
+[ADD] - Added new statistics graph for the campaigns delivery stats in the campaign overview and for the backend/customer area dashboards
+[ADD] - Added the possibility to archive campaigns that are sent
+[CHG] - Made room for a future High Volume Sender extension
+[ADD] - Added ability for segments to filter subscribers that did not open and/or did not click campaigns, in addition to the existing ability to select subscribers that did open and did click campaigns
+[ADD] - Added status failed for the transactional emails. Now, after 3 unsuccessful retries, the emails status will become failed instead of sent
+[BUG] - We were counting the delivery servers marked for deletion when calculating a customer maximum allowed quota for servers, resulting in not allowing the creation of new servers
+[Add] - Added Brevo as delivery server type using web api
+[ENH] - In order to prevent template engine syntax errors, we're now doing syntax validation check if the template engine is enabled
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.4.1 - 2024-01-08
+--- -------------------------------------------
+[BUG] - Some API endpoints were missing from the permissions list for an API key, making them forbidden when using permissions
+[ADD] - Added campaign_can_be_blocked filter hook
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.4.0 - 2024-01-04
+--- -------------------------------------------
+[ADD] - Added delivery_servers_{before,after}_pick_server filter hooks
+[CHG] - The DeliveryServer::pickServer method moved to DeliveryServer::handlePickServer. DeliveryServer::pickServer only calls the above hooks and DeliveryServer::pickServer
+[CHG] - When counting subscribers for backend dashboard, we exclude the ones from deleted or archived lists
+[ADD] - Added delivery server quota for second and minute
+[BUG] - Delivery servers would require validation when changing an attribute that does not require validation
+[CHG] - We changed the way we count and find subscribers for segments using the ANY operator, improving performance dramatically
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.3.9 - 2023-12-04
+--- -------------------------------------------
+[BUG] - Fix bulk delete of email blacklist when not all selected records would be deleted
+[CHG] - Abuse complaints will be stored per customer specific blacklist if/when the feature is enabled, otherwise, they will stay in the global blacklist
+[ADD] - Added SMTP server type for GreenArrow
+[CHG] - XML and JSON feeds will not use cache if they contain dynamic tags in their attributes
+[ADD] - Added campaign_model_postpone_seconds_count filter hook
+[ADD] - Ability to send an email notification to the customer with the DNS Records to add, when a sending domain is created in the backend
+[ADD] - Added {user|customer}_login_remember_me_default_value filter hooks to determine if the remember me checkbox at login is checked or not by default
+[ADD] - Added a new command: delete-expired-sessions, to delete expired sessions from database
+[ADD] - The new delete-expired-sessions command will also run in the daily cron job, automatically
+[ADD] - Added the ability to limit the number of list custom fields for customers/customer groups
+
+--- -------------------------------------------
+--- Version 2.3.8 - 2023-11-14
+--- -------------------------------------------
+[ADD] - Added new endpoints for creating/updating/deleting list subscribers segments.
+[ADD] - Added new endpoint to retrieve the list segments operators
+[ADD] - Now the campaigns endpoint can filter the campaigns based on the list_uid
+[ADD] - Exposing the field_id for the list field values endpoint
+[ADD] - Added new endpoints for creating/updating/deleting list fields.
+[ENH] - For delivery servers, you can now have multiple "use for" cases
+[ENH] - For test emails in campaigns, delivery servers where "use for" is set for test emails will be selected first, if they exist. If not, the ones for campaigns will be used.
+[ENH] - For test emails in lists(templates), delivery servers where "use for" is set for test emails will be selected first, if they exist. If not, the ones for lists will be used.
+[ADD] - Added list_field_builder_type_[FIELD_TYPE]_crud_build_field_array filter hooks
+[ENH] - Email box Monitors now check the Subject header as well; best for List-Unsubscribe header auto-generated emails
+[ADD] - Added config.shiftEnterMode = CKEDITOR.ENTER_BR; to ckeditor configuration
+[ENH] - EmailBoxMonitor can now decode and read base64 encoded messages as well and it will also look in the email subject
+[ADD] - Added ability for force the FROM NAME on delivery servers
+[CHG] - Deprecated DeliveryServer::sendEmail method in favour of DeliveryServer::send. Calling DeliveryServer::sendEmail will still work but will trigger a deprecation notice.
+[ADD] - Added console_send_campaigns_command_{find|count}_subscribers filter hooks
+[BUG] - Fixed the CSS issues for GrapesJS
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.3.7 - 2023-10-19
+--- -------------------------------------------
+[BUG] - Fix the landing pages default templates path to handle the situation when MailWizz is installed in a subfolder
+[ADD] - The email header and footer from customer settings are injected when a test email is sent from the campaign template step
+[ADD] - Added console_command_list_import_finished_can_send_email filter hook
+[ADD] - Added the ability to export the campaigns bounce logs from the backend
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.3.6 - 2023-09-28
+--- -------------------------------------------
+[CHG] - Raised the max number of records per page from 50 to 1000 for API
+[IMP] - When deleting customers, we will now delete the campaigns and the lists first, one by one, then the customers
+[ADD] - Ability for Redis to connect using unix sockets
+[BUG] - Fix a bug in delivery server selection criteria where some servers would be selected for delivery when they should not
+[CHG] - Added campaigns limit and offset flags to the global mutex lock for send-campaigns command
+[ADD] - Added SerializeHelper to help serialize/unserialize data and try to fix it if it is broken
+[ENH] - All console commands accept a new flag, --stdout_format=text|json to format the output in text or json. Defaults to text
+[ADD] - Added console_command_stdout_message filter hook
+[RMV] - Removed console_command_send_campaigns_stdout_message filter hook, use console_command_stdout_message instead
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.3.5 - 2023-09-05
+--- -------------------------------------------
+[ADD] - Added dswh_before_process and dswh_after_process action hooks to allow hooking in the dswh bounce/complaint processing
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.3.4 - 2023-08-28
+--- -------------------------------------------
+[FIX] - Landing Page Domains - Fix a big where the http scheme was not loaded properly
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.3.3 - 2023-08-27
+--- -------------------------------------------
+[RMV] - Removed filter hook ext_content_builder_register_scripts_allowed_scripts
+[ADD] - Added filter hook ext_content_builder_register_scripts_allowed_scripts_tags
+[RMV] - Removed filter hook ext_content_builder_register_styles_allowed_styles
+[ADD] - Added filter hook ext_content_builder_register_styles_allowed_styles_tags
+[ADD] - Assets registering will accept a new property, beside src and priority: tags, which is an array of tags
+[ADD] - Added following new action hooks: frontend_list_page_display_content_{before,after}_content_wrapper
+[ADD] - Added following new action hooks: frontend_list_page_display_content_{before,after}_content
+[ADD] - For subscribe form and unsubscribe form, custom assets are embed in the form itself
+[CHG] - In send-campaigns command, prepare the email after we're done with the delivery server checks, all of them
+[CHG] - We are not using clone to copy models, instead, we create them from their attributes
+[ADD] - Added the possibility to restrict the number of the tracking domains a customer can create
+[ADD] - Added domain alias feature for Landing Pages
+[ADD] - The search-by-custom-fields API endpoint now accepts a status query string to search only by status
+[INF] - For landing pages, custom javascript will be executed only: for full guests (not backend/customer login) / when using custom domains / when visiting the page as the page owner
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.3.2 - 2023-08-07
+--- -------------------------------------------
+[ADD] - Added delete-campaigns-by-date-range command to delete campaigns within the specified date range
+[ADD] - Added delete-lists-by-date-range command to delete lists within the specified date range
+[ADD] - Added category support to surveys.
+[ADD] - Ability to only allow a certain number of internal bounces then blacklist a subscriber
+[ADD] - When updating a subscriber profile in the public list forms, subscribers are now required to validate the change with a confirmation code they get on their updated email address
+[ADD] - Added new filter hook: dompdf_instance to return/modify the dompdf instance
+[CHG] - The file manager will not be auto-enabled for the default drag and drop builder
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.3.1 - 2023-07-26
+--- -------------------------------------------
+[BUG] - Fixed various bugs in the Email Template Builders integration
+[BUG] - Fixed various bugs in Landing Pages
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.3.0 - 2023-07-25
+--- -------------------------------------------
+[ADD] - New Landing Pages feature - See https://www.youtube.com/watch?v=ME-4Yl8nBy0
+[ADD] - New Content Builder for Pages
+[ADD] - New Content Builder for Articles
+[ADD] - New Stripo Email Template Builder
+[ADD] - New GrapesJs Email Template Builder
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.19 - 2023-07-24
+--- -------------------------------------------
+[ADD] - Added campaign_feed_parser_no_items_postpone_campaign_hours_count filter hook
+[CHG] - Allow unlimited subdomain parts in the sending domains
+[ADD] - Added the content_security_policy_header_policy_directives filter hook to control the CSP header
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.18 - 2023-06-28
+--- -------------------------------------------
+[ENH] - CSS alignment improvements for checkboxes and radio buttons
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.17 - 2023-06-28
+--- -------------------------------------------
+[ADD] - Add option to "Remove all" links in the "Change subscriber custom field on link click" campaign template section
+[ENH] - The confirm subscribe url will now contain a unique key to prevent automatic confirmations
+[BUG] - Fix the regex for sending domain validation
+[BUG] - Fix checkbox custom field(lists and surveys) when default value specified and it would be automatically checked
+[ADD] - Add ability to set default country for phone number field in list custom fields
+[BUG] - Fix undefined array index in survey export
+[CHG] - When pasting text in the wysiwyg editor in the drag and drop builder, it will be stripped of any html to prevent breaking the editor
+[ADD] - Additional custom fields will accept changing their values on campaign click/open/sent: Checkbox, CheckboxList, URL, RadioList, PhoneNumber, Rating
+[ADD] - Added following new filter hooks: campaign_click_action_allowed_fields, campaign_sent_action_allowed_fields, campaign_open_action_allowed_fields
+[ADD] - Added following new filter hooks: console_command_send_campaigns_pre_checks_step1_mutex_hash_ttl and console_command_send_campaigns_pre_checks_step1_populate_customer_data_mutex_hash_ttl
+[ADD] - The delivery_server_get_params_array filter hook got a CAttributeCollection param that receives the deliveryObject for which the sending happens
+
+--- -------------------------------------------
+--- Version 2.2.16 - 2023-06-08
+--- -------------------------------------------
+[ENH] - When using queue tables, check if subscribers still exists and if they have the right status. If not, remove them from queue table
+[BUG] - Passing an integer for strpos when it needs a string
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.15 - 2023-06-06
+--- -------------------------------------------
+[ADD] - Added A/B Testing for regular campaigns as well
+[ENH] - Stricter validation for domain name for Sending Domains
+[BUG] - Fix a bug in the import process that caused a fatal error when using PHP >= 8.1
+[ADD] - Added DS_NAME, DS_HOST, DS_TYPE, DS_ID, DS_FROM_NAME, DS_FROM_EMAIL, DS_REPLYTO_EMAIL as variables available for actions against subscriber custom fields after campaign sent, opened, clicked
+[ADD] - Added extensions_manager_{before,after}_enable_extension action hook
+[ADD] - Added extensions_manager_can_enable_extension filter hook
+[ADD] - Added extensions_manager_{before,after}_disable_extension action hook
+[ADD] - Added extensions_manager_can_disable_extension filter hook
+[ADD] - Added extensions_manager_{before,after}_delete_extension action hook
+[ADD] - Added extensions_manager_can_delete_extension filter hook
+[ADD] - Added extensions_manager_{before,after}_update_extension action hook
+[ADD] - Added api_{campaign_bounces,campaign_delivery_logs,campaign_unsubscribes,campaigns}_collection_{min,max}_records_per_page filter hook
+[ADD] - Added api_{campaign_bounces,campaign_delivery_logs,campaign_unsubscribes,campaigns}_collection_{count,find}_criteria filter hook
+[ADD] - Added api_{campaign_bounces,campaign_delivery_logs,campaign_unsubscribes,campaigns}_collection_{record,data} filter hook
+[ADD] - Added api_{countries,delivery_servers,list_segments,list_subscribers,lists,templates,transactional_emails}_collection_{min,max}_records_per_page filter hook
+[ADD] - Added api_{countries,delivery_servers,list_segments,list_subscribers,lists,templates,transactional_emails}_collection_{count,find}_criteria filter hook
+[ADD] - Added api_{countries,delivery_servers,list_segments,list_subscribers,lists,templates,transactional_emails}_collection_{record,data} filter hook
+[ENH] - AI Assistant extension updates
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.14 - 2023-05-10
+--- -------------------------------------------
+[ENH] - HTMLPurifier allow more attributes(flex-direction, align-items) and attribute values(for width, height and display)
+[ADD] - Added AI Assistant which is a chat extension to help with daily marketing tasks. It is an integration with OpenAI's ChatGPT.
+[CHG] - When a Warmup plan finishes, we do not set the quota to zero. Last plan schedule quota will remain set on the delivery server.
+[BUG] - Tracking redirect would fail when MailWizz would be installed in a subfolder and tracking domains would be used
+[ENH] - API access by IP now allows ranges as well. Added proper info in tooltips as well.
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.13 - 2023-05-04
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.12 - 2023-05-02
+--- -------------------------------------------
+[BUG] - Fix a bug where the customer quota notifications would trigger too early when the OS would kill PCNTL processes
+[ADD] - Added ability to set the unread messages reminder frequency for customers and customer groups
+[ADD] - Added emailboxmonitor_process_remote_contents_{before,after}_subscriber_action action hooks
+[CHG] - Postmark webhook processing now treats SpamComplaint as a true spam complaint as opposed to the old SpamNotification. SpamNotification are treated as internal bounces
+[BUG] - Fix a bug where campaigns would start sending again, when the send-campaigns cron jobs would run, if they took longer than 7 hours to process and they span at least two days.
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.11 - 2023-04-03
+--- -------------------------------------------
+[ADD] - Tracking and Sending domains will now show their IDs in the list view for both, backend and customer area
+[ADD] - Added the 'register_client_script_core_packages' filter hook, to register ClientScript core packages
+[CHG] - In the daily cron job, the delete lists function will remove subscribers in batches instead of removing all in one go, then remove the list itself
+[ADD] - We show used delivery servers in campaign overview as well, not just in the quick view.
+[BUG] - Fix customer notes links
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.10 - 2023-03-14
+--- -------------------------------------------
+[CHG] - We are not showing anymore the links that will not pass validation in the campaign template step for the actions on link click
+[BUG] - Fixes for HTML in consent checkbox
+[BUG] - Fixes for API Keys permissions
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.9 - 2023-03-13
+--- -------------------------------------------
+[ADD] - In customer area, the body tag will get two new classes: customer-id-X and customer-group-id-X
+[ADD] - Added ability to select permissions for api keys
+[ADD] - The Consent Checkbox field type now accepts HTML
+[ENH] - When used, tracking domains will be kept for all tracking links, including unsubscribe, update profile, etc
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.8 - 2023-02-20
+--- -------------------------------------------
+[ENH] - Postmark api will now include the sender name
+[ENH] - Campaign share code feature will allow to use the code multiple times
+[UPD] - Upgraded KnockoutJS to latest version
+[CHG] - We are now using ListFieldText as the class for list Text fields in the field builder
+[CHG] - We are now using ListFieldTextarea as the class for list Textarea fields in the field builder
+[CHG] - We are now using ListFieldUrl as the class for list URL fields in the field builder
+[ADD] - You can now set min/max length for the Text and Textarea fields, and also rules for the content they accept
+[ADD] - You can now set min/max length and allowed schemes for the URL field, and also whitelist/blacklist accepted domains
+[BUG] - Fixed database error when deleting campaign track click logs
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.7 - 2023-01-30
+--- -------------------------------------------
+[BUG] - Queue import processing would not remove files if they don't contain a valid header
+[RMV] - Remove google fonts
+[BUG] - Fix wrong quota display for sub-accounts in the backend customers grid
+[ADD] - Added a new template tag, 'CAMPAIGN_TEMPLATE_NAME', which shows the email template used in the campaign
+[BUG] - Fix a bug where campaign activity map pins would still show emails even if they supposed to be masked
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.6 - 2023-01-16
+--- -------------------------------------------
+[BUG] - Autoresponder menu item would not be displayed on new installs in customer area
+[BUG] - Loaders would not be properly aligned
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.5 - 2023-01-12
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.4 - 2023-01-12
+--- -------------------------------------------
+[BUG] - Fixed index size for primary key for list_subscriber_meta_data table
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.3 - 2023-01-11
+--- -------------------------------------------
+[ENH] - When unsubscribed and re-subscribe via the web interface, the subscriber will now get the welcome email if enabled
+[ADD] - Added a new AR event, AUTORESPONDER_EVENT_AFTER_PROFILE_UPDATE, triggered only when subscribers update their profile
+[CHG] - Change the way we set daily sending intervals, now you set the start date and an interval, in hours
+[CHG] - We are using last_updated now for the unsubscribes and blacklisted statuses in the ListSubscribers7DaysActivityWidget query.
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.2 - 2022-12-12
+--- -------------------------------------------
+[ENH] - Campaigns removal will be blocked if the campaign is a dependency for an autoresponder
+[ENH] - Add ability to use v4 for Google Analytics
+[ENH] - Remove limit for campaign custom and extra tags
+[ENH] - In campaign setup step, for related campaigns, bring the options together with the campaign so we don't do multiple queries anymore
+[ENG] - Add database index for the category/message combo for translation_source_message table
+[ADD] - Added two new tags: [SUBSCRIBER_EMAIL_NAME] and [SUBSCRIBER_EMAIL_DOMAIN]
+[CHG] - List custom fields sync will be enabled by default. If performance is affected, disable from Backend > Settings > Cron > List Subscribers
+[ADD] - List custom fields sync will automatically run after each import and/or each time when the list custom fields are updated
+[ADD] - Added a new action hook: list_import_finished
+[ENH] - On campaigns list pages, the status and stats(opens/clicks/bounces/etc) columns will be loaded via ajax per campaign basis
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.1 - 2022-11-09
+--- -------------------------------------------
+[ENH] - When processing bounce/fbl/ebm messages, beside looking in the campaign delivery log, look in its archive as well
+[ADD] - Add CampaignDeliveryLogHelper to query in both, the campaign delivery log table and its archive
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.2.0 - 2022-10-31
+--- -------------------------------------------
+[BUG] - Warmup Plans would cause the delivery servers to sometimes get stuck when switching between plans
+[ADD] - Added ability to send campaigns only between certain hours
+[ENH] - Skip tracking URLs by adding the disable-tracking query param to the URL you want to skip, i.e: (https://mailwizz.com/contact/?disable-tracking or https://mailwizz.com/contact/?source=email&disable-tracking)
+[ENH] - Using the 'campaign.track.click.url.segment' app param, you can now customize the tracking url for clicks
+[ENH] - Using the 'campaign.track.open.url.segment' app param, you can now customize the tracking url for opens
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.20 - 2022-10-17
+--- -------------------------------------------
+[BUG] - RSS/JSON feeds would create duplicate rows when using index based tags
+[ADD] - Added campaign_custom_unsubscribe_url_enabled filter hook
+[ADD] - Added campaign_custom_unsubscribe_url_template filter hook
+[ADD] - Added the X-Frame-Options header with the SAMEORIGIN value
+[BUG] - Fix a bug where the drag and drop builder would encode quotes for background image style attribute
+[BUG] - Fix a bug where blank charts when sharing campaign reports
+[ENH] - PHP 8.0 and PHP 8.1 better compatibility
+[RMV] - Removed setting the auto_detect_line_endings directive
+[ADD] - Added campaign_test_email_delivery_server_use_for filter hook
+[ADD] - Added template_test_email_delivery_server_use_for filter hook
+[UPD] - Updated Dompdf library to 2.x
+[CHG] - Use the official PHP SDK for pepipost
+[ADD] - Option to select all the links to populate a custom field on "Change subscriber custom field on link click"
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.19 - 2022-09-12
+--- -------------------------------------------
+[ADD] - Show attachments list in the confirmation page of the campaign
+[CHG] - Change the wording from "Send campaigns" to "Schedule campaign" in the confirmation step of the campaign
+[ENH] - If enabled, forced opt-in and opt-out will now propagate in frontend, and api as well, dynamically
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.18 - 2022-08-26
+--- -------------------------------------------
+[CHG] - When subaccounts export subscribers from "All Subscribers" area, we notify subaccounts not the main account
+[ADD] - Add 'date_added' and 'last_updated' to export file when exporting from "All Subscribers" area
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.17 - 2022-08-15
+--- -------------------------------------------
+[ADD] - Added note in the welcome step of the installer as to what to do if the installer does not pass the welcome screen
+[ENH] - Encode subject and body in the list unsubscribe header value
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.16 - 2022-07-15
+--- -------------------------------------------
+[BUG] - Fix a bug in tracking urls that would prevent transforming successive links on same line
+[CHG] - Transform HTML into plain text ONLY if the given input is HTML, otherwise leave it as is
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.15 - 2022-07-12
+--- -------------------------------------------
+[ADD] - Added countdown tag for campaign content. See https://www.mailwizz.com/kb/how-to-add-a-countdown-to-an-email-template
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.14 - 2022-06-21
+--- -------------------------------------------
+[RMV] - Remove everifier.org from the email verification services providers
+[BUG] - Fixed error caused by parsing tracking urls in plain text mode
+[ENH] - Tour extension now shows the right account/sub-account info
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.13 - 2022-06-15
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.12 - 2022-06-14
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.11 - 2022-06-14
+--- -------------------------------------------
+[IMP] - Autosaves the campaign form when navigating using the wizard
+[BUG] - Fixed a bug where html was removed from translations
+[IMP] - We no longer track urls from the <link> tags in campaign email templates
+[UPD] - Upgraded jQuery to latest version
+[UPD] - Upgraded ElasticEmail API from v2 to v4 (new REST api)
+[CHG] - We will use the Details column instead of Description column for Postmark bounces
+[CHG] - Changed the way we regenerate the system urls
+[BUG] - Fixed an error where masked emails would be displayed in shared stats pages
+[ADD] - New tags: INCREMENT_ONCE_BY_X, DECREMENT_ONCE_BY_X, MULTIPLY_ONCE_BY_X
+[CHG] - Use bordoni/phpass instead of ozh/phpass which is discontinued
+[ADD] - Added Favorite pages feature that allows you to bookmark pages
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.10 - 2022-05-02
+--- -------------------------------------------
+[ADD] - Added support for Embed Images for Mailgun Web Api
+[BUG] - Fix a bug in the Symfony Mailer implementation for embed images
+[RMV] - Deprecated AppInitHelper::fixRemoteAddress
+[ADD] - Added options to tell the app it is running under a reverse proxy so that it extracts the right IP addresses for visitors
+[SEC] - Fixed a bug that allowed guest users to bypass the anti-brute login mechanism and do more login requests that allowed
+[CHG] - Changed the way we retrieve the IP addresses of visitors. See https://www.mailwizz.com/kb/ip-detection-changes-since-2-1-10/
+[BUG] - The search extension would show the search modal in the login screen when it should not
+[ADD] - Implemented backoff/throttle for failed login attempts
+[ADD] - Added Warmup Plans for delivery servers, to build sender reputation over a period of time. See https://www.mailwizz.com/kb/delivery-servers-warmup-plans/
+
+--- -------------------------------------------
+--- Version 2.1.9 - 2022-04-04
+--- -------------------------------------------
+[UPD] - CSS updates
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.8 - 2022-04-01
+--- -------------------------------------------
+[ADD] - Added ability to see the public campaigns history for a list
+[ADD] - Added a new feature that allows a backend user to create notes for each customer
+[BUG] - The campaign template will stay in sync with the plain text version from now on
+[ENH] - More modern blue skin
+[ADD] - Added dark mode for the blue skin
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.7 - 2022-03-14
+--- -------------------------------------------
+[ADD] - Added ability to import Bounce Servers, Feedback Loop Servers and Email Box Monitors from a CSV file
+[BUG] - Fix bulk action error on subscribers grid
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.6 - 2022-03-07
+--- -------------------------------------------
+[ADD] - Added ability to blacklist IP addresses in customer area
+[ENH] - The subscribe page will now check if the subscriber IP address is blacklisted and forbid access if it is
+[ADD] - Added loader for list growth widget
+[ENH] - When importing in web, if an email address is blacklisted, we now show the real reason, not a generic message anymore
+[ADD] - Added "Complaints" to Customer > Campaigns > Stats grid
+[ADD] - Added "delete-orphan-campaign-gallery" command to delete gallery folders for campaigns that don't exist anymore
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.5 - 2022-02-15
+--- -------------------------------------------
+[BUG] - Campaign overview would load only for sent campaigns
+
+--- -------------------------------------------
+--- Version 2.1.4 - 2022-02-14
+--- -------------------------------------------
+[ADD] - In backend area, in lists and campaigns overview, the counter links are now clickable and will redirect to customer area impersonating the right customer
+[ADD] - Now the Customer Notification set in the Common tab of a Customer Group will not show after the close button is pressed
+[CHG] - The campaign overview widgets will load through AJAX (asynchronous) to avoid blocking the page rendering
+[CHG] - The customer and backend dashboards will load through AJAX (asynchronous) to avoid blocking the page rendering
+[BUG] - API endpoint for subscribers would not parse default values for custom fields when they contain tags. Now fixed
+[CHG] - Default values for list custom fields will be set via import and API, no need to wait for the sync command anymore. The trade-off is a slower import if the fields have default values
+[BUG] - The [*_LINK] tags would create entries in the campaign url table for each email that would go out resulting in large number of records in the table and slow campaign pages load
+[ENH] - The queries for counting all clicks and unique clicks have been rewritten resulting in huge performance improvements in campaigns list page and campaign overview page
+[ENH] - When a list is copied, if the "List Form Custom Assets" extension is enabled, it will copy those assets as well
+[ENH] - When a list is copied, if the "List Form Custom Redirect" extension is enabled, it will copy the redirect as well
+[ADD] - If sending a list (un)subscribe confirmation email fails to send, the list owner and system users will be notified via system messages (applies for regular web and api)
+[ADD] - If sending sharing stats for a campaign via email fails to send, the list owner and system users will be notified via system messages
+[ADD] - If sending the welcome and/or approval email fails for a list subscriber, the list owner and system users will be notified via system messages
+[ADD] - Users and customers will now receive a daily digest via email, with their unread messages
+
+--- -------------------------------------------
+--- Version 2.1.3 - 2022-01-25
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.2 - 2022-01-24
+--- -------------------------------------------
+[ADD] - Add the 'campaign-grid-stats-cache-warmup' console command to warm up the caches for campaigns grid view
+[BUG] - Exported subscribers would contain encoded quotes, now they do not
+[ADD] - Added SymfonyMailer as an alternative to SwiftMailer. SymfonyMailer is about 20% faster than SwiftMailer, it will become the default mailer and we will remove SwiftMailer
+[ADD] - Campaign stats, the customer can decide now how many days to wait to send the second email
+[CHG] - Campaigns in send groups will now calculate the stats ONLY based on the emails delivered by the campaign itself
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.1 - 2022-01-13
+--- -------------------------------------------
+[CHG] - The priority for the email address used in list unsubscribe is (low < high): Campaign Reply To < Server Forced Reply To < Customer Group: List Unsubscribe Header Email
+[CHG] - Country name change: Swaziland => Eswatini
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.1.0 - 2022-01-10
+--- -------------------------------------------
+[BUG] - Unparsed URLs in web version when opened without a subscriber identifier
+[CHG] - Bounces / FBLs / EBMs will not be identified via custom headers anymore BUT only via the original message id
+[RMV] - Removed all custom headers used to identify a campaign / subscribers, we're using the Message-Id header now
+[BUG] - URL would not be normalised in some cases when doing redirects for tracking
+[BUG] - Possible duplicate open tracking pixel under certain circumstances
+[ENH] - Make sure we add the open tracking pixel only if it does not exists in the content
+[BUG] - Remove Postmark delivery server casting to array which would cause the message to deliver but report it did not
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.34 - 2021-12-16
+--- -------------------------------------------
+[ADD] - Added a new chart in the list overview showing the growth/shrink over a period. The hourly cron is handling creating the counters
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.33 - 2021-12-02
+--- -------------------------------------------
+[CHG] - The translation messages are now case sensitive, which means there is a high number of new translation messages
+[ADD] - Added possibility to create transactional emails with attachments through API.
+[ADD] - Sending a test email within the campaign setup, will include the campaign attachments if any
+[ADD] - Added bulk delete and blacklist in the Backend-> Campaigns Abuse reports page
+[CHG] - Bounce processing now uses the Message-ID header in order to identify campaigns and subscribers
+[BUG] - Fix orphaned 'draggable' attribute in the drag and drop builder
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.32 - 2021-11-08
+--- -------------------------------------------
+[RMV] - Remove the Moono theme for ElFinder since it hasn't been updated in 5 years
+[ENH] - Custom fields that contain only URLs will now be parsed into tracking URLs
+[ENH] - Better handling of missing translations
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.31 - 2021-10-27
+--- -------------------------------------------
+[ADD] - Added a wrapper over getimagesize for better security. For best results, PHP's finfo class/extension must be enabled on your host
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.30 - 2021-10-26
+--- -------------------------------------------
+[BUG] - Fix a bug for ExtensionInit::createAbsoluteUrl(). Added the schema and sent it correctly for call of createAbsoluteUrl()
+[MSC] - The exported list/survey file name will not contain only the list/survey uid, since the list/survey name can get very long and cause filesystem issues
+[ADD] - Added Cookie Consent Extension
+[ADD] - Added '8.8.8.8', '8.8.4.4' as system nameservers
+[ADD] - Added a new hook: dns_resolver_nameservers to overwrite the above nameservers if needed
+[ADD] - Sending domains will use the above external nameservers to query for data
+[ADD] - A new method SendingDomain::hasValidDNSTxtRecord which can be called at any time to verify the sending domain has valid DNS records
+[ADD] - The hourly cron will check(if enabled) all active sending domains to make sure they still have valid DNS records. Invalid domains will be disabled
+[ADD] - Added ability to enable/disable hourly checks against sending domains
+[CHG] - Test emails are now prefixed with *** TEST *** instead of [TEST] to avoid GMail thread grouping
+[IMP] - CSV import now auto-detects the delimiters
+[ADD] - Tracking domains will use the above external nameservers to query for data
+[ADD] - A new method TrackingDomain::hasValidDNSRecords which can be called at any time to verify the tracking domain has valid DNS records
+[ADD] - The hourly cron will check(if enabled) all active sending domains to make sure they still have valid DNS records. Invalid domains will be disabled
+[ADD] - Added ability to enable/disable hourly checks against sending domains
+[ADD] - Added ability to set the maximum number of active campaigns customers can have
+[ADD] - A new method TrackingDomain::hasValidDNSRecords which can be called at any time to verify the tracking domain has valid DNS records
+[ADD] - Added a menu builder. It will inject the menus created in the header and footer of the frontend page.
+[BUG] - Increased the category name length from 32 chars to 100 in the translation_source_message table
+[CHG] - Accommodated the TheChecker.co transition to Emailable. Now the Email verification provider for this service is updated to use the new endpoint
+
+--- -------------------------------------------
+--- Version 2.0.29 - 2021-10-04
+--- -------------------------------------------
+[ADD] - Added Domains Blacklist
+[ADD] - Added ability to add subscribers to Customer Blacklist from customer area with one click
+[ADD] - Added ability to remove items from Queue Monitor if they are too old(24H) in the processing state
+[ADD] - Confirmation step of the campaign will tell the estimated number of recipients for that campaign
+[ADD] - Survey fields can get default values now. If you need to default on subscriber values, just use the subscriber tag from your list with the SUBSCRIBER_ prefix, i.e: [SUBSCRIBER_EMAIL]
+[ADD] - Added A/B Testing feature for Autoresponders subject lines
+[ADD] - Added scroll indicator for delivery server popup and Campaign Quick View popup
+[ADD] - Added A/B Testing subjects in the Campaign Quick View popup
+[ADD] - Campaign status can now be modified from the API update endpoint
+[ADD] - Campaign test emails will now get the [TEST] prefix on subject lines
+[ADD] - Added ability to decide if customers can use recurring campaigns or not
+[BUG] - Fix a bug in customer controller for guests where we wrongly referenced the API key to send new customers details to a MailWizz list
+[ADD] - Add list display name as page title in public list pages, such as subscribe form
+[ADD] - Added an optional name property for Bounce / FBL / Email Box Monitors, for easier identification
+
+--- -------------------------------------------
+--- Version 2.0.28 - 2021-09-13
+--- -------------------------------------------
+[BUG] - Fix Phpass reference error in the installer
+
+--- -------------------------------------------
+--- Version 2.0.27 - 2021-09-13
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.26 - 2021-09-13
+--- -------------------------------------------
+[CHG] - Changed the password hashing library since the old one has been removed by the author
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.25 - 2021-09-13
+--- -------------------------------------------
+[ADD] - Added ability to enable/disable only the editor for the ckeditor extension
+[ADD] - Added ability to use the file manager in backend even if the WYSIWYG editor is disabled. See Backend > Email Templates > File Manager
+[ADD] - Added ability to use the file manager in customer even if the WYSIWYG editor is disabled. See Customer > Email Templates > File Manager
+[BUG] - Segments would return wrng results count when using fields + campaign actions for condition
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.24 - 2021-08-25
+--- -------------------------------------------
+[CHG] - Switched the Cron Expression Parser library
+[BUG] - Fix failed delivery when using performance flags to not take delivery usage logs into consideration were set
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.23 - 2021-08-23
+--- -------------------------------------------
+[ADD] - Added ability to notify system admins via email when cron jobs don't run
+[RMV] - Removed the 'backend_dashboard_console_command_history_check_list' filter hook
+[ADD] - Added the 'console_command_list_model_get_command_map_check_interval' filter hook
+[BUG] - When not using PCNTL, customer would go over assigned quota under certain circumstances
+[CHG] - Mutex checks will happen each 10ms instead of each second, resulting in faster response times
+[IMP] - Much faster delivery speed
+
+--- -------------------------------------------
+--- Version 2.0.22 - 2021-08-04
+--- -------------------------------------------
+[RMV] - Removed unused libraries from composer.json
+[CHG] - We're no longer using Queue Tables for Autoresponders + Segments. More at https://forum.mailwizz.com/threads/were-thinking-to-remove-the-queue-tables-feature.7738/
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.21 - 2021-07-26
+--- -------------------------------------------
+[ENH] - The send-transactional-emails command now makes use of PCNTL for faster processing
+[ADD] - Added select2 for selects with multiple items to ease finding the desired select value(s)
+[ADD] - Added DMARC record suggestion for sending domains
+
+--- -------------------------------------------
+--- Version 2.0.20 - 2021-07-14
+--- -------------------------------------------
+[ADD] - Add [SUBSCRIBE_URL] and [SUBSCRIBE_LINK] tags
+[ENH] - Better handling for campaigns that use timewarp
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.19 - 2021-07-12
+--- -------------------------------------------
+[ENH] - Allow removal of delivery server types which the application does not support anymore
+[ENH] - Disable php-mail server types if they exist, since we don't use them anymore
+[ADD] - Add html_purify function to easily access the htmlpurifier object
+[ENH] - Better output filtering
+[BUG] - When Recaptcha is enabled and user enter correct login details but did not fill the captcha would allow user to login on a second submission without checking the captcha, since the login was already done before captcha was reached
+
+--- -------------------------------------------
+--- Version 2.0.18 - 2021-07-09
+--- -------------------------------------------
+[ENH] - Give more time to timewarp to complete sending, 7 days instead of just 36 hours
+[ENH] - Better handling of email validation in custom fields when email is empty
+[ADD] - Showing the campaign delivery servers in the step confirm and quick overview
+[ADD] - Added ability to filter the Delivery server logs by delivery_for column
+[ADD] - Added new notification and new email template for when a campaign pending approval is approved
+[ADD] - Added ability to disapprove a campaign that is pending approval
+[ADD] - Added new notification and new email template for when a campaign pending approval is disapproved
+[BUG] - When posting to a subscribe form with curl and curl would follow redirect, if the email was part of the list, we'd lose the email address field from the subscriber object
+
+--- -------------------------------------------
+--- Version 2.0.17 - 2021-06-29
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.16 - 2021-06-28
+--- -------------------------------------------
+[BUG] - Fix issue with bounce processing because of wrong type casting
+[BUG] - Fix queue bug with queue items being reprocessed while they were still processing
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.15 - 2021-06-22
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.14 - 2021-06-22
+--- -------------------------------------------
+[BUG] - Extension update message/action was not properly shown in backend area
+[CHG] - Better handling for when GD is missing and we try to resize
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.13 - 2021-06-21
+--- -------------------------------------------
+[CHG] - Do not disable the API on auto update
+[CHG] - PHP's proc_open is now required only for Sendmail delivery server type
+[BUG] - Fix a type error when doing str_replace on a null value
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.12 - 2021-06-21
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.11 - 2021-06-16
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.10 - 2021-06-09
+--- -------------------------------------------
+[ADD] - Added ability for lists to add Open Graph tags for the subscription page
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.9 - 2021-05-10
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.8 - 2021-05-06
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.7 - 2021-05-03
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.6 - 2021-04-14
+--- -------------------------------------------
+[ADD] - Added the 'none' visibility for custom fields
+[CHG] - The 'hidden' visibility for custom fields will render the fields in form but will hide them
+[CHG] - The 'none' visibility for custom fields will NOT render the fields in the form
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.5 - 2021-03-11
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.4 - 2021-03-10
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.3 - 2021-03-03
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.2 - 2021-03-01
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.1 - 2021-03-01
+--- -------------------------------------------
+[MSC] - Overall fixes
+[UPD] - Updated composer packages
+
+--- -------------------------------------------
+--- Version 2.0.0 - 2021-02-26
+--- -------------------------------------------
+[RLS] - Initial release

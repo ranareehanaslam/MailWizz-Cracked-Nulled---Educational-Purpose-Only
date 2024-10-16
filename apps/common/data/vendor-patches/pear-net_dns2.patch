@@ -1,0 +1,13 @@
+diff --git a/Net/DNS2/Socket.php b/Net/DNS2/Socket.php
+index 953f9a8..615bf74 100644
+--- a/Net/DNS2/Socket.php
++++ b/Net/DNS2/Socket.php
+@@ -129,7 +129,7 @@ class Net_DNS2_Socket
+         //
+         // bind to a local IP/port if it's set
+         //
+-        if (strlen($this->local_host) > 0) {
++        if (strlen((string)$this->local_host) > 0) {
+ 
+             $opts['socket']['bindto'] = $this->local_host;
+             if ($this->local_port > 0) {

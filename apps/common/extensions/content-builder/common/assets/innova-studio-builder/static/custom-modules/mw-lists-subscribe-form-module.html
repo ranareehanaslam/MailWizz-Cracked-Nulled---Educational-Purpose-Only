@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <base href="[MODULE_BASE_HREF]">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <style>
+        html { height:100%; margin:15px;}
+        body { margin:0;height:100%;overflow:hidden;font-family:Sans-Serif;font-size:13px;letter-spacing:1px;line-height:1.7; }
+
+        select {width:90%;font-size:14px;letter-spacing:1px;border:none;padding:10px;}
+        select:focus {outline:none}
+
+        label {display:flex;flex-direction:column;width:100%;margin:0 10px 15px}
+        .spinner-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80%;
+        }
+        .loading-spinner {
+            display:none;
+            width:26px;
+            height:26px;
+            background: url(/assets/img/grid-view-loading.gif) no-repeat;
+            background-size: 100% 100%;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 3px;
+        }
+        .loading-spinner.active {
+            display:block;
+        }
+        .content-builder-customer-lists-forms-wrapper .lists-forms-dropdown {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <input id="chosen-list-uid{id}" type="hidden"/>
+    <input id="chosen-list-subscribe-form-html{id}" type="hidden"/>
+
+    <div>
+        [CUSTOMER_LISTS_SUBSCRIBE_FORMS_SETUP_ELEMENT]
+    </div>
+
+    <div id="customer-subscribe-lists-forms{id}"><p>We are loading the lists. Please wait...</p></div>
+    <div class="spinner-container">
+        <div id="mw-lists-subscribe-form-module-loader{id}" class="loading-spinner"></div>
+    </div>
+
+    <script>
+        (function() {
+            const setupDiv = document.getElementById('mw-customer-subscribe-lists-forms-setup{id}');
+            const loaderDiv = document.getElementById('mw-lists-subscribe-form-module-loader{id}');
+
+            const requestForListsDropdown = new XMLHttpRequest();
+            requestForListsDropdown.onreadystatechange = function () {
+                if (requestForListsDropdown.readyState === XMLHttpRequest.DONE) {
+                    if (requestForListsDropdown.status === 200) {
+                        const jsonResponse = JSON.parse(requestForListsDropdown.responseText)
+                        document.getElementById("customer-subscribe-lists-forms{id}").innerHTML = jsonResponse.html;
+                        document.getElementById("lists-forms-dropdown{id}").addEventListener('change', function() {
+                            document.getElementById("chosen-list-uid{id}").value = this.value;
+                            loaderDiv.classList.add('active');
+                            const requestForListSubscribeFormHtml = new XMLHttpRequest();
+                            requestForListSubscribeFormHtml.onreadystatechange = function() {
+                                if (requestForListSubscribeFormHtml.readyState === XMLHttpRequest.DONE) {
+                                    if (requestForListSubscribeFormHtml.status === 200) {
+                                        var jsonResponse = JSON.parse(requestForListSubscribeFormHtml.responseText);
+                                        document.getElementById("chosen-list-subscribe-form-html{id}").value = jsonResponse.html;
+                                    } else {
+                                        console.log("Status error: " + requestForListSubscribeFormHtml.status);
+                                    }
+
+                                    loaderDiv.classList.remove('active');
+                                }
+                            };
+                            requestForListSubscribeFormHtml.open("GET", document.getElementById('mw-customer-subscribe-lists-forms-setup{id}').dataset.formUrl + '/' + document.getElementById('chosen-list-uid{id}').value, true);
+                            requestForListSubscribeFormHtml.send();
+                        });
+
+                    } else {
+                        console.log("Status error: " + requestForListsDropdown.status);
+                    }
+                }
+            };
+            requestForListsDropdown.open("GET", setupDiv.dataset.url)
+            requestForListsDropdown.send();
+        })();
+
+        var activeModule = parent._cb.getActiveModule();
+
+        var settings = parent._cb.getModuleSettings();
+        if (settings !== 'undefined') {
+            try {
+                var json = JSON.parse(settings);
+                document.getElementById("chosen-list-uid{id}").value = json.list_uid;
+                document.getElementById("chosen-list-subscribe-form-html{id}").value = json.list_subscribe_form_html;
+            } catch (e) { }
+        }
+
+        function construct() {
+            var html = '<div class="list-subscribe-form-container" id="{id}">' + document.getElementById("chosen-list-subscribe-form-html{id}").value + '</div>';
+            parent._cb.setModuleHtml(html);
+
+            var settings = '{"list_uid": "' + document.getElementById("chosen-list-uid{id}").value + '", "list_subscribe_form_html": "' + document.getElementById("chosen-list-subscribe-form-html{id}").value + '"}';
+            parent._cb.setModuleSettings(settings);
+        }
+
+        // Style stuff
+        function applyParentStyles() {
+            var cssString = `
+                body {
+                    color: ${parent._cb.styleInputColor};
+                }
+                select {
+                    color: ${parent._cb.styleInputColor};
+                    background-color: ${parent._cb.styleInputBackground};
+                    border-bottom: ${parent._cb.styleInputBorderBottom};
+                }
+                select:focus {
+                    outline: none;
+                }
+            `;
+            var style = document.createElement("style");
+            style.type = "text/css";
+            style.innerHTML = cssString;
+            document.getElementsByTagName("head")[0].appendChild(style);
+        }
+
+        applyParentStyles();
+    </script>
+
+</body>
+</html>

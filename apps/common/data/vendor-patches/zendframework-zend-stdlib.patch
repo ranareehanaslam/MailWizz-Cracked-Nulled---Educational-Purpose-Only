@@ -1,0 +1,11 @@
+diff --git a/src/JsonSerializable/PhpLegacyCompatibility.php b/src/JsonSerializable/PhpLegacyCompatibility.php
+index a590cab..b3521cc 100644
+--- a/src/JsonSerializable/PhpLegacyCompatibility.php
++++ b/src/JsonSerializable/PhpLegacyCompatibility.php
+@@ -24,5 +24,6 @@ interface PhpLegacyCompatibility
+      * @return mixed
+      * @see    http://php.net/manual/jsonserializable.jsonserialize.php
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize();
+ }

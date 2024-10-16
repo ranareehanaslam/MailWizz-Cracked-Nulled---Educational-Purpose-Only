@@ -1,0 +1,90 @@
+.gjs-block-label {
+    font-size: 1.65rem !important;
+}
+
+.gjs-pn-panel {
+    font-size: 1.65rem !important;
+}
+
+.gjs-layer {
+    font-size: 0.95rem !important;
+}
+
+.gjs-field input, .gjs-field select, .gjs-field textarea {
+    border: none !important;
+}
+
+.gjs-editor .gjs-pn-views-container {
+    width: 17%;
+}
+.gjs-editor .gjs-pn-options {
+    right: 17%;
+}
+.gjs-editor .gjs-input:focus,
+.gjs-editor .gjs-button:focus,
+.gjs-editor .gjs-btn-prim:focus,
+.gjs-editor .gjs-select:focus,
+.gjs-editor .gjs-select select:focus {
+    background-color: transparent !important;
+}
+
+.gjs-editor .gjs-field input,
+.gjs-editor .gjs-field select,
+.gjs-editor .gjs-field textarea {
+    color: inherit !important;
+    background-image: none !important;
+    background-size: 0;
+    padding: 5px !important;
+    background-color: rgba(0,0,0,0);
+}
+
+.gjs-editor .gjs-radio-item input {
+    display: none;
+}
+
+.gjs-editor .gjs-field input:focus,
+.gjs-editor .gjs-field select:focus,
+.gjs-editor .gjs-field textarea:focus {
+    background-color: transparent !important;
+}
+
+.gjs-editor .gjs-radio-item-label {
+    margin-bottom: 0 !important;
+    color: #b9a5a6 !important;
+    font-family: Helvetica, sans-serif, FontAwesome;
+}
+
+.gjs-editor .gjs-sm-properties {
+    font-size: 11px;
+}
+
+.gjs-editor .gjs-sm-field input,
+.gjs-editor .gjs-clm-select input,
+.gjs-editor .gjs-clm-field input,
+.gjs-editor .gjs-sm-field select,
+.gjs-editor .gjs-clm-select select,
+.gjs-editor .gjs-clm-field select {
+    color: rgba(255, 255, 255, .7) !important;
+}
+
+.gjs-editor .gjs-clm-tags {
+    font-size: 15px;
+}
+
+.gjs-editor #gjs-clm-add-tag, .gjs-clm-tags-btn {
+    height: 30px;
+    width: 30px;
+}
+
+.gjs-editor .gjs-label {
+    line-height: 18px;
+}
+
+.gjs-editor .gjs-trt-traits {
+    font-size: 13px;
+}
+
+.gjs-editor span {
+    color: inherit;
+    font-size: inherit;
+}

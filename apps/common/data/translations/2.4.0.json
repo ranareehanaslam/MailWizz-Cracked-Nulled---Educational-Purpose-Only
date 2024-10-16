@@ -1,0 +1,42 @@
+[
+  {
+    "category": "servers",
+    "message": "Second quota"
+  },
+  {
+    "category": "servers",
+    "message": "Minute quota"
+  },
+  {
+    "category": "servers",
+    "message": "In case there are limits that apply for sending with this server, you can set a second quota for it and it will only send in one second as many emails as you set here. Set it to 0 in order to not apply any second limit."
+  },
+  {
+    "category": "servers",
+    "message": "In case there are limits that apply for sending with this server, you can set a minute quota for it and it will only send in one minute as many emails as you set here. Set it to 0 in order to not apply any minute limit."
+  },
+  {  
+    "category": "app",
+    "message": "Are you sure you want to remove all items?"
+  },
+  {
+    "category": "app",
+    "message": "All"
+  },
+  {
+    "category": "app",
+    "message": "Missing field name and value"
+  },
+  {
+    "category": "campaigns",
+    "message": "The value that the custom field should get after the subscriber clicks the link in the campaign"
+  },
+  {
+    "category": "campaigns",
+    "message": "This campaign will target approximately {count} subscribers."
+  },
+  {
+    "category": "campaign_reports",
+    "message": "This report shows all the subscribers that were processed in order to receive your email.<br \/> It also show if the emails have been sent successfully or not."
+  }
+]

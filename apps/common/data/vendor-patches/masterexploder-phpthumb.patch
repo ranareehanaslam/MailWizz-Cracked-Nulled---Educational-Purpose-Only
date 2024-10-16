@@ -1,0 +1,15 @@
+diff --git a/src/PHPThumb/GD.php b/src/PHPThumb/GD.php
+index 350bf19..a039f92 100644
+--- a/src/PHPThumb/GD.php
++++ b/src/PHPThumb/GD.php
+@@ -106,6 +106,10 @@ class GD extends PHPThumb
+                 break;
+         }
+ 
++        if (!$this->oldImage) {
++            throw new \Exception(sprintf('Unable to create the image resource from the "%s" image', $this->fileName));
++        }
++
+         $this->currentDimensions = array (
+             'width'  => imagesx($this->oldImage),
+             'height' => imagesy($this->oldImage)

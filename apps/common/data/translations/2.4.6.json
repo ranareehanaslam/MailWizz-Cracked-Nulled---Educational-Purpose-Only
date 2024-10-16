@@ -1,0 +1,26 @@
+[
+  {
+    "category": "servers",
+    "message": "Version 1"
+  },
+  {
+    "category": "servers",
+    "message": "Version 2"
+  },
+  {
+    "category": "servers",
+    "message": "ARN Topic Signature Version"
+  },
+  {
+    "category": "servers",
+    "message": "Your Amazon SES SMTP Username"
+  },
+  {
+    "category": "servers",
+    "message": "Your Amazon SES SMTP Password"
+  },
+  {
+    "category": "servers",
+    "message": "The signature version to use when creating the ARN Topic. Default is Version 1. Try Version 2 only if you notice your topic subscription inside your AWS console remains under the Pending-Confirmation status. Please keep in mind that if you change the signature version, you need to remove the delivery server and add it again for changes to take effect."
+  }
+]

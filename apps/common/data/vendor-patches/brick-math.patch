@@ -1,0 +1,12 @@
+diff --git a/src/BigNumber.php b/src/BigNumber.php
+index 38c8c55..c1dc7d3 100644
+--- a/src/BigNumber.php
++++ b/src/BigNumber.php
+@@ -565,6 +565,7 @@ abstract class BigNumber implements \Serializable, \JsonSerializable
+     /**
+      * {@inheritdoc}
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize() : string
+     {
+         return $this->__toString();

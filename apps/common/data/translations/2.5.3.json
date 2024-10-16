@@ -1,0 +1,10 @@
+[
+  {
+    "category": "app",
+    "message": "Announcements"
+  },
+  {
+    "category": "announcements",
+    "message": "Are you sure? You will never be able to see this message again after closing it."
+  }
+]

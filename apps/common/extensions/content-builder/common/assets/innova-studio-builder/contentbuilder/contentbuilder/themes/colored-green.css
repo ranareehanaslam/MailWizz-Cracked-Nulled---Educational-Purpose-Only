@@ -1,0 +1,1271 @@
+.colored .is-builder[gridoutline] > div > div {
+  outline: 1px solid rgba(132, 132, 132, 0.27);
+}
+.colored .is-builder > div > div.cell-active:not([data-protected]) {
+  outline: 1px solid #00da89;
+}
+.colored .is-builder .row-active:not([data-protected]) {
+  outline: 1px solid #00da89;
+}
+.colored .is-builder .row-active:not([data-protected]).row-outline {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.colored .is-builder .cell-active .elm-active {
+  background: rgba(200, 200, 201, 0.11);
+}
+.colored .is-builder .cell-active[data-html] {
+  background-color: rgba(200, 200, 201, 0.11);
+}
+.colored .is-builder .cell-active .icon-active {
+  background-color: rgba(200, 200, 201, 0.4);
+}
+.colored .is-builder .elm-inspected {
+  outline: 1px solid #ffb84a !important;
+}
+.colored .sortable-ghost {
+  background: rgba(204, 204, 204, 0.15);
+}
+.colored .is-builder .snippet-item.sortable-ghost {
+  background: rgba(204, 204, 204, 0.15);
+}
+.colored .moveable-control {
+  background: #2196f3 !important;
+}
+.colored #_cbhtml,
+.colored .is-ui {
+  /*  general use */
+}
+.colored #_cbhtml .style-helper,
+.colored .is-ui .style-helper {
+  background: #96af16;
+  color: rgba(255, 255, 255, 0.95);
+}
+.colored #_cbhtml .style-helper.on,
+.colored .is-ui .style-helper.on {
+  background: #a2bd18;
+}
+.colored #_cbhtml .style-helper.hover,
+.colored .is-ui .style-helper.hover {
+  background: #a6c118;
+}
+.colored #_cbhtml .style-helper svg,
+.colored .is-ui .style-helper svg {
+  fill: rgba(255, 255, 255, 0.95);
+}
+.colored #_cbhtml .style-helper.modal-color,
+.colored .is-ui .style-helper.modal-color {
+  background: #000;
+}
+.colored #_cbhtml .style-helper.modal-background,
+.colored .is-ui .style-helper.modal-background {
+  background: #d5d6d3;
+}
+.colored #_cbhtml .style-helper.button-pickcolor-border,
+.colored .is-ui .style-helper.button-pickcolor-border {
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.colored #_cbhtml .style-helper.button-pickcolor-background,
+.colored .is-ui .style-helper.button-pickcolor-background {
+  background: rgba(255, 255, 255, 0.2);
+}
+.colored #_cbhtml .style-helper.snippet-color,
+.colored .is-ui .style-helper.snippet-color {
+  background: #000;
+}
+.colored #_cbhtml .style-helper.snippet-background,
+.colored .is-ui .style-helper.snippet-background {
+  background: #e2e2e0;
+}
+.colored #_cbhtml .style-helper.snippet-tabs-background,
+.colored .is-ui .style-helper.snippet-tabs-background {
+  background: #d5d6d3;
+}
+.colored #_cbhtml .style-helper.snippet-tab-item-background,
+.colored .is-ui .style-helper.snippet-tab-item-background {
+  background: rgba(255, 255, 255, 0.55);
+}
+.colored #_cbhtml .style-helper.snippet-tab-item-background-active,
+.colored .is-ui .style-helper.snippet-tab-item-background-active {
+  background: #d5d6d3;
+}
+.colored #_cbhtml .style-helper.snippet-tab-item-background-hover,
+.colored .is-ui .style-helper.snippet-tab-item-background-hover {
+  background: rgba(255, 255, 255, 0.55);
+}
+.colored #_cbhtml .style-helper.snippet-tab-item-color,
+.colored .is-ui .style-helper.snippet-tab-item-color {
+  background: rgba(0, 0, 0, 0.95);
+}
+.colored #_cbhtml .style-helper.snippet-more-item-background,
+.colored .is-ui .style-helper.snippet-more-item-background {
+  background: #dddddb;
+}
+.colored #_cbhtml .style-helper.snippet-more-item-background-active,
+.colored .is-ui .style-helper.snippet-more-item-background-active {
+  background: rgba(255, 255, 255, 0.38);
+}
+.colored #_cbhtml .style-helper.snippet-more-item-background-hover,
+.colored .is-ui .style-helper.snippet-more-item-background-hover {
+  background: rgba(255, 255, 255, 0.38);
+}
+.colored #_cbhtml .style-helper.snippet-more-item-color,
+.colored .is-ui .style-helper.snippet-more-item-color {
+  background: rgba(0, 0, 0, 0.95);
+}
+.colored #_cbhtml .style-helper.tabs-background,
+.colored .is-ui .style-helper.tabs-background {
+  background: rgba(255, 255, 255, 0.12);
+}
+.colored #_cbhtml .style-helper.tab-item-active-border-bottom,
+.colored .is-ui .style-helper.tab-item-active-border-bottom {
+  border: rgba(0, 0, 0, 0.5) 1px solid;
+}
+.colored #_cbhtml .style-helper.tab-item-color,
+.colored .is-ui .style-helper.tab-item-color {
+  background: rgba(0, 0, 0, 0.95);
+}
+.colored #_cbhtml .style-helper.tabs-more-background,
+.colored .is-ui .style-helper.tabs-more-background {
+  background: #dddddb;
+}
+.colored #_cbhtml .style-helper.tabs-more-border,
+.colored .is-ui .style-helper.tabs-more-border {
+  border: 1px solid #dddddb;
+}
+.colored #_cbhtml .style-helper.tabs-more-item-color,
+.colored .is-ui .style-helper.tabs-more-item-color {
+  background: rgba(0, 0, 0, 0.95);
+}
+.colored #_cbhtml .style-helper.tabs-more-item-background-hover,
+.colored .is-ui .style-helper.tabs-more-item-background-hover {
+  background: rgba(255, 255, 255, 0.55);
+}
+.colored #_cbhtml .style-helper.separator-color,
+.colored .is-ui .style-helper.separator-color {
+  background: rgba(255, 255, 255, 0.2);
+}
+.colored #_cbhtml .style-helper-button-classic,
+.colored .is-ui .style-helper-button-classic {
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+.colored #_cbhtml .style-helper-button-classic.hover,
+.colored .is-ui .style-helper-button-classic.hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.colored #_cbhtml .style-helper-button-classic svg,
+.colored .is-ui .style-helper-button-classic svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-area,
+.colored .is-ui .is-area {
+  color: #000 !important;
+  background: #d5d6d3 !important;
+}
+.colored #_cbhtml .is-area button,
+.colored .is-ui .is-area button {
+  color: #000 !important;
+}
+.colored #_cbhtml .is-area button svg,
+.colored .is-ui .is-area button svg {
+  fill: #000 !important;
+}
+.colored #_cbhtml .is-area-2nd,
+.colored .is-ui .is-area-2nd {
+  color: #000 !important;
+  background: #e2e2e0 !important;
+}
+.colored #_cbhtml .is-area-2nd button,
+.colored .is-ui .is-area-2nd button {
+  color: #000 !important;
+}
+.colored #_cbhtml .is-area-2nd button svg,
+.colored .is-ui .is-area-2nd button svg {
+  fill: #000 !important;
+}
+.colored #_cbhtml .is-pop,
+.colored .is-ui .is-pop {
+  color: #000;
+  background: #d5d6d3;
+  border: 1px solid #d5d6d3;
+  box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.colored #_cbhtml .is-pop button,
+.colored .is-ui .is-pop button {
+  color: #000;
+  background-color: transparent !important;
+}
+.colored #_cbhtml .is-pop button svg,
+.colored .is-ui .is-pop button svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-pop.arrow-top:after,
+.colored .is-ui .is-pop.arrow-top:after {
+  border-bottom-color: #d5d6d3;
+}
+.colored #_cbhtml .is-pop.arrow-top:before,
+.colored .is-ui .is-pop.arrow-top:before {
+  border-bottom-color: #d5d6d3;
+}
+.colored #_cbhtml .is-pop.arrow-left:after,
+.colored .is-ui .is-pop.arrow-left:after {
+  border-right-color: #d5d6d3;
+}
+.colored #_cbhtml .is-pop.arrow-left:before,
+.colored .is-ui .is-pop.arrow-left:before {
+  border-right-color: #d5d6d3;
+}
+.colored #_cbhtml .is-pop.arrow-right:after,
+.colored .is-ui .is-pop.arrow-right:after {
+  border-left-color: #d5d6d3;
+}
+.colored #_cbhtml .is-pop.arrow-right:before,
+.colored .is-ui .is-pop.arrow-right:before {
+  border-left-color: #d5d6d3;
+}
+.colored #_cbhtml .is-pop.arrow-bottom:after,
+.colored .is-ui .is-pop.arrow-bottom:after {
+  border-top-color: #d5d6d3;
+}
+.colored #_cbhtml .is-pop.arrow-bottom:before,
+.colored .is-ui .is-pop.arrow-bottom:before {
+  border-top-color: #d5d6d3;
+}
+.colored #_cbhtml .is-pop-tabs > div,
+.colored .is-ui .is-pop-tabs > div {
+  background: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.95);
+}
+.colored #_cbhtml .is-pop-tabs > div.active,
+.colored .is-ui .is-pop-tabs > div.active {
+  background: transparent;
+}
+.colored #_cbhtml .is-general-options,
+.colored .is-ui .is-general-options {
+  color: #fff;
+  background: #96af16;
+}
+.colored #_cbhtml .is-general-options button,
+.colored #_cbhtml .is-general-options div[role=button],
+.colored .is-ui .is-general-options button,
+.colored .is-ui .is-general-options div[role=button] {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.95);
+  width: 45px;
+  height: 40px;
+  margin: 0;
+  box-shadow: none;
+}
+.colored #_cbhtml .is-general-options button.on,
+.colored #_cbhtml .is-general-options div[role=button].on,
+.colored .is-ui .is-general-options button.on,
+.colored .is-ui .is-general-options div[role=button].on {
+  background: #a2bd18;
+}
+.colored #_cbhtml .is-general-options button:hover,
+.colored #_cbhtml .is-general-options div[role=button]:hover,
+.colored .is-ui .is-general-options button:hover,
+.colored .is-ui .is-general-options div[role=button]:hover {
+  background: #a6c118 !important;
+}
+.colored #_cbhtml .is-general-options button svg,
+.colored #_cbhtml .is-general-options div[role=button] svg,
+.colored .is-ui .is-general-options button svg,
+.colored .is-ui .is-general-options div[role=button] svg {
+  fill: rgba(255, 255, 255, 0.95);
+}
+.colored #_cbhtml .is-rte-tool,
+.colored #_cbhtml .is-elementrte-tool,
+.colored #_cbhtml .is-rte-pop.rte-more-options,
+.colored #_cbhtml .is-rte-pop.elementrte-more-options,
+.colored .is-ui .is-rte-tool,
+.colored .is-ui .is-elementrte-tool,
+.colored .is-ui .is-rte-pop.rte-more-options,
+.colored .is-ui .is-rte-pop.elementrte-more-options {
+  color: #fff;
+  background: #96af16;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 9px 0px;
+}
+.colored #_cbhtml .is-rte-tool button,
+.colored #_cbhtml .is-elementrte-tool button,
+.colored #_cbhtml .is-rte-pop.rte-more-options button,
+.colored #_cbhtml .is-rte-pop.elementrte-more-options button,
+.colored .is-ui .is-rte-tool button,
+.colored .is-ui .is-elementrte-tool button,
+.colored .is-ui .is-rte-pop.rte-more-options button,
+.colored .is-ui .is-rte-pop.elementrte-more-options button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.95);
+  box-shadow: none;
+}
+.colored #_cbhtml .is-rte-tool button.on,
+.colored #_cbhtml .is-elementrte-tool button.on,
+.colored #_cbhtml .is-rte-pop.rte-more-options button.on,
+.colored #_cbhtml .is-rte-pop.elementrte-more-options button.on,
+.colored .is-ui .is-rte-tool button.on,
+.colored .is-ui .is-elementrte-tool button.on,
+.colored .is-ui .is-rte-pop.rte-more-options button.on,
+.colored .is-ui .is-rte-pop.elementrte-more-options button.on {
+  background: #a2bd18;
+}
+.colored #_cbhtml .is-rte-tool button:hover,
+.colored #_cbhtml .is-elementrte-tool button:hover,
+.colored #_cbhtml .is-rte-pop.rte-more-options button:hover,
+.colored #_cbhtml .is-rte-pop.elementrte-more-options button:hover,
+.colored .is-ui .is-rte-tool button:hover,
+.colored .is-ui .is-elementrte-tool button:hover,
+.colored .is-ui .is-rte-pop.rte-more-options button:hover,
+.colored .is-ui .is-rte-pop.elementrte-more-options button:hover {
+  background: #a6c118;
+}
+.colored #_cbhtml .is-rte-tool button svg,
+.colored #_cbhtml .is-elementrte-tool button svg,
+.colored #_cbhtml .is-rte-pop.rte-more-options button svg,
+.colored #_cbhtml .is-rte-pop.elementrte-more-options button svg,
+.colored .is-ui .is-rte-tool button svg,
+.colored .is-ui .is-elementrte-tool button svg,
+.colored .is-ui .is-rte-pop.rte-more-options button svg,
+.colored .is-ui .is-rte-pop.elementrte-more-options button svg {
+  fill: rgba(255, 255, 255, 0.95);
+}
+.colored #_cbhtml .is-rte-tool .rte-separator,
+.colored #_cbhtml .is-elementrte-tool .rte-separator,
+.colored #_cbhtml .is-rte-pop.rte-more-options .rte-separator,
+.colored #_cbhtml .is-rte-pop.elementrte-more-options .rte-separator,
+.colored .is-ui .is-rte-tool .rte-separator,
+.colored .is-ui .is-elementrte-tool .rte-separator,
+.colored .is-ui .is-rte-pop.rte-more-options .rte-separator,
+.colored .is-ui .is-rte-pop.elementrte-more-options .rte-separator {
+  background: rgba(241, 249, 203, 0.35);
+}
+.colored #_cbhtml[toolbarleft] .is-rte-tool,
+.colored #_cbhtml[toolbarleft] .is-elementrte-tool,
+.colored .is-ui[toolbarleft] .is-rte-tool,
+.colored .is-ui[toolbarleft] .is-elementrte-tool {
+  box-shadow: rgba(0, 0, 0, 0.05) 6px 0px 9px 0px;
+}
+.colored #_cbhtml[toolbarright] .is-rte-tool,
+.colored #_cbhtml[toolbarright] .is-elementrte-tool,
+.colored .is-ui[toolbarright] .is-rte-tool,
+.colored .is-ui[toolbarright] .is-elementrte-tool {
+  box-shadow: rgba(0, 0, 0, 0.05) -4px 0px 9px 0px;
+}
+.colored #_cbhtml .is-rte-pop,
+.colored .is-ui .is-rte-pop {
+  color: #fff;
+  background: #96af16;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 7px 12px 0px;
+}
+.colored #_cbhtml .is-rte-pop button.on,
+.colored .is-ui .is-rte-pop button.on {
+  background: #a2bd18;
+}
+.colored #_cbhtml .is-rte-pop button:hover,
+.colored .is-ui .is-rte-pop button:hover {
+  background: #a6c118;
+}
+.colored #_cbhtml .is-rte-pop .is-label.separator,
+.colored .is-ui .is-rte-pop .is-label.separator {
+  border-top: rgba(255, 255, 255, 0.2) 1px solid;
+}
+.colored #_cbhtml .is-rte-pop .is-rangeslider,
+.colored .is-ui .is-rte-pop .is-rangeslider {
+  background: rgba(72, 84, 11, 0.4);
+}
+.colored #_cbhtml .is-rte-pop .is-rangeslider::-webkit-slider-thumb,
+.colored .is-ui .is-rte-pop .is-rangeslider::-webkit-slider-thumb {
+  background: rgba(205, 231, 68, 0.55);
+}
+.colored #_cbhtml .is-rte-pop .is-rangeslider::-moz-range-thumb,
+.colored .is-ui .is-rte-pop .is-rangeslider::-moz-range-thumb {
+  background: rgba(205, 231, 68, 0.55);
+}
+.colored #_cbhtml .is-rte-pop.rte-paragraph-options li.on,
+.colored .is-ui .is-rte-pop.rte-paragraph-options li.on {
+  background: #a2bd18;
+}
+.colored #_cbhtml .is-rte-pop.rte-paragraph-options > ul > li:hover, .colored #_cbhtml .is-rte-pop.rte-paragraph-options > ul > li:focus,
+.colored .is-ui .is-rte-pop.rte-paragraph-options > ul > li:hover,
+.colored .is-ui .is-rte-pop.rte-paragraph-options > ul > li:focus {
+  background: #a6c118;
+}
+.colored #_cbhtml .is-rte-pop.rte-textsetting-options button.on,
+.colored .is-ui .is-rte-pop.rte-textsetting-options button.on {
+  background: #a2bd18;
+}
+.colored #_cbhtml .is-rte-pop.rte-textsetting-options button:hover,
+.colored .is-ui .is-rte-pop.rte-textsetting-options button:hover {
+  background: #a6c118;
+}
+.colored #_cbhtml .is-rte-pop.rte-textsetting-options button:focus,
+.colored .is-ui .is-rte-pop.rte-textsetting-options button:focus {
+  background: #a6c118;
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker button,
+.colored .is-ui .is-rte-pop.rte-color-picker button {
+  color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+  background: rgba(211, 234, 90, 0.15);
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker button:hover,
+.colored .is-ui .is-rte-pop.rte-color-picker button:hover {
+  background: rgba(211, 234, 90, 0.15);
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker input[type=text],
+.colored .is-ui .is-rte-pop.rte-color-picker input[type=text] {
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(111, 130, 16, 0.4);
+  border: none;
+  border-bottom: 1px solid rgba(217, 237, 113, 0.45);
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .rte-color-picker-area > div,
+.colored .is-ui .is-rte-pop.rte-color-picker .rte-color-picker-area > div {
+  opacity: 0.9;
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .is-pop-tabs > div,
+.colored .is-ui .is-rte-pop.rte-color-picker .is-pop-tabs > div {
+  background: #8aa114;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: bold;
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .is-pop-tabs > div.active,
+.colored .is-ui .is-rte-pop.rte-color-picker .is-pop-tabs > div.active {
+  background: transparent;
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .rangeSlider,
+.colored .is-ui .is-rte-pop.rte-color-picker .rangeSlider {
+  outline: 1px solid rgba(0, 0, 0, 0.08);
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .rangeSlider__handle,
+.colored .is-ui .is-rte-pop.rte-color-picker .rangeSlider__handle {
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.55);
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .dot-1,
+.colored .is-ui .is-rte-pop.rte-color-picker .dot-1 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .dot-2,
+.colored .is-ui .is-rte-pop.rte-color-picker .dot-2 {
+  background: rgba(238, 239, 237, 0.3);
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .dot-3,
+.colored .is-ui .is-rte-pop.rte-color-picker .dot-3 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .dot-4,
+.colored .is-ui .is-rte-pop.rte-color-picker .dot-4 {
+  background: rgba(238, 239, 237, 0.3);
+}
+.colored #_cbhtml .is-rte-pop.rte-color-picker .is-color-preview,
+.colored .is-ui .is-rte-pop.rte-color-picker .is-color-preview {
+  border: transparent 1px solid;
+}
+.colored #_cbhtml .is-rte-pop.rte-customtag-options > div button:hover,
+.colored .is-ui .is-rte-pop.rte-customtag-options > div button:hover {
+  background: #a6c118;
+}
+.colored #_cbhtml .is-rte-pop.rte-customtag-options > div button:focus,
+.colored .is-ui .is-rte-pop.rte-customtag-options > div button:focus {
+  background: #a6c118;
+}
+.colored #_cbhtml[toolbarleft] .is-rte-pop,
+.colored .is-ui[toolbarleft] .is-rte-pop {
+  box-shadow: rgba(0, 0, 0, 0.05) 5px 0px 9px 0px;
+}
+.colored #_cbhtml[toolbarright] .is-rte-pop,
+.colored .is-ui[toolbarright] .is-rte-pop {
+  box-shadow: rgba(0, 0, 0, 0.05) -6px 1px 9px 0px;
+}
+.colored #_cbhtml .is-modal,
+.colored .is-ui .is-modal {
+  background: rgba(255, 255, 255, 0.000001);
+}
+.colored #_cbhtml .is-modal button,
+.colored .is-ui .is-modal button {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.colored #_cbhtml .is-modal button:hover,
+.colored .is-ui .is-modal button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.colored #_cbhtml .is-modal button.on,
+.colored .is-ui .is-modal button.on {
+  background: rgba(218, 219, 216, 0.3);
+}
+.colored #_cbhtml .is-modal .is-separator,
+.colored .is-ui .is-modal .is-separator {
+  border-top: rgba(255, 255, 255, 0.4) 1px solid;
+}
+.colored #_cbhtml .is-modal .is-rangeslider,
+.colored .is-ui .is-modal .is-rangeslider {
+  background: rgba(163, 165, 158, 0.4);
+}
+.colored #_cbhtml .is-modal .is-rangeslider::-webkit-slider-thumb,
+.colored .is-ui .is-modal .is-rangeslider::-webkit-slider-thumb {
+  background: rgba(125, 128, 119, 0.4);
+}
+.colored #_cbhtml .is-modal .is-rangeslider::-moz-range-thumb,
+.colored .is-ui .is-modal .is-rangeslider::-moz-range-thumb {
+  background: rgba(125, 128, 119, 0.4);
+}
+.colored #_cbhtml .is-modal .is-modal-overlay,
+.colored .is-ui .is-modal .is-modal-overlay {
+  background: rgba(255, 255, 255, 0.000001);
+}
+.colored #_cbhtml .is-modal .is-modal-overlay.overlay-stay,
+.colored .is-ui .is-modal .is-modal-overlay.overlay-stay {
+  background: rgba(183, 183, 183, 0.11);
+}
+.colored #_cbhtml .is-modal.is-modal-content,
+.colored #_cbhtml .is-modal .is-modal-content,
+.colored .is-ui .is-modal.is-modal-content,
+.colored .is-ui .is-modal .is-modal-content {
+  color: #000;
+  background: #d5d6d3;
+  border: 1px solid rgba(226, 226, 224, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.34);
+  box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.colored #_cbhtml .is-modal.is-modal-content svg,
+.colored #_cbhtml .is-modal .is-modal-content svg,
+.colored .is-ui .is-modal.is-modal-content svg,
+.colored .is-ui .is-modal .is-modal-content svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay),
+.colored .is-ui .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) {
+  color: #000;
+  background: #d5d6d3;
+  border: 1px solid rgba(226, 226, 224, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.34);
+  box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.colored #_cbhtml .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) svg,
+.colored .is-ui .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-modal div.is-modal-bar,
+.colored .is-ui .is-modal div.is-modal-bar {
+  color: rgba(0, 0, 0, 0.68);
+}
+.colored #_cbhtml .is-modal div.is-modal-bar .is-modal-close,
+.colored .is-ui .is-modal div.is-modal-bar .is-modal-close {
+  color: #000;
+}
+.colored #_cbhtml .is-modal.viewhtml textarea,
+.colored .is-ui .is-modal.viewhtml textarea {
+  background-color: #fff;
+}
+.colored #_cbhtml .is-modal.previewcontent,
+.colored .is-ui .is-modal.previewcontent {
+  background: #e1e1e1;
+}
+.colored #_cbhtml .is-modal.previewcontent .size-control,
+.colored .is-ui .is-modal.previewcontent .size-control {
+  cursor: pointer;
+  background: #cbccc8;
+  border-left: #eeefed 2px solid;
+  border-right: #eeefed 2px solid;
+}
+.colored #_cbhtml .is-modal.previewcontent .size-control-info,
+.colored .is-ui .is-modal.previewcontent .size-control-info {
+  color: #000;
+}
+.colored #_cbhtml .is-modal.previewcontent .size-control.hover,
+.colored .is-ui .is-modal.previewcontent .size-control.hover {
+  background: #dddddb;
+}
+.colored #_cbhtml .is-modal.previewcontent .is-modal-close svg,
+.colored .is-ui .is-modal.previewcontent .is-modal-close svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-modal.grideditor,
+.colored .is-ui .is-modal.grideditor {
+  background: #d5d6d3;
+}
+.colored #_cbhtml .is-modal.grideditor .is-separator,
+.colored .is-ui .is-modal.grideditor .is-separator {
+  border-top: rgba(255, 255, 255, 0.36) 1px solid;
+}
+.colored #_cbhtml .is-modal.pickgradientcolor div.is-modal-content > div,
+.colored .is-ui .is-modal.pickgradientcolor div.is-modal-content > div {
+  opacity: 0.9;
+}
+.colored #_cbhtml .is-modal.pickgradientcolor .is-settings button.is-btn-color,
+.colored .is-ui .is-modal.pickgradientcolor .is-settings button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.colored #_cbhtml .is-modal.pickgradientcolor .is-settings button .is-elmgrad-remove,
+.colored .is-ui .is-modal.pickgradientcolor .is-settings button .is-elmgrad-remove {
+  background: rgba(95, 94, 94, 0.26);
+  color: #fff;
+}
+.colored #_cbhtml .is-modal.edittable .is-modal-bar,
+.colored .is-ui .is-modal.edittable .is-modal-bar {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.colored #_cbhtml .is-modal.edittable button.is-btn-color,
+.colored .is-ui .is-modal.edittable button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.colored #_cbhtml .is-modal.buttoneditor .is-modal-bar,
+.colored .is-ui .is-modal.buttoneditor .is-modal-bar {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.colored #_cbhtml .is-modal.columnsettings .is-modal-bar, .colored #_cbhtml .is-modal.rowsettings .is-modal-bar,
+.colored .is-ui .is-modal.columnsettings .is-modal-bar,
+.colored .is-ui .is-modal.rowsettings .is-modal-bar {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.colored #_cbhtml .is-modal.columnsettings button.is-btn-color, .colored #_cbhtml .is-modal.rowsettings button.is-btn-color,
+.colored .is-ui .is-modal.columnsettings button.is-btn-color,
+.colored .is-ui .is-modal.rowsettings button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.colored #_cbhtml .is-modal.pickcolor button,
+.colored .is-ui .is-modal.pickcolor button {
+  color: rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+  background: rgba(255, 255, 255, 0.3);
+}
+.colored #_cbhtml .is-modal.pickcolor button:hover,
+.colored .is-ui .is-modal.pickcolor button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.colored #_cbhtml .is-modal.pickcolor input[type=text],
+.colored .is-ui .is-modal.pickcolor input[type=text] {
+  color: rgba(0, 0, 0, 0.83);
+  background: rgba(188, 189, 185, 0.25);
+  border: none;
+  border-bottom: 1px solid #e2e2e0;
+}
+.colored #_cbhtml .is-modal.pickcolor div.is-modal-content > div,
+.colored .is-ui .is-modal.pickcolor div.is-modal-content > div {
+  opacity: 0.9;
+}
+.colored #_cbhtml .is-modal.pickcolor .rangeSlider,
+.colored .is-ui .is-modal.pickcolor .rangeSlider {
+  outline: 1px solid rgba(0, 0, 0, 0.08);
+}
+.colored #_cbhtml .is-modal.pickcolor .rangeSlider__handle,
+.colored .is-ui .is-modal.pickcolor .rangeSlider__handle {
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.55);
+}
+.colored #_cbhtml .is-modal.pickcolor .dot-1,
+.colored .is-ui .is-modal.pickcolor .dot-1 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.colored #_cbhtml .is-modal.pickcolor .dot-2,
+.colored .is-ui .is-modal.pickcolor .dot-2 {
+  background: rgba(238, 239, 237, 0.3);
+}
+.colored #_cbhtml .is-modal.pickcolor .dot-3,
+.colored .is-ui .is-modal.pickcolor .dot-3 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.colored #_cbhtml .is-modal.pickcolor .dot-4,
+.colored .is-ui .is-modal.pickcolor .dot-4 {
+  background: rgba(238, 239, 237, 0.3);
+}
+.colored #_cbhtml .is-modal.pickcolor .is-color-preview,
+.colored .is-ui .is-modal.pickcolor .is-color-preview {
+  border: transparent 1px solid;
+}
+.colored #_cbhtml .is-modal.pickcolormore div.is-modal-content > div,
+.colored .is-ui .is-modal.pickcolormore div.is-modal-content > div {
+  opacity: 0.9;
+}
+.colored #_cbhtml .is-modal.pickfontfamily .is-modal-bar,
+.colored .is-ui .is-modal.pickfontfamily .is-modal-bar {
+  background: rgba(255, 255, 255, 0.12);
+}
+.colored #_cbhtml .is-modal.insertimage .is-drop-area,
+.colored .is-ui .is-modal.insertimage .is-drop-area {
+  border: 2px dashed rgba(0, 0, 0, 0.3);
+}
+.colored #_cbhtml .is-modal.insertimage .is-drop-area svg,
+.colored .is-ui .is-modal.insertimage .is-drop-area svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-modal.insertimage .is-drop-area:hover,
+.colored .is-ui .is-modal.insertimage .is-drop-area:hover {
+  background-color: #dadbd8;
+}
+.colored #_cbhtml .is-modal.insertimage .is-drop-area.image-dropping,
+.colored .is-ui .is-modal.insertimage .is-drop-area.image-dropping {
+  background-color: #dadbd8;
+}
+.colored #_cbhtml .is-modal.insertimage .is-preview-area,
+.colored .is-ui .is-modal.insertimage .is-preview-area {
+  opacity: 0.8;
+}
+.colored #_cbhtml .is-modal.insertimage .is-preview-area div i,
+.colored .is-ui .is-modal.insertimage .is-preview-area div i {
+  background: rgba(0, 0, 0, 0.23);
+  color: #fff;
+}
+.colored #_cbhtml .is-modal.imageedit .imageedit-crop button,
+.colored .is-ui .is-modal.imageedit .imageedit-crop button {
+  color: #000;
+  border: rgba(0, 0, 0, 0.32) 1px solid;
+}
+.colored #_cbhtml .is-modal ::-webkit-input-placeholder,
+.colored .is-ui .is-modal ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.colored #_cbhtml .is-modal :-ms-input-placeholder,
+.colored .is-ui .is-modal :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.colored #_cbhtml .is-modal ::placeholder,
+.colored .is-ui .is-modal ::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.colored #_cbhtml .is-tool#divImageTool,
+.colored .is-ui .is-tool#divImageTool {
+  background: rgba(0, 0, 0, 0.15);
+}
+.colored #_cbhtml .is-tool#divImageTool svg,
+.colored .is-ui .is-tool#divImageTool svg {
+  fill: #fff;
+}
+.colored #_cbhtml .is-tool.is-spacer-tool > button,
+.colored .is-ui .is-tool.is-spacer-tool > button {
+  background: #eaeaea;
+}
+.colored #_cbhtml .is-tool.is-spacer-tool > button svg,
+.colored .is-ui .is-tool.is-spacer-tool > button svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-tool.is-table-tool > button,
+.colored .is-ui .is-tool.is-table-tool > button {
+  background: #eaeaea;
+}
+.colored #_cbhtml .is-tool.is-table-tool > button svg,
+.colored .is-ui .is-tool.is-table-tool > button svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-tool.is-code-tool > button, .colored #_cbhtml .is-tool.is-module-tool > button,
+.colored .is-ui .is-tool.is-code-tool > button,
+.colored .is-ui .is-tool.is-module-tool > button {
+  background: #eaeaea;
+}
+.colored #_cbhtml .is-tool.is-code-tool > button svg, .colored #_cbhtml .is-tool.is-module-tool > button svg,
+.colored .is-ui .is-tool.is-code-tool > button svg,
+.colored .is-ui .is-tool.is-module-tool > button svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-tool#divLinkTool button, .colored #_cbhtml .is-tool#divButtonTool button, .colored #_cbhtml .is-tool#divSvgTool button,
+.colored .is-ui .is-tool#divLinkTool button,
+.colored .is-ui .is-tool#divButtonTool button,
+.colored .is-ui .is-tool#divSvgTool button {
+  background: #eaeaea;
+}
+.colored #_cbhtml .is-tool#divLinkTool button svg, .colored #_cbhtml .is-tool#divButtonTool button svg, .colored #_cbhtml .is-tool#divSvgTool button svg,
+.colored .is-ui .is-tool#divLinkTool button svg,
+.colored .is-ui .is-tool#divButtonTool button svg,
+.colored .is-ui .is-tool#divSvgTool button svg {
+  fill: #000;
+}
+.colored #_cbhtml #divImageProgress,
+.colored .is-ui #divImageProgress {
+  background: rgba(107, 107, 107, 0.15);
+}
+.colored #_cbhtml #divImageProgress .dot,
+.colored .is-ui #divImageProgress .dot {
+  background-color: #fff;
+}
+.colored #_cbhtml .is-side,
+.colored .is-ui .is-side {
+  color: #000;
+  box-shadow: rgba(150, 175, 22, 0.05) 0 0 16px 0px;
+  background: #d5d6d3;
+}
+.colored #_cbhtml .is-side button,
+.colored .is-ui .is-side button {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.colored #_cbhtml .is-side button:hover,
+.colored .is-ui .is-side button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.colored #_cbhtml .is-side button.on,
+.colored .is-ui .is-side button.on {
+  background: rgba(218, 219, 216, 0.3);
+}
+.colored #_cbhtml .is-side svg,
+.colored .is-ui .is-side svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-side.fromleft,
+.colored .is-ui .is-side.fromleft {
+  border-right: 1px solid #d5d6d3;
+}
+.colored #_cbhtml button,
+.colored #_cbhtml .is-btn,
+.colored .is-ui button,
+.colored .is-ui .is-btn {
+  color: rgba(255, 255, 255, 0.95);
+  background: #96af16;
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.colored #_cbhtml button:hover,
+.colored #_cbhtml .is-btn:hover,
+.colored .is-ui button:hover,
+.colored .is-ui .is-btn:hover {
+  background: #9eb817;
+}
+.colored #_cbhtml button svg,
+.colored #_cbhtml .is-btn svg,
+.colored .is-ui button svg,
+.colored .is-ui .is-btn svg {
+  fill: rgba(255, 255, 255, 0.95);
+}
+.colored #_cbhtml button.classic,
+.colored #_cbhtml .is-btn.classic,
+.colored .is-ui button.classic,
+.colored .is-ui .is-btn.classic {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.colored #_cbhtml button.classic:hover,
+.colored #_cbhtml .is-btn.classic:hover,
+.colored .is-ui button.classic:hover,
+.colored .is-ui .is-btn.classic:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.colored #_cbhtml button.classic-primary,
+.colored #_cbhtml .is-btn.classic-primary,
+.colored .is-ui button.classic-primary,
+.colored .is-ui .is-btn.classic-primary {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  border: transparent 1px solid;
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.colored #_cbhtml button.classic-primary:hover,
+.colored #_cbhtml .is-btn.classic-primary:hover,
+.colored .is-ui button.classic-primary:hover,
+.colored .is-ui .is-btn.classic-primary:hover {
+  border: transparent 1px solid;
+  background: rgba(255, 255, 255, 0.3);
+}
+.colored #_cbhtml button.classic-secondary,
+.colored #_cbhtml .is-btn.classic-secondary,
+.colored .is-ui button.classic-secondary,
+.colored .is-ui .is-btn.classic-secondary {
+  color: #000;
+  background: transparent;
+  border: transparent 1px solid;
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.colored #_cbhtml button.classic-secondary:hover,
+.colored #_cbhtml .is-btn.classic-secondary:hover,
+.colored .is-ui button.classic-secondary:hover,
+.colored .is-ui .is-btn.classic-secondary:hover {
+  border: transparent 1px solid;
+  background: transparent;
+}
+.colored #_cbhtml textarea:not(.monaco-mouse-cursor-text),
+.colored .is-ui textarea:not(.monaco-mouse-cursor-text) {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: rgba(188, 189, 185, 0.25);
+  color: rgba(0, 0, 0, 0.83);
+}
+.colored #_cbhtml select,
+.colored .is-ui select {
+  color: rgba(0, 0, 0, 0.83);
+  background-color: #e2e2e0;
+}
+.colored #_cbhtml select option,
+.colored .is-ui select option {
+  background: #e7e7e5;
+}
+.colored #_cbhtml input[type=text],
+.colored .is-ui input[type=text] {
+  color: rgba(0, 0, 0, 0.83);
+  border: none;
+  border-bottom: none;
+  background-color: rgba(188, 189, 185, 0.25);
+}
+.colored #_cbhtml input[type=checkbox],
+.colored .is-ui input[type=checkbox] {
+  opacity: 0.7;
+}
+.colored #_cbhtml label,
+.colored .is-ui label {
+  color: #000;
+}
+.colored #_cbhtml .is-tabs,
+.colored .is-ui .is-tabs {
+  background: rgba(255, 255, 255, 0.12);
+}
+.colored #_cbhtml .is-tabs a,
+.colored .is-ui .is-tabs a {
+  color: rgba(0, 0, 0, 0.95);
+  border-bottom: transparent 1px solid;
+}
+.colored #_cbhtml .is-tabs a.active,
+.colored .is-ui .is-tabs a.active {
+  background: transparent;
+  border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
+}
+.colored #_cbhtml .is-tabs a svg,
+.colored .is-ui .is-tabs a svg {
+  fill: rgba(0, 0, 0, 0.95);
+}
+.colored #_cbhtml .is-tabs-more,
+.colored .is-ui .is-tabs-more {
+  background: #dddddb;
+  border: 1px solid #dddddb;
+  box-shadow: 3px 4px 9px 0px rgba(0, 0, 0, 0.07);
+}
+.colored #_cbhtml .is-tabs-more > a,
+.colored .is-ui .is-tabs-more > a {
+  color: rgba(0, 0, 0, 0.95);
+}
+.colored #_cbhtml .is-tabs-more > a:hover, .colored #_cbhtml .is-tabs-more > a.active,
+.colored .is-ui .is-tabs-more > a:hover,
+.colored .is-ui .is-tabs-more > a.active {
+  background: rgba(255, 255, 255, 0.55);
+}
+.colored #_cbhtml #divSnippetList,
+.colored .is-ui #divSnippetList {
+  background: #e7e7e5;
+  border-left: 1px solid #e4e5e3;
+  box-shadow: rgba(0, 0, 0, 0.03) 0 0 10px 0px;
+}
+.colored #_cbhtml #divSnippetList #divSnippetHandle,
+.colored .is-ui #divSnippetList #divSnippetHandle {
+  background: #e7e7e5;
+  border: 1px solid #e4e5e3;
+  box-shadow: rgba(0, 0, 0, 0.025) -4px 2px 5px 0px;
+}
+.colored #_cbhtml #divSnippetList #divSnippetHandle svg,
+.colored .is-ui #divSnippetList #divSnippetHandle svg {
+  fill: #000;
+}
+.colored #_cbhtml #divSnippetList.fromleft #divSnippetHandle,
+.colored .is-ui #divSnippetList.fromleft #divSnippetHandle {
+  border-right: 1px solid #e4e5e3;
+}
+.colored #_cbhtml #divSnippetScrollUp,
+.colored #_cbhtml #divSnippetScrollDown,
+.colored .is-ui #divSnippetScrollUp,
+.colored .is-ui #divSnippetScrollDown {
+  background: rgba(82, 82, 82, 0.6);
+  color: #fff;
+}
+.colored #_cbhtml .is-design-list > div,
+.colored .is-ui .is-design-list > div {
+  outline: rgba(219, 219, 219, 0.35) 1px solid !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+.colored #_cbhtml .is-design-list > div .is-overlay,
+.colored .is-ui .is-design-list > div .is-overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.colored #_cbhtml .is-design-list > div .is-overlay:after,
+.colored .is-ui .is-design-list > div .is-overlay:after {
+  background: rgba(0, 0, 0, 0.03);
+}
+.colored #_cbhtml .is-design-list .snippet-item.sortable-drag:hover,
+.colored .is-ui .is-design-list .snippet-item.sortable-drag:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.colored #_cbhtml .is-selectbox,
+.colored .is-ui .is-selectbox {
+  color: #000;
+  background: #d5d6d3;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.03);
+}
+.colored #_cbhtml .is-selectbox:hover,
+.colored .is-ui .is-selectbox:hover {
+  background: #d8d8d6;
+}
+.colored #_cbhtml .is-selectbox svg,
+.colored .is-ui .is-selectbox svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-selectbox-options,
+.colored .is-ui .is-selectbox-options {
+  border: transparent 1px solid;
+  background-color: #d5d6d3;
+}
+.colored #_cbhtml .is-selectbox-options > div,
+.colored .is-ui .is-selectbox-options > div {
+  color: #000;
+}
+.colored #_cbhtml .is-selectbox-options > div:hover,
+.colored .is-ui .is-selectbox-options > div:hover {
+  background: rgba(255, 255, 255, 0.38);
+}
+.colored #_cbhtml .is-selectbox-options > div.selected,
+.colored .is-ui .is-selectbox-options > div.selected {
+  background: rgba(255, 255, 255, 0.38);
+}
+.colored #_cbhtml .is-dropdown .dropdown-toggle,
+.colored .is-ui .is-dropdown .dropdown-toggle {
+  color: #000;
+  background: #d5d6d3;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.03);
+}
+.colored #_cbhtml .is-dropdown .dropdown-toggle:hover,
+.colored .is-ui .is-dropdown .dropdown-toggle:hover {
+  background: #d8d8d6;
+}
+.colored #_cbhtml .is-dropdown .dropdown-toggle svg,
+.colored .is-ui .is-dropdown .dropdown-toggle svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-dropdown .dropdown-toggle::after,
+.colored .is-ui .is-dropdown .dropdown-toggle::after {
+  border-top-color: #000;
+  border-bottom-color: transparent;
+}
+.colored #_cbhtml .is-dropdown .dropdown-toggle.active::after,
+.colored .is-ui .is-dropdown .dropdown-toggle.active::after {
+  border-bottom-color: #000;
+  border-top-color: transparent;
+}
+.colored #_cbhtml .is-dropdown .dropdown-menu,
+.colored .is-ui .is-dropdown .dropdown-menu {
+  border: transparent 1px solid;
+  background-color: #d5d6d3;
+}
+.colored #_cbhtml .is-dropdown .dropdown-menu li,
+.colored .is-ui .is-dropdown .dropdown-menu li {
+  color: #000;
+  background-color: #d5d6d3;
+}
+.colored #_cbhtml .is-dropdown .dropdown-menu li:hover, .colored #_cbhtml .is-dropdown .dropdown-menu li:focus,
+.colored .is-ui .is-dropdown .dropdown-menu li:hover,
+.colored .is-ui .is-dropdown .dropdown-menu li:focus {
+  background: rgba(255, 255, 255, 0.38);
+}
+.colored #_cbhtml .is-dropdown .dropdown-menu li.selected,
+.colored .is-ui .is-dropdown .dropdown-menu li.selected {
+  background: rgba(255, 255, 255, 0.38);
+}
+.colored #_cbhtml .elementstyles .elm-list,
+.colored .is-ui .elementstyles .elm-list {
+  color: rgba(0, 0, 0, 0.95);
+  border-bottom: transparent 1px solid;
+}
+.colored #_cbhtml .elementstyles .elm-list a,
+.colored .is-ui .elementstyles .elm-list a {
+  color: rgba(0, 0, 0, 0.95);
+}
+.colored #_cbhtml .elementstyles .elm-list a.active,
+.colored .is-ui .elementstyles .elm-list a.active {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+}
+.colored #_cbhtml .elementstyles .is-settings button.is-btn-color,
+.colored .is-ui .elementstyles .is-settings button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.colored .is-tool {
+  background: #eaeaea;
+}
+.colored .is-tool button {
+  color: #000;
+}
+.colored .is-tool button svg {
+  fill: #000;
+}
+.colored #_cbhtml[gray] .is-tool.is-column-tool {
+  background: #eaeaea;
+}
+.colored #_cbhtml[gray] .is-tool.is-column-tool .cell-add {
+  background: transparent;
+}
+.colored #_cbhtml[gray] .is-tool.is-column-tool .cell-more {
+  background: transparent;
+}
+.colored #_cbhtml[gray] .is-tool.is-column-tool .cell-remove {
+  background: transparent;
+}
+.colored #_cbhtml[gray] .is-tool.is-column-tool svg {
+  fill: #000;
+}
+.colored #_cbhtml .is-tool.is-column-tool .cell-add {
+  background: #0fcc52;
+}
+.colored #_cbhtml .is-tool.is-column-tool .cell-more {
+  background: rgba(216, 200, 6, 0.9);
+}
+.colored #_cbhtml .is-tool.is-column-tool .cell-remove {
+  background: rgba(255, 85, 4, 0.9);
+}
+.colored #_cbhtml .is-tool.is-column-tool svg {
+  fill: #fff;
+}
+.colored #_cbhtml .is-pop.columnmore div.is-separator {
+  border-top: rgba(255, 255, 255, 0.4) 1px solid;
+}
+.colored #_cbhtml .is-pop.rowmore div.is-separator {
+  border-top: rgba(255, 255, 255, 0.4) 1px solid;
+}
+.colored #_cbhtml .is-pop.quickadd .pop-separator {
+  border-top: rgba(255, 255, 255, 0.4) 1px solid;
+}
+.colored #_cbhtml .is-tool.is-element-tool {
+  background: #eaeaea;
+}
+.colored #_cbhtml .is-tool.is-element-tool button {
+  background: transparent;
+}
+.colored #_cbhtml .is-tool.is-element-tool svg {
+  fill: #000;
+}
+.colored .is-tool.is-row-tool svg {
+  fill: #fff;
+}
+.colored .is-tool.is-row-tool .row-handle {
+  background: #169af7;
+}
+.colored .is-tool.is-row-tool .row-grideditor {
+  background: rgba(216, 200, 6, 0.9);
+}
+.colored .is-tool.is-row-tool .row-more {
+  background: rgba(216, 200, 6, 0.9);
+}
+.colored .is-tool.is-row-tool .row-remove {
+  background: rgba(255, 85, 4, 0.9);
+}
+.colored .is-builder[gray] .is-tool.is-row-tool {
+  background: #eaeaea;
+}
+.colored .is-builder[gray] .is-tool.is-row-tool svg {
+  fill: #000;
+}
+.colored .is-rowadd-tool {
+  border-bottom: 1px solid #ffb784;
+}
+.colored .is-rowadd-tool button {
+  border: 1px solid #ff8e3e;
+}
+.colored .is-builder[gray] .is-rowadd-tool {
+  border-bottom: 1px solid rgba(222, 222, 222, 0.32);
+}
+.colored .is-builder[gray] .is-rowadd-tool button {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+.colored .row-add-initial {
+  color: #333;
+  border: 1px dashed rgba(169, 169, 169, 0.8);
+  background: rgba(255, 255, 255, 0.5);
+}
+.colored .row-add-initial:hover {
+  background: rgba(248, 248, 248, 0.35);
+}
+.colored .is-builder[clean] .is-tool.is-row-tool {
+  background: #eaeaea;
+}
+.colored .is-builder[clean] .is-tool.is-row-tool .row-grideditor {
+  background: transparent;
+}
+.colored .is-builder[clean] .is-tool.is-row-tool .row-grideditor svg {
+  fill: #000;
+}
+.colored .is-builder[clean] .row-outline {
+  outline: none;
+}
+.colored .is-builder[clean] .cell-active {
+  outline: none;
+}
+.colored .is-builder[clean] .row-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.colored .is-builder[rowoutline] .row-outline {
+  outline: none;
+}
+.colored .is-builder[rowoutline] .cell-active {
+  outline: none;
+}
+.colored .is-builder[rowoutline] .row-active:not([data-protected]) {
+  outline: 1px solid #00da89;
+}
+.colored .is-builder[grayoutline] .row-outline {
+  outline: none;
+}
+.colored .is-builder[grayoutline] .cell-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.1);
+}
+.colored .is-builder[grayoutline] .row-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.colored .is-builder[rowoutline][grayoutline] .row-outline {
+  outline: none;
+}
+.colored .is-builder[rowoutline][grayoutline] .cell-active {
+  outline: none;
+}
+.colored .is-builder[rowoutline][grayoutline] .row-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.colored .is-builder[hideoutline] .row-outline {
+  outline: none !important;
+}
+.colored .is-builder[hideoutline] .cell-active {
+  outline: none !important;
+}
+.colored .is-builder[hideoutline] .row-active {
+  outline: none !important;
+}
+.colored .is-builder[hideoutline] .row-active.row-outline {
+  outline: none !important;
+}
+.colored .is-builder[hidesnippetaddtool] .row-outline .is-rowadd-tool,
+.colored .is-builder[hidesnippetaddtool] .row-active .is-rowadd-tool {
+  display: none;
+}
+.colored .is-builder[hideelementhighlight] .elm-active {
+  background-color: transparent;
+}
+.colored .is-tooltip {
+  background: #333;
+  color: #fefefe;
+}
+.colored .scroll * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.4) auto;
+}
+.colored .scroll *::-webkit-scrollbar {
+  width: 12px;
+}
+.colored .scroll *::-webkit-scrollbar-track {
+  background: transparent;
+}
+.colored .scroll *::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.colored .scroll-darker * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(78, 78, 78, 0.62) auto;
+}
+.colored .scroll-darker *::-webkit-scrollbar {
+  width: 12px;
+}
+.colored .scroll-darker *::-webkit-scrollbar-track {
+  background: transparent;
+}
+.colored .scroll-darker *::-webkit-scrollbar-thumb {
+  background-color: rgba(78, 78, 78, 0.62);
+}

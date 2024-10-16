@@ -1,0 +1,6 @@
+[
+  {
+    "category": "list_subscribers",
+    "message": "The subscriber having the email address \"{email}\" has been successfully unsubscribed from the \"{listName}\" list!"
+  }
+]

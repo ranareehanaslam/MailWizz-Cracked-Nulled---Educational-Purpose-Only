@@ -1,0 +1,161 @@
+diff --git a/lib/helpers/contacts/Recipients.php b/lib/helpers/contacts/Recipients.php
+index 48c48fa..bd78bd8 100644
+--- a/lib/helpers/contacts/Recipients.php
++++ b/lib/helpers/contacts/Recipients.php
+@@ -70,6 +70,7 @@ class Recipient implements \JsonSerializable
+         return $this->email;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+diff --git a/lib/helpers/mail/Mail.php b/lib/helpers/mail/Mail.php
+index cdccd2a..a650543 100644
+--- a/lib/helpers/mail/Mail.php
++++ b/lib/helpers/mail/Mail.php
+@@ -74,6 +74,7 @@ class ReplyTo implements \JsonSerializable
+         return $this->name;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -113,6 +114,7 @@ class ClickTracking implements \JsonSerializable
+         return $this->enable_text;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -152,6 +154,7 @@ class OpenTracking implements \JsonSerializable
+         return $this->substitution_tag;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -213,6 +216,7 @@ class SubscriptionTracking implements \JsonSerializable
+         return $this->substitution_tag;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -298,6 +302,7 @@ class Ganalytics implements \JsonSerializable
+         return $this->utm_campaign;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -363,6 +368,7 @@ class TrackingSettings implements \JsonSerializable
+         return $this->ganalytics;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -404,6 +410,7 @@ class BccSettings implements \JsonSerializable
+         return $this->email;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -432,6 +439,7 @@ class BypassListManagement implements \JsonSerializable
+         return $this->enable;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -481,6 +489,7 @@ class Footer implements \JsonSerializable
+         return $this->html;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -509,6 +518,8 @@ class SandBoxMode implements \JsonSerializable
+     {
+         return $this->enable;
+     }
++
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -558,6 +569,7 @@ class SpamCheck implements \JsonSerializable
+         return $this->post_to_url;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -631,6 +643,7 @@ class MailSettings implements \JsonSerializable
+         return $this->spam_check;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -673,6 +686,7 @@ class ASM implements \JsonSerializable
+         return $this->groups_to_display;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -745,6 +759,7 @@ class Attachment implements \JsonSerializable
+         return $this->content_id;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -805,6 +820,7 @@ class Content implements \JsonSerializable
+         return $this->value;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -910,6 +926,7 @@ class Personalization implements \JsonSerializable
+         return $this->send_at;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -989,6 +1006,7 @@ class Email implements \JsonSerializable
+         return $this->email;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(
+@@ -1210,6 +1228,7 @@ class Mail implements \JsonSerializable
+         return $this->reply_to;
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize()
+     {
+         return array_filter(

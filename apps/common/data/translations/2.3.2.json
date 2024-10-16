@@ -1,0 +1,14 @@
+[
+  {
+    "category": "orders",
+    "message": "Payment from"
+  },
+  {
+    "category": "orders",
+    "message": "Payment to"
+  },
+  {
+    "category": "orders",
+    "message": "Unit price"
+  }
+]

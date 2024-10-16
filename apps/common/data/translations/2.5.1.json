@@ -1,0 +1,18 @@
+[
+  {
+    "category": "app",
+    "message": "Your IP Address"
+  },
+  {
+    "category": "campaigns",
+    "message": "Please note you have enabled Smart Tracking. If you trigger one of the rules for opens and\/or clicks, you may end up in the ignore list and your clicks and\/or opens will not be tracked."
+  },
+  {
+    "category": "campaigns",
+    "message": "In order to avoid this, please wait at least {n} seconds from the moment your campaign has been sent, before you open and\/or click a campaign."
+  },
+  {
+    "category": "campaigns",
+    "message": "Please also avoid doing repetitive opens and\/or clicks in short periods of time."
+  }
+]

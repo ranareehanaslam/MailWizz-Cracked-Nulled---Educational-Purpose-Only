@@ -1,0 +1,22 @@
+[
+  {
+    "category": "campaigns",
+    "message": "The \"{tagName}\" tag already exists."
+  },
+  {
+    "category": "app",
+    "message": "Account holder"
+  },
+  {
+    "category": "campaigns",
+    "message": "Status"
+  },
+  {
+    "category": "campaigns",
+    "message": "After campaign sent"
+  },
+  {
+    "category": "campaigns",
+    "message": "After campaign open"
+  }
+]

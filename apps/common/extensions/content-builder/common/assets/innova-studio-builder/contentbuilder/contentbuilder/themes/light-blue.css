@@ -1,0 +1,1271 @@
+.light .is-builder[gridoutline] > div > div {
+  outline: 1px solid rgba(132, 132, 132, 0.27);
+}
+.light .is-builder > div > div.cell-active:not([data-protected]) {
+  outline: 1px solid #00da89;
+}
+.light .is-builder .row-active:not([data-protected]) {
+  outline: 1px solid #00da89;
+}
+.light .is-builder .row-active:not([data-protected]).row-outline {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.light .is-builder .cell-active .elm-active {
+  background: rgba(200, 200, 201, 0.11);
+}
+.light .is-builder .cell-active[data-html] {
+  background-color: rgba(200, 200, 201, 0.11);
+}
+.light .is-builder .cell-active .icon-active {
+  background-color: rgba(200, 200, 201, 0.4);
+}
+.light .is-builder .elm-inspected {
+  outline: 1px solid #ffb84a !important;
+}
+.light .sortable-ghost {
+  background: rgba(204, 204, 204, 0.15);
+}
+.light .is-builder .snippet-item.sortable-ghost {
+  background: rgba(204, 204, 204, 0.15);
+}
+.light .moveable-control {
+  background: #2196f3 !important;
+}
+.light #_cbhtml,
+.light .is-ui {
+  /*  general use */
+}
+.light #_cbhtml .style-helper,
+.light .is-ui .style-helper {
+  background: #dbe5f5;
+  color: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .style-helper.on,
+.light .is-ui .style-helper.on {
+  background: #cfdcf2;
+}
+.light #_cbhtml .style-helper.hover,
+.light .is-ui .style-helper.hover {
+  background: #cbd9f1;
+}
+.light #_cbhtml .style-helper svg,
+.light .is-ui .style-helper svg {
+  fill: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .style-helper.modal-color,
+.light .is-ui .style-helper.modal-color {
+  background: #000;
+}
+.light #_cbhtml .style-helper.modal-background,
+.light .is-ui .style-helper.modal-background {
+  background: #e3e9f3;
+}
+.light #_cbhtml .style-helper.button-pickcolor-border,
+.light .is-ui .style-helper.button-pickcolor-border {
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.light #_cbhtml .style-helper.button-pickcolor-background,
+.light .is-ui .style-helper.button-pickcolor-background {
+  background: rgba(255, 255, 255, 0.2);
+}
+.light #_cbhtml .style-helper.snippet-color,
+.light .is-ui .style-helper.snippet-color {
+  background: #000;
+}
+.light #_cbhtml .style-helper.snippet-background,
+.light .is-ui .style-helper.snippet-background {
+  background: #eaeff6;
+}
+.light #_cbhtml .style-helper.snippet-tabs-background,
+.light .is-ui .style-helper.snippet-tabs-background {
+  background: #eaeff6;
+}
+.light #_cbhtml .style-helper.snippet-tab-item-background,
+.light .is-ui .style-helper.snippet-tab-item-background {
+  background: rgba(255, 255, 255, 0.55);
+}
+.light #_cbhtml .style-helper.snippet-tab-item-background-active,
+.light .is-ui .style-helper.snippet-tab-item-background-active {
+  background: #eaeff6;
+}
+.light #_cbhtml .style-helper.snippet-tab-item-background-hover,
+.light .is-ui .style-helper.snippet-tab-item-background-hover {
+  background: rgba(255, 255, 255, 0.55);
+}
+.light #_cbhtml .style-helper.snippet-tab-item-color,
+.light .is-ui .style-helper.snippet-tab-item-color {
+  background: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .style-helper.snippet-more-item-background,
+.light .is-ui .style-helper.snippet-more-item-background {
+  background: #eef1f8;
+}
+.light #_cbhtml .style-helper.snippet-more-item-background-active,
+.light .is-ui .style-helper.snippet-more-item-background-active {
+  background: #dfe6f1;
+}
+.light #_cbhtml .style-helper.snippet-more-item-background-hover,
+.light .is-ui .style-helper.snippet-more-item-background-hover {
+  background: #dfe6f1;
+}
+.light #_cbhtml .style-helper.snippet-more-item-color,
+.light .is-ui .style-helper.snippet-more-item-color {
+  background: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .style-helper.tabs-background,
+.light .is-ui .style-helper.tabs-background {
+  background: rgba(255, 255, 255, 0.12);
+}
+.light #_cbhtml .style-helper.tab-item-active-border-bottom,
+.light .is-ui .style-helper.tab-item-active-border-bottom {
+  border: rgba(0, 0, 0, 0.5) 1px solid;
+}
+.light #_cbhtml .style-helper.tab-item-color,
+.light .is-ui .style-helper.tab-item-color {
+  background: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .style-helper.tabs-more-background,
+.light .is-ui .style-helper.tabs-more-background {
+  background: #eef1f8;
+}
+.light #_cbhtml .style-helper.tabs-more-border,
+.light .is-ui .style-helper.tabs-more-border {
+  border: 1px solid #eef1f8;
+}
+.light #_cbhtml .style-helper.tabs-more-item-color,
+.light .is-ui .style-helper.tabs-more-item-color {
+  background: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .style-helper.tabs-more-item-background-hover,
+.light .is-ui .style-helper.tabs-more-item-background-hover {
+  background: #dfe6f1;
+}
+.light #_cbhtml .style-helper.separator-color,
+.light .is-ui .style-helper.separator-color {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .style-helper-button-classic,
+.light .is-ui .style-helper-button-classic {
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+.light #_cbhtml .style-helper-button-classic.hover,
+.light .is-ui .style-helper-button-classic.hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .style-helper-button-classic svg,
+.light .is-ui .style-helper-button-classic svg {
+  fill: #000;
+}
+.light #_cbhtml .is-area,
+.light .is-ui .is-area {
+  color: #000 !important;
+  background: #e3e9f3 !important;
+}
+.light #_cbhtml .is-area button,
+.light .is-ui .is-area button {
+  color: #000 !important;
+}
+.light #_cbhtml .is-area button svg,
+.light .is-ui .is-area button svg {
+  fill: #000 !important;
+}
+.light #_cbhtml .is-area-2nd,
+.light .is-ui .is-area-2nd {
+  color: #000 !important;
+  background: #eaeff6 !important;
+}
+.light #_cbhtml .is-area-2nd button,
+.light .is-ui .is-area-2nd button {
+  color: #000 !important;
+}
+.light #_cbhtml .is-area-2nd button svg,
+.light .is-ui .is-area-2nd button svg {
+  fill: #000 !important;
+}
+.light #_cbhtml .is-pop,
+.light .is-ui .is-pop {
+  color: #000;
+  background: #e3e9f3;
+  border: 1px solid #e3e9f3;
+  box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.light #_cbhtml .is-pop button,
+.light .is-ui .is-pop button {
+  color: #000;
+  background-color: transparent !important;
+}
+.light #_cbhtml .is-pop button svg,
+.light .is-ui .is-pop button svg {
+  fill: #000;
+}
+.light #_cbhtml .is-pop.arrow-top:after,
+.light .is-ui .is-pop.arrow-top:after {
+  border-bottom-color: #e3e9f3;
+}
+.light #_cbhtml .is-pop.arrow-top:before,
+.light .is-ui .is-pop.arrow-top:before {
+  border-bottom-color: #e3e9f3;
+}
+.light #_cbhtml .is-pop.arrow-left:after,
+.light .is-ui .is-pop.arrow-left:after {
+  border-right-color: #e3e9f3;
+}
+.light #_cbhtml .is-pop.arrow-left:before,
+.light .is-ui .is-pop.arrow-left:before {
+  border-right-color: #e3e9f3;
+}
+.light #_cbhtml .is-pop.arrow-right:after,
+.light .is-ui .is-pop.arrow-right:after {
+  border-left-color: #e3e9f3;
+}
+.light #_cbhtml .is-pop.arrow-right:before,
+.light .is-ui .is-pop.arrow-right:before {
+  border-left-color: #e3e9f3;
+}
+.light #_cbhtml .is-pop.arrow-bottom:after,
+.light .is-ui .is-pop.arrow-bottom:after {
+  border-top-color: #e3e9f3;
+}
+.light #_cbhtml .is-pop.arrow-bottom:before,
+.light .is-ui .is-pop.arrow-bottom:before {
+  border-top-color: #e3e9f3;
+}
+.light #_cbhtml .is-pop-tabs > div,
+.light .is-ui .is-pop-tabs > div {
+  background: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .is-pop-tabs > div.active,
+.light .is-ui .is-pop-tabs > div.active {
+  background: transparent;
+}
+.light #_cbhtml .is-general-options,
+.light .is-ui .is-general-options {
+  color: #000;
+  background: #dbe5f5;
+}
+.light #_cbhtml .is-general-options button,
+.light #_cbhtml .is-general-options div[role=button],
+.light .is-ui .is-general-options button,
+.light .is-ui .is-general-options div[role=button] {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.95);
+  width: 45px;
+  height: 40px;
+  margin: 0;
+  box-shadow: none;
+}
+.light #_cbhtml .is-general-options button.on,
+.light #_cbhtml .is-general-options div[role=button].on,
+.light .is-ui .is-general-options button.on,
+.light .is-ui .is-general-options div[role=button].on {
+  background: #cfdcf2;
+}
+.light #_cbhtml .is-general-options button:hover,
+.light #_cbhtml .is-general-options div[role=button]:hover,
+.light .is-ui .is-general-options button:hover,
+.light .is-ui .is-general-options div[role=button]:hover {
+  background: #cbd9f1 !important;
+}
+.light #_cbhtml .is-general-options button svg,
+.light #_cbhtml .is-general-options div[role=button] svg,
+.light .is-ui .is-general-options button svg,
+.light .is-ui .is-general-options div[role=button] svg {
+  fill: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .is-rte-tool,
+.light #_cbhtml .is-elementrte-tool,
+.light #_cbhtml .is-rte-pop.rte-more-options,
+.light #_cbhtml .is-rte-pop.elementrte-more-options,
+.light .is-ui .is-rte-tool,
+.light .is-ui .is-elementrte-tool,
+.light .is-ui .is-rte-pop.rte-more-options,
+.light .is-ui .is-rte-pop.elementrte-more-options {
+  color: #000;
+  background: #dbe5f5;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 4px 0px;
+}
+.light #_cbhtml .is-rte-tool button,
+.light #_cbhtml .is-elementrte-tool button,
+.light #_cbhtml .is-rte-pop.rte-more-options button,
+.light #_cbhtml .is-rte-pop.elementrte-more-options button,
+.light .is-ui .is-rte-tool button,
+.light .is-ui .is-elementrte-tool button,
+.light .is-ui .is-rte-pop.rte-more-options button,
+.light .is-ui .is-rte-pop.elementrte-more-options button {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.95);
+  box-shadow: none;
+}
+.light #_cbhtml .is-rte-tool button.on,
+.light #_cbhtml .is-elementrte-tool button.on,
+.light #_cbhtml .is-rte-pop.rte-more-options button.on,
+.light #_cbhtml .is-rte-pop.elementrte-more-options button.on,
+.light .is-ui .is-rte-tool button.on,
+.light .is-ui .is-elementrte-tool button.on,
+.light .is-ui .is-rte-pop.rte-more-options button.on,
+.light .is-ui .is-rte-pop.elementrte-more-options button.on {
+  background: #cfdcf2;
+}
+.light #_cbhtml .is-rte-tool button:hover,
+.light #_cbhtml .is-elementrte-tool button:hover,
+.light #_cbhtml .is-rte-pop.rte-more-options button:hover,
+.light #_cbhtml .is-rte-pop.elementrte-more-options button:hover,
+.light .is-ui .is-rte-tool button:hover,
+.light .is-ui .is-elementrte-tool button:hover,
+.light .is-ui .is-rte-pop.rte-more-options button:hover,
+.light .is-ui .is-rte-pop.elementrte-more-options button:hover {
+  background: #cbd9f1;
+}
+.light #_cbhtml .is-rte-tool button svg,
+.light #_cbhtml .is-elementrte-tool button svg,
+.light #_cbhtml .is-rte-pop.rte-more-options button svg,
+.light #_cbhtml .is-rte-pop.elementrte-more-options button svg,
+.light .is-ui .is-rte-tool button svg,
+.light .is-ui .is-elementrte-tool button svg,
+.light .is-ui .is-rte-pop.rte-more-options button svg,
+.light .is-ui .is-rte-pop.elementrte-more-options button svg {
+  fill: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .is-rte-tool .rte-separator,
+.light #_cbhtml .is-elementrte-tool .rte-separator,
+.light #_cbhtml .is-rte-pop.rte-more-options .rte-separator,
+.light #_cbhtml .is-rte-pop.elementrte-more-options .rte-separator,
+.light .is-ui .is-rte-tool .rte-separator,
+.light .is-ui .is-elementrte-tool .rte-separator,
+.light .is-ui .is-rte-pop.rte-more-options .rte-separator,
+.light .is-ui .is-rte-pop.elementrte-more-options .rte-separator {
+  background: rgba(0, 0, 0, 0.11);
+}
+.light #_cbhtml[toolbarleft] .is-rte-tool,
+.light #_cbhtml[toolbarleft] .is-elementrte-tool,
+.light .is-ui[toolbarleft] .is-rte-tool,
+.light .is-ui[toolbarleft] .is-elementrte-tool {
+  box-shadow: rgba(0, 0, 0, 0.05) 6px 0px 9px 0px;
+}
+.light #_cbhtml[toolbarright] .is-rte-tool,
+.light #_cbhtml[toolbarright] .is-elementrte-tool,
+.light .is-ui[toolbarright] .is-rte-tool,
+.light .is-ui[toolbarright] .is-elementrte-tool {
+  box-shadow: rgba(0, 0, 0, 0.05) -4px 0px 9px 0px;
+}
+.light #_cbhtml .is-rte-pop,
+.light .is-ui .is-rte-pop {
+  color: #000;
+  background: #dbe5f5;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 12px 0px;
+}
+.light #_cbhtml .is-rte-pop button.on,
+.light .is-ui .is-rte-pop button.on {
+  background: #cfdcf2;
+}
+.light #_cbhtml .is-rte-pop button:hover,
+.light .is-ui .is-rte-pop button:hover {
+  background: #cbd9f1;
+}
+.light #_cbhtml .is-rte-pop .is-label.separator,
+.light .is-ui .is-rte-pop .is-label.separator {
+  border-top: rgba(255, 255, 255, 0.3) 1px solid;
+}
+.light #_cbhtml .is-rte-pop .is-rangeslider,
+.light .is-ui .is-rte-pop .is-rangeslider {
+  background: rgba(139, 171, 223, 0.4);
+}
+.light #_cbhtml .is-rte-pop .is-rangeslider::-webkit-slider-thumb,
+.light .is-ui .is-rte-pop .is-rangeslider::-webkit-slider-thumb {
+  background: rgba(79, 128, 206, 0.55);
+}
+.light #_cbhtml .is-rte-pop .is-rangeslider::-moz-range-thumb,
+.light .is-ui .is-rte-pop .is-rangeslider::-moz-range-thumb {
+  background: rgba(79, 128, 206, 0.55);
+}
+.light #_cbhtml .is-rte-pop.rte-paragraph-options li.on,
+.light .is-ui .is-rte-pop.rte-paragraph-options li.on {
+  background: #cfdcf2;
+}
+.light #_cbhtml .is-rte-pop.rte-paragraph-options > ul > li:hover, .light #_cbhtml .is-rte-pop.rte-paragraph-options > ul > li:focus,
+.light .is-ui .is-rte-pop.rte-paragraph-options > ul > li:hover,
+.light .is-ui .is-rte-pop.rte-paragraph-options > ul > li:focus {
+  background: #cbd9f1;
+}
+.light #_cbhtml .is-rte-pop.rte-textsetting-options button.on,
+.light .is-ui .is-rte-pop.rte-textsetting-options button.on {
+  background: #cfdcf2;
+}
+.light #_cbhtml .is-rte-pop.rte-textsetting-options button:hover,
+.light .is-ui .is-rte-pop.rte-textsetting-options button:hover {
+  background: #cbd9f1;
+}
+.light #_cbhtml .is-rte-pop.rte-textsetting-options button:focus,
+.light .is-ui .is-rte-pop.rte-textsetting-options button:focus {
+  background: #cbd9f1;
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker button,
+.light .is-ui .is-rte-pop.rte-color-picker button {
+  color: rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+  background: rgba(255, 255, 255, 0.15);
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker button:hover,
+.light .is-ui .is-rte-pop.rte-color-picker button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker input[type=text],
+.light .is-ui .is-rte-pop.rte-color-picker input[type=text] {
+  color: rgba(0, 0, 0, 0.95);
+  background: rgba(179, 200, 234, 0.4);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .rte-color-picker-area > div,
+.light .is-ui .is-rte-pop.rte-color-picker .rte-color-picker-area > div {
+  opacity: 0.9;
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .is-pop-tabs > div,
+.light .is-ui .is-rte-pop.rte-color-picker .is-pop-tabs > div {
+  background: #cfdcf2;
+  color: rgba(0, 0, 0, 0.95);
+  font-weight: bold;
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .is-pop-tabs > div.active,
+.light .is-ui .is-rte-pop.rte-color-picker .is-pop-tabs > div.active {
+  background: transparent;
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .rangeSlider,
+.light .is-ui .is-rte-pop.rte-color-picker .rangeSlider {
+  outline: 1px solid rgba(0, 0, 0, 0.08);
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .rangeSlider__handle,
+.light .is-ui .is-rte-pop.rte-color-picker .rangeSlider__handle {
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.55);
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .dot-1,
+.light .is-ui .is-rte-pop.rte-color-picker .dot-1 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .dot-2,
+.light .is-ui .is-rte-pop.rte-color-picker .dot-2 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .dot-3,
+.light .is-ui .is-rte-pop.rte-color-picker .dot-3 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .dot-4,
+.light .is-ui .is-rte-pop.rte-color-picker .dot-4 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .is-rte-pop.rte-color-picker .is-color-preview,
+.light .is-ui .is-rte-pop.rte-color-picker .is-color-preview {
+  border: transparent 1px solid;
+}
+.light #_cbhtml .is-rte-pop.rte-customtag-options > div button:hover,
+.light .is-ui .is-rte-pop.rte-customtag-options > div button:hover {
+  background: #cbd9f1;
+}
+.light #_cbhtml .is-rte-pop.rte-customtag-options > div button:focus,
+.light .is-ui .is-rte-pop.rte-customtag-options > div button:focus {
+  background: #cbd9f1;
+}
+.light #_cbhtml[toolbarleft] .is-rte-pop,
+.light .is-ui[toolbarleft] .is-rte-pop {
+  box-shadow: rgba(0, 0, 0, 0.05) 5px 0px 9px 0px;
+}
+.light #_cbhtml[toolbarright] .is-rte-pop,
+.light .is-ui[toolbarright] .is-rte-pop {
+  box-shadow: rgba(0, 0, 0, 0.05) -6px 1px 9px 0px;
+}
+.light #_cbhtml .is-modal,
+.light .is-ui .is-modal {
+  background: rgba(255, 255, 255, 0.000001);
+}
+.light #_cbhtml .is-modal button,
+.light .is-ui .is-modal button {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.light #_cbhtml .is-modal button:hover,
+.light .is-ui .is-modal button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .is-modal button.on,
+.light .is-ui .is-modal button.on {
+  background: rgba(234, 239, 246, 0.3);
+}
+.light #_cbhtml .is-modal .is-separator,
+.light .is-ui .is-modal .is-separator {
+  border-top: rgba(0, 0, 0, 0.05) 1px solid;
+}
+.light #_cbhtml .is-modal .is-rangeslider,
+.light .is-ui .is-modal .is-rangeslider {
+  background: rgba(156, 177, 212, 0.4);
+}
+.light #_cbhtml .is-modal .is-rangeslider::-webkit-slider-thumb,
+.light .is-ui .is-modal .is-rangeslider::-webkit-slider-thumb {
+  background: rgba(102, 135, 189, 0.4);
+}
+.light #_cbhtml .is-modal .is-rangeslider::-moz-range-thumb,
+.light .is-ui .is-modal .is-rangeslider::-moz-range-thumb {
+  background: rgba(102, 135, 189, 0.4);
+}
+.light #_cbhtml .is-modal .is-modal-overlay,
+.light .is-ui .is-modal .is-modal-overlay {
+  background: rgba(255, 255, 255, 0.000001);
+}
+.light #_cbhtml .is-modal .is-modal-overlay.overlay-stay,
+.light .is-ui .is-modal .is-modal-overlay.overlay-stay {
+  background: rgba(183, 183, 183, 0.11);
+}
+.light #_cbhtml .is-modal.is-modal-content,
+.light #_cbhtml .is-modal .is-modal-content,
+.light .is-ui .is-modal.is-modal-content,
+.light .is-ui .is-modal .is-modal-content {
+  color: #000;
+  background: #e3e9f3;
+  border: 1px solid transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.34);
+  box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.light #_cbhtml .is-modal.is-modal-content svg,
+.light #_cbhtml .is-modal .is-modal-content svg,
+.light .is-ui .is-modal.is-modal-content svg,
+.light .is-ui .is-modal .is-modal-content svg {
+  fill: #000;
+}
+.light #_cbhtml .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay),
+.light .is-ui .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) {
+  color: #000;
+  background: #e3e9f3;
+  border: 1px solid transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.34);
+  box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.light #_cbhtml .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) svg,
+.light .is-ui .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) svg {
+  fill: #000;
+}
+.light #_cbhtml .is-modal div.is-modal-bar,
+.light .is-ui .is-modal div.is-modal-bar {
+  color: rgba(0, 0, 0, 0.68);
+}
+.light #_cbhtml .is-modal div.is-modal-bar .is-modal-close,
+.light .is-ui .is-modal div.is-modal-bar .is-modal-close {
+  color: #000;
+}
+.light #_cbhtml .is-modal.viewhtml textarea,
+.light .is-ui .is-modal.viewhtml textarea {
+  background-color: #fff;
+}
+.light #_cbhtml .is-modal.previewcontent,
+.light .is-ui .is-modal.previewcontent {
+  background: #f7f8f8;
+}
+.light #_cbhtml .is-modal.previewcontent .size-control,
+.light .is-ui .is-modal.previewcontent .size-control {
+  cursor: pointer;
+  background: #d5deed;
+  border-left: white 2px solid;
+  border-right: white 2px solid;
+}
+.light #_cbhtml .is-modal.previewcontent .size-control-info,
+.light .is-ui .is-modal.previewcontent .size-control-info {
+  color: #000;
+}
+.light #_cbhtml .is-modal.previewcontent .size-control.hover,
+.light .is-ui .is-modal.previewcontent .size-control.hover {
+  background: #eef1f8;
+}
+.light #_cbhtml .is-modal.previewcontent .is-modal-close svg,
+.light .is-ui .is-modal.previewcontent .is-modal-close svg {
+  fill: #000;
+}
+.light #_cbhtml .is-modal.grideditor,
+.light .is-ui .is-modal.grideditor {
+  background: #e3e9f3;
+}
+.light #_cbhtml .is-modal.grideditor .is-separator,
+.light .is-ui .is-modal.grideditor .is-separator {
+  border-top: rgba(0, 0, 0, 0.05) 1px solid;
+}
+.light #_cbhtml .is-modal.pickgradientcolor div.is-modal-content > div,
+.light .is-ui .is-modal.pickgradientcolor div.is-modal-content > div {
+  opacity: 0.9;
+}
+.light #_cbhtml .is-modal.pickgradientcolor .is-settings button.is-btn-color,
+.light .is-ui .is-modal.pickgradientcolor .is-settings button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.light #_cbhtml .is-modal.pickgradientcolor .is-settings button .is-elmgrad-remove,
+.light .is-ui .is-modal.pickgradientcolor .is-settings button .is-elmgrad-remove {
+  background: rgba(95, 94, 94, 0.26);
+  color: #fff;
+}
+.light #_cbhtml .is-modal.edittable .is-modal-bar,
+.light .is-ui .is-modal.edittable .is-modal-bar {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.light #_cbhtml .is-modal.edittable button.is-btn-color,
+.light .is-ui .is-modal.edittable button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.light #_cbhtml .is-modal.buttoneditor .is-modal-bar,
+.light .is-ui .is-modal.buttoneditor .is-modal-bar {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.light #_cbhtml .is-modal.columnsettings .is-modal-bar, .light #_cbhtml .is-modal.rowsettings .is-modal-bar,
+.light .is-ui .is-modal.columnsettings .is-modal-bar,
+.light .is-ui .is-modal.rowsettings .is-modal-bar {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.light #_cbhtml .is-modal.columnsettings button.is-btn-color, .light #_cbhtml .is-modal.rowsettings button.is-btn-color,
+.light .is-ui .is-modal.columnsettings button.is-btn-color,
+.light .is-ui .is-modal.rowsettings button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.light #_cbhtml .is-modal.pickcolor button,
+.light .is-ui .is-modal.pickcolor button {
+  color: rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .is-modal.pickcolor button:hover,
+.light .is-ui .is-modal.pickcolor button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .is-modal.pickcolor input[type=text],
+.light .is-ui .is-modal.pickcolor input[type=text] {
+  color: rgba(0, 0, 0, 0.83);
+  background: rgba(191, 205, 228, 0.25);
+  border: none;
+  border-bottom: 1px solid #f5f7fb;
+}
+.light #_cbhtml .is-modal.pickcolor div.is-modal-content > div,
+.light .is-ui .is-modal.pickcolor div.is-modal-content > div {
+  opacity: 0.9;
+}
+.light #_cbhtml .is-modal.pickcolor .rangeSlider,
+.light .is-ui .is-modal.pickcolor .rangeSlider {
+  outline: 1px solid rgba(0, 0, 0, 0.08);
+}
+.light #_cbhtml .is-modal.pickcolor .rangeSlider__handle,
+.light .is-ui .is-modal.pickcolor .rangeSlider__handle {
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.55);
+}
+.light #_cbhtml .is-modal.pickcolor .dot-1,
+.light .is-ui .is-modal.pickcolor .dot-1 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.light #_cbhtml .is-modal.pickcolor .dot-2,
+.light .is-ui .is-modal.pickcolor .dot-2 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .is-modal.pickcolor .dot-3,
+.light .is-ui .is-modal.pickcolor .dot-3 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.light #_cbhtml .is-modal.pickcolor .dot-4,
+.light .is-ui .is-modal.pickcolor .dot-4 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .is-modal.pickcolor .is-color-preview,
+.light .is-ui .is-modal.pickcolor .is-color-preview {
+  border: transparent 1px solid;
+}
+.light #_cbhtml .is-modal.pickcolormore div.is-modal-content > div,
+.light .is-ui .is-modal.pickcolormore div.is-modal-content > div {
+  opacity: 0.9;
+}
+.light #_cbhtml .is-modal.pickfontfamily .is-modal-bar,
+.light .is-ui .is-modal.pickfontfamily .is-modal-bar {
+  background: rgba(255, 255, 255, 0.12);
+}
+.light #_cbhtml .is-modal.insertimage .is-drop-area,
+.light .is-ui .is-modal.insertimage .is-drop-area {
+  border: 2px dashed rgba(0, 0, 0, 0.3);
+}
+.light #_cbhtml .is-modal.insertimage .is-drop-area svg,
+.light .is-ui .is-modal.insertimage .is-drop-area svg {
+  fill: #000;
+}
+.light #_cbhtml .is-modal.insertimage .is-drop-area:hover,
+.light .is-ui .is-modal.insertimage .is-drop-area:hover {
+  background-color: #eaeff6;
+}
+.light #_cbhtml .is-modal.insertimage .is-drop-area.image-dropping,
+.light .is-ui .is-modal.insertimage .is-drop-area.image-dropping {
+  background-color: #eaeff6;
+}
+.light #_cbhtml .is-modal.insertimage .is-preview-area,
+.light .is-ui .is-modal.insertimage .is-preview-area {
+  opacity: 0.8;
+}
+.light #_cbhtml .is-modal.insertimage .is-preview-area div i,
+.light .is-ui .is-modal.insertimage .is-preview-area div i {
+  background: rgba(0, 0, 0, 0.23);
+  color: #fff;
+}
+.light #_cbhtml .is-modal.imageedit .imageedit-crop button,
+.light .is-ui .is-modal.imageedit .imageedit-crop button {
+  color: #000;
+  border: rgba(0, 0, 0, 0.32) 1px solid;
+}
+.light #_cbhtml .is-modal ::-webkit-input-placeholder,
+.light .is-ui .is-modal ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.light #_cbhtml .is-modal :-ms-input-placeholder,
+.light .is-ui .is-modal :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.light #_cbhtml .is-modal ::placeholder,
+.light .is-ui .is-modal ::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.light #_cbhtml .is-tool#divImageTool,
+.light .is-ui .is-tool#divImageTool {
+  background: rgba(0, 0, 0, 0.15);
+}
+.light #_cbhtml .is-tool#divImageTool svg,
+.light .is-ui .is-tool#divImageTool svg {
+  fill: #fff;
+}
+.light #_cbhtml .is-tool.is-spacer-tool > button,
+.light .is-ui .is-tool.is-spacer-tool > button {
+  background: #eeeff3;
+}
+.light #_cbhtml .is-tool.is-spacer-tool > button svg,
+.light .is-ui .is-tool.is-spacer-tool > button svg {
+  fill: #000;
+}
+.light #_cbhtml .is-tool.is-table-tool > button,
+.light .is-ui .is-tool.is-table-tool > button {
+  background: #eeeff3;
+}
+.light #_cbhtml .is-tool.is-table-tool > button svg,
+.light .is-ui .is-tool.is-table-tool > button svg {
+  fill: #000;
+}
+.light #_cbhtml .is-tool.is-code-tool > button, .light #_cbhtml .is-tool.is-module-tool > button,
+.light .is-ui .is-tool.is-code-tool > button,
+.light .is-ui .is-tool.is-module-tool > button {
+  background: #eeeff3;
+}
+.light #_cbhtml .is-tool.is-code-tool > button svg, .light #_cbhtml .is-tool.is-module-tool > button svg,
+.light .is-ui .is-tool.is-code-tool > button svg,
+.light .is-ui .is-tool.is-module-tool > button svg {
+  fill: #000;
+}
+.light #_cbhtml .is-tool#divLinkTool button, .light #_cbhtml .is-tool#divButtonTool button, .light #_cbhtml .is-tool#divSvgTool button,
+.light .is-ui .is-tool#divLinkTool button,
+.light .is-ui .is-tool#divButtonTool button,
+.light .is-ui .is-tool#divSvgTool button {
+  background: #eeeff3;
+}
+.light #_cbhtml .is-tool#divLinkTool button svg, .light #_cbhtml .is-tool#divButtonTool button svg, .light #_cbhtml .is-tool#divSvgTool button svg,
+.light .is-ui .is-tool#divLinkTool button svg,
+.light .is-ui .is-tool#divButtonTool button svg,
+.light .is-ui .is-tool#divSvgTool button svg {
+  fill: #000;
+}
+.light #_cbhtml #divImageProgress,
+.light .is-ui #divImageProgress {
+  background: rgba(94, 101, 132, 0.15);
+}
+.light #_cbhtml #divImageProgress .dot,
+.light .is-ui #divImageProgress .dot {
+  background-color: #fff;
+}
+.light #_cbhtml .is-side,
+.light .is-ui .is-side {
+  color: #000;
+  box-shadow: rgba(219, 229, 245, 0.05) 0 0 16px 0px;
+  background: #e3e9f3;
+}
+.light #_cbhtml .is-side button,
+.light .is-ui .is-side button {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.light #_cbhtml .is-side button:hover,
+.light .is-ui .is-side button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .is-side button.on,
+.light .is-ui .is-side button.on {
+  background: rgba(234, 239, 246, 0.3);
+}
+.light #_cbhtml .is-side svg,
+.light .is-ui .is-side svg {
+  fill: #000;
+}
+.light #_cbhtml .is-side.fromleft,
+.light .is-ui .is-side.fromleft {
+  border-right: 1px solid #e3e9f3;
+}
+.light #_cbhtml button,
+.light #_cbhtml .is-btn,
+.light .is-ui button,
+.light .is-ui .is-btn {
+  color: rgba(0, 0, 0, 0.95);
+  background: #dbe5f5;
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.light #_cbhtml button:hover,
+.light #_cbhtml .is-btn:hover,
+.light .is-ui button:hover,
+.light .is-ui .is-btn:hover {
+  background: #e3ebf7;
+}
+.light #_cbhtml button svg,
+.light #_cbhtml .is-btn svg,
+.light .is-ui button svg,
+.light .is-ui .is-btn svg {
+  fill: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml button.classic,
+.light #_cbhtml .is-btn.classic,
+.light .is-ui button.classic,
+.light .is-ui .is-btn.classic {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.light #_cbhtml button.classic:hover,
+.light #_cbhtml .is-btn.classic:hover,
+.light .is-ui button.classic:hover,
+.light .is-ui .is-btn.classic:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml button.classic-primary,
+.light #_cbhtml .is-btn.classic-primary,
+.light .is-ui button.classic-primary,
+.light .is-ui .is-btn.classic-primary {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  border: transparent 1px solid;
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.light #_cbhtml button.classic-primary:hover,
+.light #_cbhtml .is-btn.classic-primary:hover,
+.light .is-ui button.classic-primary:hover,
+.light .is-ui .is-btn.classic-primary:hover {
+  border: transparent 1px solid;
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml button.classic-secondary,
+.light #_cbhtml .is-btn.classic-secondary,
+.light .is-ui button.classic-secondary,
+.light .is-ui .is-btn.classic-secondary {
+  color: #000;
+  background: transparent;
+  border: transparent 1px solid;
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.light #_cbhtml button.classic-secondary:hover,
+.light #_cbhtml .is-btn.classic-secondary:hover,
+.light .is-ui button.classic-secondary:hover,
+.light .is-ui .is-btn.classic-secondary:hover {
+  border: transparent 1px solid;
+  background: transparent;
+}
+.light #_cbhtml textarea:not(.monaco-mouse-cursor-text),
+.light .is-ui textarea:not(.monaco-mouse-cursor-text) {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: rgba(191, 205, 228, 0.25);
+  color: rgba(0, 0, 0, 0.83);
+}
+.light #_cbhtml select,
+.light .is-ui select {
+  color: rgba(0, 0, 0, 0.83);
+  background-color: #f5f7fb;
+}
+.light #_cbhtml select option,
+.light .is-ui select option {
+  background: #fcfdfe;
+}
+.light #_cbhtml input[type=text],
+.light .is-ui input[type=text] {
+  color: rgba(0, 0, 0, 0.83);
+  border: none;
+  border-bottom: none;
+  background-color: rgba(191, 205, 228, 0.25);
+}
+.light #_cbhtml input[type=checkbox],
+.light .is-ui input[type=checkbox] {
+  opacity: 0.7;
+}
+.light #_cbhtml label,
+.light .is-ui label {
+  color: #000;
+}
+.light #_cbhtml .is-tabs,
+.light .is-ui .is-tabs {
+  background: rgba(255, 255, 255, 0.12);
+}
+.light #_cbhtml .is-tabs a,
+.light .is-ui .is-tabs a {
+  color: rgba(0, 0, 0, 0.95);
+  border-bottom: transparent 1px solid;
+}
+.light #_cbhtml .is-tabs a.active,
+.light .is-ui .is-tabs a.active {
+  background: transparent;
+  border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
+}
+.light #_cbhtml .is-tabs a svg,
+.light .is-ui .is-tabs a svg {
+  fill: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .is-tabs-more,
+.light .is-ui .is-tabs-more {
+  background: #eef1f8;
+  border: 1px solid #eef1f8;
+  box-shadow: 3px 4px 9px 0px rgba(0, 0, 0, 0.07);
+}
+.light #_cbhtml .is-tabs-more > a,
+.light .is-ui .is-tabs-more > a {
+  color: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .is-tabs-more > a:hover, .light #_cbhtml .is-tabs-more > a.active,
+.light .is-ui .is-tabs-more > a:hover,
+.light .is-ui .is-tabs-more > a.active {
+  background: #dfe6f1;
+}
+.light #_cbhtml #divSnippetList,
+.light .is-ui #divSnippetList {
+  background: #f1f4f9;
+  border-left: 1px solid #eef1f8;
+  box-shadow: rgba(0, 0, 0, 0.03) 0 0 10px 0px;
+}
+.light #_cbhtml #divSnippetList #divSnippetHandle,
+.light .is-ui #divSnippetList #divSnippetHandle {
+  background: #f1f4f9;
+  border: 1px solid #eef1f8;
+  box-shadow: rgba(0, 0, 0, 0.025) -4px 2px 5px 0px;
+}
+.light #_cbhtml #divSnippetList #divSnippetHandle svg,
+.light .is-ui #divSnippetList #divSnippetHandle svg {
+  fill: #000;
+}
+.light #_cbhtml #divSnippetList.fromleft #divSnippetHandle,
+.light .is-ui #divSnippetList.fromleft #divSnippetHandle {
+  border-right: 1px solid #eef1f8;
+}
+.light #_cbhtml #divSnippetScrollUp,
+.light #_cbhtml #divSnippetScrollDown,
+.light .is-ui #divSnippetScrollUp,
+.light .is-ui #divSnippetScrollDown {
+  background: rgba(82, 82, 82, 0.6);
+  color: #fff;
+}
+.light #_cbhtml .is-design-list > div,
+.light .is-ui .is-design-list > div {
+  outline: rgba(219, 219, 219, 0.35) 1px solid !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+.light #_cbhtml .is-design-list > div .is-overlay,
+.light .is-ui .is-design-list > div .is-overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.light #_cbhtml .is-design-list > div .is-overlay:after,
+.light .is-ui .is-design-list > div .is-overlay:after {
+  background: rgba(0, 0, 0, 0.03);
+}
+.light #_cbhtml .is-design-list .snippet-item.sortable-drag:hover,
+.light .is-ui .is-design-list .snippet-item.sortable-drag:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.light #_cbhtml .is-selectbox,
+.light .is-ui .is-selectbox {
+  color: #000;
+  background: #e3e9f3;
+  box-shadow: none;
+}
+.light #_cbhtml .is-selectbox:hover,
+.light .is-ui .is-selectbox:hover {
+  background: #e7ecf5;
+}
+.light #_cbhtml .is-selectbox svg,
+.light .is-ui .is-selectbox svg {
+  fill: #000;
+}
+.light #_cbhtml .is-selectbox-options,
+.light .is-ui .is-selectbox-options {
+  border: transparent 1px solid;
+  background-color: #e3e9f3;
+}
+.light #_cbhtml .is-selectbox-options > div,
+.light .is-ui .is-selectbox-options > div {
+  color: #000;
+}
+.light #_cbhtml .is-selectbox-options > div:hover,
+.light .is-ui .is-selectbox-options > div:hover {
+  background: #d5deed;
+}
+.light #_cbhtml .is-selectbox-options > div.selected,
+.light .is-ui .is-selectbox-options > div.selected {
+  background: #d5deed;
+}
+.light #_cbhtml .is-dropdown .dropdown-toggle,
+.light .is-ui .is-dropdown .dropdown-toggle {
+  color: #000;
+  background: #e3e9f3;
+  box-shadow: none;
+}
+.light #_cbhtml .is-dropdown .dropdown-toggle:hover,
+.light .is-ui .is-dropdown .dropdown-toggle:hover {
+  background: #e7ecf5;
+}
+.light #_cbhtml .is-dropdown .dropdown-toggle svg,
+.light .is-ui .is-dropdown .dropdown-toggle svg {
+  fill: #000;
+}
+.light #_cbhtml .is-dropdown .dropdown-toggle::after,
+.light .is-ui .is-dropdown .dropdown-toggle::after {
+  border-top-color: #000;
+  border-bottom-color: transparent;
+}
+.light #_cbhtml .is-dropdown .dropdown-toggle.active::after,
+.light .is-ui .is-dropdown .dropdown-toggle.active::after {
+  border-bottom-color: #000;
+  border-top-color: transparent;
+}
+.light #_cbhtml .is-dropdown .dropdown-menu,
+.light .is-ui .is-dropdown .dropdown-menu {
+  border: transparent 1px solid;
+  background-color: #e3e9f3;
+}
+.light #_cbhtml .is-dropdown .dropdown-menu li,
+.light .is-ui .is-dropdown .dropdown-menu li {
+  color: #000;
+  background-color: #e3e9f3;
+}
+.light #_cbhtml .is-dropdown .dropdown-menu li:hover, .light #_cbhtml .is-dropdown .dropdown-menu li:focus,
+.light .is-ui .is-dropdown .dropdown-menu li:hover,
+.light .is-ui .is-dropdown .dropdown-menu li:focus {
+  background: #d5deed;
+}
+.light #_cbhtml .is-dropdown .dropdown-menu li.selected,
+.light .is-ui .is-dropdown .dropdown-menu li.selected {
+  background: #d5deed;
+}
+.light #_cbhtml .elementstyles .elm-list,
+.light .is-ui .elementstyles .elm-list {
+  color: rgba(0, 0, 0, 0.95);
+  border-bottom: transparent 1px solid;
+}
+.light #_cbhtml .elementstyles .elm-list a,
+.light .is-ui .elementstyles .elm-list a {
+  color: rgba(0, 0, 0, 0.95);
+}
+.light #_cbhtml .elementstyles .elm-list a.active,
+.light .is-ui .elementstyles .elm-list a.active {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+}
+.light #_cbhtml .elementstyles .is-settings button.is-btn-color,
+.light .is-ui .elementstyles .is-settings button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.55) 1px solid;
+}
+.light .is-tool {
+  background: #eeeff3;
+}
+.light .is-tool button {
+  color: #000;
+}
+.light .is-tool button svg {
+  fill: #000;
+}
+.light #_cbhtml[gray] .is-tool.is-column-tool {
+  background: #eeeff3;
+}
+.light #_cbhtml[gray] .is-tool.is-column-tool .cell-add {
+  background: transparent;
+}
+.light #_cbhtml[gray] .is-tool.is-column-tool .cell-more {
+  background: transparent;
+}
+.light #_cbhtml[gray] .is-tool.is-column-tool .cell-remove {
+  background: transparent;
+}
+.light #_cbhtml[gray] .is-tool.is-column-tool svg {
+  fill: #000;
+}
+.light #_cbhtml .is-tool.is-column-tool .cell-add {
+  background: #0fcc52;
+}
+.light #_cbhtml .is-tool.is-column-tool .cell-more {
+  background: rgba(216, 200, 6, 0.9);
+}
+.light #_cbhtml .is-tool.is-column-tool .cell-remove {
+  background: rgba(255, 85, 4, 0.9);
+}
+.light #_cbhtml .is-tool.is-column-tool svg {
+  fill: #fff;
+}
+.light #_cbhtml .is-pop.columnmore div.is-separator {
+  border-top: rgba(0, 0, 0, 0.05) 1px solid;
+}
+.light #_cbhtml .is-pop.rowmore div.is-separator {
+  border-top: rgba(0, 0, 0, 0.05) 1px solid;
+}
+.light #_cbhtml .is-pop.quickadd .pop-separator {
+  border-top: rgba(0, 0, 0, 0.05) 1px solid;
+}
+.light #_cbhtml .is-tool.is-element-tool {
+  background: #eeeff3;
+}
+.light #_cbhtml .is-tool.is-element-tool button {
+  background: transparent;
+}
+.light #_cbhtml .is-tool.is-element-tool svg {
+  fill: #000;
+}
+.light .is-tool.is-row-tool svg {
+  fill: #fff;
+}
+.light .is-tool.is-row-tool .row-handle {
+  background: #169af7;
+}
+.light .is-tool.is-row-tool .row-grideditor {
+  background: rgba(216, 200, 6, 0.9);
+}
+.light .is-tool.is-row-tool .row-more {
+  background: rgba(216, 200, 6, 0.9);
+}
+.light .is-tool.is-row-tool .row-remove {
+  background: rgba(255, 85, 4, 0.9);
+}
+.light .is-builder[gray] .is-tool.is-row-tool {
+  background: #eeeff3;
+}
+.light .is-builder[gray] .is-tool.is-row-tool svg {
+  fill: #000;
+}
+.light .is-rowadd-tool {
+  border-bottom: 1px solid #ffb784;
+}
+.light .is-rowadd-tool button {
+  border: 1px solid #ff8e3e;
+}
+.light .is-builder[gray] .is-rowadd-tool {
+  border-bottom: 1px solid rgba(222, 222, 222, 0.32);
+}
+.light .is-builder[gray] .is-rowadd-tool button {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+.light .row-add-initial {
+  color: #333;
+  border: 1px dashed rgba(169, 169, 169, 0.8);
+  background: rgba(255, 255, 255, 0.5);
+}
+.light .row-add-initial:hover {
+  background: rgba(248, 248, 248, 0.35);
+}
+.light .is-builder[clean] .is-tool.is-row-tool {
+  background: #eeeff3;
+}
+.light .is-builder[clean] .is-tool.is-row-tool .row-grideditor {
+  background: transparent;
+}
+.light .is-builder[clean] .is-tool.is-row-tool .row-grideditor svg {
+  fill: #000;
+}
+.light .is-builder[clean] .row-outline {
+  outline: none;
+}
+.light .is-builder[clean] .cell-active {
+  outline: none;
+}
+.light .is-builder[clean] .row-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.light .is-builder[rowoutline] .row-outline {
+  outline: none;
+}
+.light .is-builder[rowoutline] .cell-active {
+  outline: none;
+}
+.light .is-builder[rowoutline] .row-active:not([data-protected]) {
+  outline: 1px solid #00da89;
+}
+.light .is-builder[grayoutline] .row-outline {
+  outline: none;
+}
+.light .is-builder[grayoutline] .cell-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.1);
+}
+.light .is-builder[grayoutline] .row-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.light .is-builder[rowoutline][grayoutline] .row-outline {
+  outline: none;
+}
+.light .is-builder[rowoutline][grayoutline] .cell-active {
+  outline: none;
+}
+.light .is-builder[rowoutline][grayoutline] .row-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.light .is-builder[hideoutline] .row-outline {
+  outline: none !important;
+}
+.light .is-builder[hideoutline] .cell-active {
+  outline: none !important;
+}
+.light .is-builder[hideoutline] .row-active {
+  outline: none !important;
+}
+.light .is-builder[hideoutline] .row-active.row-outline {
+  outline: none !important;
+}
+.light .is-builder[hidesnippetaddtool] .row-outline .is-rowadd-tool,
+.light .is-builder[hidesnippetaddtool] .row-active .is-rowadd-tool {
+  display: none;
+}
+.light .is-builder[hideelementhighlight] .elm-active {
+  background-color: transparent;
+}
+.light .is-tooltip {
+  background: #333;
+  color: #fefefe;
+}
+.light .scroll * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.4) auto;
+}
+.light .scroll *::-webkit-scrollbar {
+  width: 12px;
+}
+.light .scroll *::-webkit-scrollbar-track {
+  background: transparent;
+}
+.light .scroll *::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.light .scroll-darker * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(78, 78, 78, 0.62) auto;
+}
+.light .scroll-darker *::-webkit-scrollbar {
+  width: 12px;
+}
+.light .scroll-darker *::-webkit-scrollbar-track {
+  background: transparent;
+}
+.light .scroll-darker *::-webkit-scrollbar-thumb {
+  background-color: rgba(78, 78, 78, 0.62);
+}

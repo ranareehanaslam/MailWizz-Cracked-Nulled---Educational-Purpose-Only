@@ -1,0 +1,34 @@
+[
+  {
+    "category": "campaigns",
+    "message": "What action to take against the subscriber when they open the campaign"
+  },
+  {
+    "category": "settings",
+    "message": "If waiting is enabled and the customer sends all emails in an hour, they will wait 23 more hours until the specified action is taken."
+  },
+  {
+    "category": "lists",
+    "message": "Optionally, a url to redirect the visitor if the subscriber hasn't been found in the list or they aren't valid anymore."
+  },
+  {
+    "category": "lists",
+    "message": "When a subscriber will subscribe to this list, if they exists in any of the lists below, unsubscribe them from those lists as well. Please note that the unsubscribe from the lists below is silent, no email is sent to the subscriber."
+  },
+  {
+    "category": "lists",
+    "message": "When a subscriber will unsubscribe from this list, if they exists in any of the lists below, unsubscribe them from those lists as well. Please note that the unsubscribe from the lists below is silent, no email is sent to the subscriber."
+  },
+  {
+    "category": "servers",
+    "message": "Login as this customer and edit the monitor from their account if you want the conditions saved!"
+  },
+  {
+    "category": "settings",
+    "message": "If the customer disables their account, how many days we should keep it in the system until we remove it for good. Set to -1 for unlimited"
+  },
+  {
+    "category": "settings",
+    "message": "Whether missing subscriber optin history can be updated when the subscriber will update their profile"
+  }
+]

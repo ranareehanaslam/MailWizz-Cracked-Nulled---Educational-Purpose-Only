@@ -1,0 +1,64 @@
+diff --git a/src/MapIterator.php b/src/MapIterator.php
+index b3678e0..2ab0890 100644
+--- a/src/MapIterator.php
++++ b/src/MapIterator.php
+@@ -42,6 +42,7 @@ class MapIterator extends IteratorIterator
+     /**
+      * @return mixed The value of the current element.
+      */
++    #[\ReturnTypeWillChange]
+     public function current()
+     {
+         return ($this->callable)(parent::current(), $this->key());
+diff --git a/src/Reader.php b/src/Reader.php
+index e29351d..223b1d1 100644
+--- a/src/Reader.php
++++ b/src/Reader.php
+@@ -246,6 +246,7 @@ class Reader extends AbstractCsv implements TabularDataReader, JsonSerializable
+     /**
+      * {@inheritdoc}
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize(): array
+     {
+         return iterator_to_array($this->getRecords(), false);
+diff --git a/src/ResultSet.php b/src/ResultSet.php
+index 7642a15..62d0cca 100644
+--- a/src/ResultSet.php
++++ b/src/ResultSet.php
+@@ -145,6 +145,7 @@ class ResultSet implements TabularDataReader, JsonSerializable
+     /**
+      * {@inheritdoc}
+      */
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize(): array
+     {
+         return iterator_to_array($this->records, false);
+diff --git a/src/Stream.php b/src/Stream.php
+index 12d11d3..c99f6ec 100644
+--- a/src/Stream.php
++++ b/src/Stream.php
+@@ -318,6 +318,7 @@ class Stream implements SeekableIterator
+      *
+      * @return int
+      */
++    #[\ReturnTypeWillChange]
+     public function key()
+     {
+         return $this->offset;
+@@ -362,6 +363,7 @@ class Stream implements SeekableIterator
+      *
+      * @return bool
+      */
++    #[\ReturnTypeWillChange]
+     public function valid()
+     {
+         if (0 !== ($this->flags & SplFileObject::READ_AHEAD)) {
+@@ -378,6 +380,7 @@ class Stream implements SeekableIterator
+      *
+      * @return mixed The value of the current element.
+      */
++    #[\ReturnTypeWillChange]
+     public function current()
+     {
+         if (false !== $this->value) {

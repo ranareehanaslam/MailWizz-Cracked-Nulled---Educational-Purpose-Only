@@ -1,0 +1,12 @@
+diff --git a/FsMessage.php b/FsMessage.php
+index d66ee52..048b6ed 100644
+--- a/FsMessage.php
++++ b/FsMessage.php
+@@ -138,6 +138,7 @@ class FsMessage implements Message, \JsonSerializable
+         return $this->getHeader('reply_to');
+     }
+ 
++    #[\ReturnTypeWillChange]
+     public function jsonSerialize(): array
+     {
+         return [

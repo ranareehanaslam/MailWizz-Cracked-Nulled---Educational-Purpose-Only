@@ -1,0 +1,1313 @@
+.dark .is-builder[gridoutline] > div > div {
+  outline: 1px solid rgba(132, 132, 132, 0.27);
+}
+.dark .is-builder > div > div.cell-active:not([data-protected]) {
+  outline: 1px solid #00da89;
+}
+.dark .is-builder .row-active:not([data-protected]) {
+  outline: 1px solid #00da89;
+}
+.dark .is-builder .row-active:not([data-protected]).row-outline {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.dark .is-builder .cell-active .elm-active {
+  background: rgba(200, 200, 201, 0.11);
+}
+.dark .is-builder .cell-active[data-html] {
+  background-color: rgba(200, 200, 201, 0.11);
+}
+.dark .is-builder .cell-active .icon-active {
+  background-color: rgba(200, 200, 201, 0.4);
+}
+.dark .is-builder .elm-inspected {
+  outline: 1px solid #ffb84a !important;
+}
+.dark .sortable-ghost {
+  background: rgba(204, 204, 204, 0.15);
+}
+.dark .is-builder .snippet-item.sortable-ghost {
+  background: rgba(204, 204, 204, 0.15);
+}
+.dark .moveable-control {
+  background: #2196f3 !important;
+}
+.dark #_cbhtml,
+.dark .is-ui {
+  /*  general use */
+}
+.dark #_cbhtml .style-helper,
+.dark .is-ui .style-helper {
+  background: #006add;
+  color: rgba(255, 255, 255, 0.95);
+}
+.dark #_cbhtml .style-helper.on,
+.dark .is-ui .style-helper.on {
+  background: #0071ec;
+}
+.dark #_cbhtml .style-helper.hover,
+.dark .is-ui .style-helper.hover {
+  background: #0074f1;
+}
+.dark #_cbhtml .style-helper svg,
+.dark .is-ui .style-helper svg {
+  fill: rgba(255, 255, 255, 0.95);
+}
+.dark #_cbhtml .style-helper.modal-color,
+.dark .is-ui .style-helper.modal-color {
+  background: #fafafa;
+}
+.dark #_cbhtml .style-helper.modal-background,
+.dark .is-ui .style-helper.modal-background {
+  background: #474c50;
+}
+.dark #_cbhtml .style-helper.button-pickcolor-border,
+.dark .is-ui .style-helper.button-pickcolor-border {
+  border: rgba(255, 255, 255, 0.22) 1px solid;
+}
+.dark #_cbhtml .style-helper.button-pickcolor-background,
+.dark .is-ui .style-helper.button-pickcolor-background {
+  background: rgba(255, 255, 255, 0.2);
+}
+.dark #_cbhtml .style-helper.snippet-color,
+.dark .is-ui .style-helper.snippet-color {
+  background: #fafafa;
+}
+.dark #_cbhtml .style-helper.snippet-background,
+.dark .is-ui .style-helper.snippet-background {
+  background: #c7c7c7;
+}
+.dark #_cbhtml .style-helper.snippet-tabs-background,
+.dark .is-ui .style-helper.snippet-tabs-background {
+  background: #474c50;
+}
+.dark #_cbhtml .style-helper.snippet-tab-item-background,
+.dark .is-ui .style-helper.snippet-tab-item-background {
+  background: rgba(146, 153, 158, 0.22);
+}
+.dark #_cbhtml .style-helper.snippet-tab-item-background-active,
+.dark .is-ui .style-helper.snippet-tab-item-background-active {
+  background: #474c50;
+}
+.dark #_cbhtml .style-helper.snippet-tab-item-background-hover,
+.dark .is-ui .style-helper.snippet-tab-item-background-hover {
+  background: rgba(146, 153, 158, 0.22);
+}
+.dark #_cbhtml .style-helper.snippet-tab-item-color,
+.dark .is-ui .style-helper.snippet-tab-item-color {
+  background: rgba(250, 250, 250, 0.95);
+}
+.dark #_cbhtml .style-helper.snippet-more-item-background,
+.dark .is-ui .style-helper.snippet-more-item-background {
+  background: #494f53;
+}
+.dark #_cbhtml .style-helper.snippet-more-item-background-active,
+.dark .is-ui .style-helper.snippet-more-item-background-active {
+  background: rgba(146, 153, 158, 0.13);
+}
+.dark #_cbhtml .style-helper.snippet-more-item-background-hover,
+.dark .is-ui .style-helper.snippet-more-item-background-hover {
+  background: rgba(146, 153, 158, 0.13);
+}
+.dark #_cbhtml .style-helper.snippet-more-item-color,
+.dark .is-ui .style-helper.snippet-more-item-color {
+  background: rgba(250, 250, 250, 0.95);
+}
+.dark #_cbhtml .style-helper.tabs-background,
+.dark .is-ui .style-helper.tabs-background {
+  background: rgba(146, 153, 158, 0.17);
+}
+.dark #_cbhtml .style-helper.tab-item-active-border-bottom,
+.dark .is-ui .style-helper.tab-item-active-border-bottom {
+  border: rgba(250, 250, 250, 0.5) 1px solid;
+}
+.dark #_cbhtml .style-helper.tab-item-color,
+.dark .is-ui .style-helper.tab-item-color {
+  background: rgba(250, 250, 250, 0.95);
+}
+.dark #_cbhtml .style-helper.tabs-more-background,
+.dark .is-ui .style-helper.tabs-more-background {
+  background: #5a6166;
+}
+.dark #_cbhtml .style-helper.tabs-more-border,
+.dark .is-ui .style-helper.tabs-more-border {
+  border: 1px solid #5a6166;
+}
+.dark #_cbhtml .style-helper.tabs-more-item-color,
+.dark .is-ui .style-helper.tabs-more-item-color {
+  background: rgba(250, 250, 250, 0.95);
+}
+.dark #_cbhtml .style-helper.tabs-more-item-background-hover,
+.dark .is-ui .style-helper.tabs-more-item-background-hover {
+  background: rgba(130, 137, 144, 0.49);
+}
+.dark #_cbhtml .style-helper.separator-color,
+.dark .is-ui .style-helper.separator-color {
+  background: rgba(159, 165, 170, 0.2);
+}
+.dark #_cbhtml .style-helper-button-classic,
+.dark .is-ui .style-helper-button-classic {
+  background: rgba(119, 127, 134, 0.49);
+  color: #fafafa;
+}
+.dark #_cbhtml .style-helper-button-classic.hover,
+.dark .is-ui .style-helper-button-classic.hover {
+  background: rgba(122, 130, 137, 0.49);
+}
+.dark #_cbhtml .style-helper-button-classic svg,
+.dark .is-ui .style-helper-button-classic svg {
+  fill: #fafafa;
+}
+.dark #_cbhtml .is-area,
+.dark .is-ui .is-area {
+  color: #fafafa !important;
+  background: #474c50 !important;
+}
+.dark #_cbhtml .is-area button,
+.dark .is-ui .is-area button {
+  color: #fafafa !important;
+}
+.dark #_cbhtml .is-area button svg,
+.dark .is-ui .is-area button svg {
+  fill: #fafafa !important;
+}
+.dark #_cbhtml .is-area-2nd,
+.dark .is-ui .is-area-2nd {
+  color: #fafafa !important;
+  background: #c7c7c7 !important;
+}
+.dark #_cbhtml .is-area-2nd button,
+.dark .is-ui .is-area-2nd button {
+  color: #fafafa !important;
+}
+.dark #_cbhtml .is-area-2nd button svg,
+.dark .is-ui .is-area-2nd button svg {
+  fill: #fafafa !important;
+}
+.dark #_cbhtml .is-pop,
+.dark .is-ui .is-pop {
+  color: #fafafa;
+  background: #474c50;
+  border: 1px solid #474c50;
+  box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.dark #_cbhtml .is-pop button,
+.dark .is-ui .is-pop button {
+  color: #fafafa;
+  background-color: transparent !important;
+}
+.dark #_cbhtml .is-pop button svg,
+.dark .is-ui .is-pop button svg {
+  fill: #fafafa;
+}
+.dark #_cbhtml .is-pop.arrow-top:after,
+.dark .is-ui .is-pop.arrow-top:after {
+  border-bottom-color: #474c50;
+}
+.dark #_cbhtml .is-pop.arrow-top:before,
+.dark .is-ui .is-pop.arrow-top:before {
+  border-bottom-color: #474c50;
+}
+.dark #_cbhtml .is-pop.arrow-left:after,
+.dark .is-ui .is-pop.arrow-left:after {
+  border-right-color: #474c50;
+}
+.dark #_cbhtml .is-pop.arrow-left:before,
+.dark .is-ui .is-pop.arrow-left:before {
+  border-right-color: #474c50;
+}
+.dark #_cbhtml .is-pop.arrow-right:after,
+.dark .is-ui .is-pop.arrow-right:after {
+  border-left-color: #474c50;
+}
+.dark #_cbhtml .is-pop.arrow-right:before,
+.dark .is-ui .is-pop.arrow-right:before {
+  border-left-color: #474c50;
+}
+.dark #_cbhtml .is-pop.arrow-bottom:after,
+.dark .is-ui .is-pop.arrow-bottom:after {
+  border-top-color: #474c50;
+}
+.dark #_cbhtml .is-pop.arrow-bottom:before,
+.dark .is-ui .is-pop.arrow-bottom:before {
+  border-top-color: #474c50;
+}
+.dark #_cbhtml .is-pop-tabs > div,
+.dark .is-ui .is-pop-tabs > div {
+  background: rgba(255, 255, 255, 0.14);
+  color: rgba(250, 250, 250, 0.95);
+}
+.dark #_cbhtml .is-pop-tabs > div.active,
+.dark .is-ui .is-pop-tabs > div.active {
+  background: transparent;
+}
+.dark #_cbhtml .is-general-options,
+.dark .is-ui .is-general-options {
+  color: #fff;
+  background: #006add;
+}
+.dark #_cbhtml .is-general-options button,
+.dark #_cbhtml .is-general-options div[role=button],
+.dark .is-ui .is-general-options button,
+.dark .is-ui .is-general-options div[role=button] {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.95);
+  width: 45px;
+  height: 40px;
+  margin: 0;
+  box-shadow: none;
+}
+.dark #_cbhtml .is-general-options button.on,
+.dark #_cbhtml .is-general-options div[role=button].on,
+.dark .is-ui .is-general-options button.on,
+.dark .is-ui .is-general-options div[role=button].on {
+  background: #0071ec;
+}
+.dark #_cbhtml .is-general-options button:hover,
+.dark #_cbhtml .is-general-options div[role=button]:hover,
+.dark .is-ui .is-general-options button:hover,
+.dark .is-ui .is-general-options div[role=button]:hover {
+  background: #0074f1 !important;
+}
+.dark #_cbhtml .is-general-options button svg,
+.dark #_cbhtml .is-general-options div[role=button] svg,
+.dark .is-ui .is-general-options button svg,
+.dark .is-ui .is-general-options div[role=button] svg {
+  fill: rgba(255, 255, 255, 0.95);
+}
+.dark #_cbhtml .is-rte-tool,
+.dark #_cbhtml .is-elementrte-tool,
+.dark #_cbhtml .is-rte-pop.rte-more-options,
+.dark #_cbhtml .is-rte-pop.elementrte-more-options,
+.dark .is-ui .is-rte-tool,
+.dark .is-ui .is-elementrte-tool,
+.dark .is-ui .is-rte-pop.rte-more-options,
+.dark .is-ui .is-rte-pop.elementrte-more-options {
+  color: #fff;
+  background: #006add;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 9px 0px;
+}
+.dark #_cbhtml .is-rte-tool button,
+.dark #_cbhtml .is-elementrte-tool button,
+.dark #_cbhtml .is-rte-pop.rte-more-options button,
+.dark #_cbhtml .is-rte-pop.elementrte-more-options button,
+.dark .is-ui .is-rte-tool button,
+.dark .is-ui .is-elementrte-tool button,
+.dark .is-ui .is-rte-pop.rte-more-options button,
+.dark .is-ui .is-rte-pop.elementrte-more-options button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.95);
+  box-shadow: none;
+}
+.dark #_cbhtml .is-rte-tool button.on,
+.dark #_cbhtml .is-elementrte-tool button.on,
+.dark #_cbhtml .is-rte-pop.rte-more-options button.on,
+.dark #_cbhtml .is-rte-pop.elementrte-more-options button.on,
+.dark .is-ui .is-rte-tool button.on,
+.dark .is-ui .is-elementrte-tool button.on,
+.dark .is-ui .is-rte-pop.rte-more-options button.on,
+.dark .is-ui .is-rte-pop.elementrte-more-options button.on {
+  background: #0071ec;
+}
+.dark #_cbhtml .is-rte-tool button:hover,
+.dark #_cbhtml .is-elementrte-tool button:hover,
+.dark #_cbhtml .is-rte-pop.rte-more-options button:hover,
+.dark #_cbhtml .is-rte-pop.elementrte-more-options button:hover,
+.dark .is-ui .is-rte-tool button:hover,
+.dark .is-ui .is-elementrte-tool button:hover,
+.dark .is-ui .is-rte-pop.rte-more-options button:hover,
+.dark .is-ui .is-rte-pop.elementrte-more-options button:hover {
+  background: #0074f1;
+}
+.dark #_cbhtml .is-rte-tool button svg,
+.dark #_cbhtml .is-elementrte-tool button svg,
+.dark #_cbhtml .is-rte-pop.rte-more-options button svg,
+.dark #_cbhtml .is-rte-pop.elementrte-more-options button svg,
+.dark .is-ui .is-rte-tool button svg,
+.dark .is-ui .is-elementrte-tool button svg,
+.dark .is-ui .is-rte-pop.rte-more-options button svg,
+.dark .is-ui .is-rte-pop.elementrte-more-options button svg {
+  fill: rgba(255, 255, 255, 0.95);
+}
+.dark #_cbhtml .is-rte-tool .rte-separator,
+.dark #_cbhtml .is-elementrte-tool .rte-separator,
+.dark #_cbhtml .is-rte-pop.rte-more-options .rte-separator,
+.dark #_cbhtml .is-rte-pop.elementrte-more-options .rte-separator,
+.dark .is-ui .is-rte-tool .rte-separator,
+.dark .is-ui .is-elementrte-tool .rte-separator,
+.dark .is-ui .is-rte-pop.rte-more-options .rte-separator,
+.dark .is-ui .is-rte-pop.elementrte-more-options .rte-separator {
+  background: rgba(221, 237, 255, 0.35);
+}
+.dark #_cbhtml[toolbarleft] .is-rte-tool,
+.dark #_cbhtml[toolbarleft] .is-elementrte-tool,
+.dark .is-ui[toolbarleft] .is-rte-tool,
+.dark .is-ui[toolbarleft] .is-elementrte-tool {
+  box-shadow: rgba(0, 0, 0, 0.05) 6px 0px 9px 0px;
+}
+.dark #_cbhtml[toolbarright] .is-rte-tool,
+.dark #_cbhtml[toolbarright] .is-elementrte-tool,
+.dark .is-ui[toolbarright] .is-rte-tool,
+.dark .is-ui[toolbarright] .is-elementrte-tool {
+  box-shadow: rgba(0, 0, 0, 0.05) -4px 0px 9px 0px;
+}
+.dark #_cbhtml .is-rte-pop,
+.dark .is-ui .is-rte-pop {
+  color: #fff;
+  background: #006add;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 7px 12px 0px;
+}
+.dark #_cbhtml .is-rte-pop button.on,
+.dark .is-ui .is-rte-pop button.on {
+  background: #0071ec;
+}
+.dark #_cbhtml .is-rte-pop button:hover,
+.dark .is-ui .is-rte-pop button:hover {
+  background: #0074f1;
+}
+.dark #_cbhtml .is-rte-pop .is-label.separator,
+.dark .is-ui .is-rte-pop .is-label.separator {
+  border-top: rgba(159, 165, 170, 0.2) 1px solid;
+}
+.dark #_cbhtml .is-rte-pop .is-rangeslider,
+.dark .is-ui .is-rte-pop .is-rangeslider {
+  background: rgba(0, 57, 119, 0.4);
+}
+.dark #_cbhtml .is-rte-pop .is-rangeslider::-webkit-slider-thumb,
+.dark .is-ui .is-rte-pop .is-rangeslider::-webkit-slider-thumb {
+  background: rgba(119, 184, 255, 0.55);
+}
+.dark #_cbhtml .is-rte-pop .is-rangeslider::-moz-range-thumb,
+.dark .is-ui .is-rte-pop .is-rangeslider::-moz-range-thumb {
+  background: rgba(119, 184, 255, 0.55);
+}
+.dark #_cbhtml .is-rte-pop.rte-paragraph-options li.on,
+.dark .is-ui .is-rte-pop.rte-paragraph-options li.on {
+  background: #0071ec;
+}
+.dark #_cbhtml .is-rte-pop.rte-paragraph-options > ul > li:hover, .dark #_cbhtml .is-rte-pop.rte-paragraph-options > ul > li:focus,
+.dark .is-ui .is-rte-pop.rte-paragraph-options > ul > li:hover,
+.dark .is-ui .is-rte-pop.rte-paragraph-options > ul > li:focus {
+  background: #0074f1;
+}
+.dark #_cbhtml .is-rte-pop.rte-textsetting-options button.on,
+.dark .is-ui .is-rte-pop.rte-textsetting-options button.on {
+  background: #0071ec;
+}
+.dark #_cbhtml .is-rte-pop.rte-textsetting-options button:hover,
+.dark .is-ui .is-rte-pop.rte-textsetting-options button:hover {
+  background: #0074f1;
+}
+.dark #_cbhtml .is-rte-pop.rte-textsetting-options button:focus,
+.dark .is-ui .is-rte-pop.rte-textsetting-options button:focus {
+  background: #0074f1;
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker button,
+.dark .is-ui .is-rte-pop.rte-color-picker button {
+  color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+  background: rgba(255, 255, 255, 0.15);
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker button:hover,
+.dark .is-ui .is-rte-pop.rte-color-picker button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker input[type=text],
+.dark .is-ui .is-rte-pop.rte-color-picker input[type=text] {
+  color: rgba(255, 255, 255, 0.95);
+  background: #404448;
+  border: none;
+  border-bottom: none;
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .rte-color-picker-area > div,
+.dark .is-ui .is-rte-pop.rte-color-picker .rte-color-picker-area > div {
+  opacity: 0.9;
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .is-pop-tabs > div,
+.dark .is-ui .is-rte-pop.rte-color-picker .is-pop-tabs > div {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: bold;
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .is-pop-tabs > div.active,
+.dark .is-ui .is-rte-pop.rte-color-picker .is-pop-tabs > div.active {
+  background: transparent;
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .rangeSlider,
+.dark .is-ui .is-rte-pop.rte-color-picker .rangeSlider {
+  outline: 1px solid rgba(0, 0, 0, 0.08);
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .rangeSlider__handle,
+.dark .is-ui .is-rte-pop.rte-color-picker .rangeSlider__handle {
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.64);
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .dot-1,
+.dark .is-ui .is-rte-pop.rte-color-picker .dot-1 {
+  background: rgba(146, 153, 158, 0.4);
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .dot-2,
+.dark .is-ui .is-rte-pop.rte-color-picker .dot-2 {
+  background: rgba(95, 102, 107, 0.3);
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .dot-3,
+.dark .is-ui .is-rte-pop.rte-color-picker .dot-3 {
+  background: rgba(146, 153, 158, 0.4);
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .dot-4,
+.dark .is-ui .is-rte-pop.rte-color-picker .dot-4 {
+  background: rgba(95, 102, 107, 0.3);
+}
+.dark #_cbhtml .is-rte-pop.rte-color-picker .is-color-preview,
+.dark .is-ui .is-rte-pop.rte-color-picker .is-color-preview {
+  border: transparent 1px solid;
+}
+.dark #_cbhtml .is-rte-pop.rte-customtag-options > div button:hover,
+.dark .is-ui .is-rte-pop.rte-customtag-options > div button:hover {
+  background: #0074f1;
+}
+.dark #_cbhtml .is-rte-pop.rte-customtag-options > div button:focus,
+.dark .is-ui .is-rte-pop.rte-customtag-options > div button:focus {
+  background: #0074f1;
+}
+.dark #_cbhtml[toolbarleft] .is-rte-pop,
+.dark .is-ui[toolbarleft] .is-rte-pop {
+  box-shadow: rgba(0, 0, 0, 0.05) 5px 0px 9px 0px;
+}
+.dark #_cbhtml[toolbarright] .is-rte-pop,
+.dark .is-ui[toolbarright] .is-rte-pop {
+  box-shadow: rgba(0, 0, 0, 0.05) -6px 1px 9px 0px;
+}
+.dark #_cbhtml .is-modal,
+.dark .is-ui .is-modal {
+  background: rgba(255, 255, 255, 0.000001);
+}
+.dark #_cbhtml .is-modal button,
+.dark .is-ui .is-modal button {
+  color: #fafafa;
+  background: rgba(119, 127, 134, 0.49);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.dark #_cbhtml .is-modal button:hover,
+.dark .is-ui .is-modal button:hover {
+  background: rgba(122, 130, 137, 0.49);
+}
+.dark #_cbhtml .is-modal button.on,
+.dark .is-ui .is-modal button.on {
+  background: rgba(95, 102, 107, 0.49);
+}
+.dark #_cbhtml .is-modal .is-separator,
+.dark .is-ui .is-modal .is-separator {
+  border-top: rgba(146, 153, 158, 0.22) 1px solid;
+}
+.dark #_cbhtml .is-modal .is-rangeslider,
+.dark .is-ui .is-modal .is-rangeslider {
+  background: rgba(23, 25, 26, 0.4);
+}
+.dark #_cbhtml .is-modal .is-rangeslider::-webkit-slider-thumb,
+.dark .is-ui .is-modal .is-rangeslider::-webkit-slider-thumb {
+  background: rgba(146, 153, 158, 0.55);
+}
+.dark #_cbhtml .is-modal .is-rangeslider::-moz-range-thumb,
+.dark .is-ui .is-modal .is-rangeslider::-moz-range-thumb {
+  background: rgba(146, 153, 158, 0.55);
+}
+.dark #_cbhtml .is-modal .is-modal-overlay,
+.dark .is-ui .is-modal .is-modal-overlay {
+  background: rgba(255, 255, 255, 0.000001);
+}
+.dark #_cbhtml .is-modal .is-modal-overlay.overlay-stay,
+.dark .is-ui .is-modal .is-modal-overlay.overlay-stay {
+  background: rgba(183, 183, 183, 0.11);
+}
+.dark #_cbhtml .is-modal.is-modal-content,
+.dark #_cbhtml .is-modal .is-modal-content,
+.dark .is-ui .is-modal.is-modal-content,
+.dark .is-ui .is-modal .is-modal-content {
+  color: #fafafa;
+  background: #474c50;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.dark #_cbhtml .is-modal.is-modal-content svg,
+.dark #_cbhtml .is-modal .is-modal-content svg,
+.dark .is-ui .is-modal.is-modal-content svg,
+.dark .is-ui .is-modal .is-modal-content svg {
+  fill: #fafafa;
+}
+.dark #_cbhtml .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay),
+.dark .is-ui .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) {
+  color: #fafafa;
+  background: #474c50;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.dark #_cbhtml .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) svg,
+.dark .is-ui .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) svg {
+  fill: #fafafa;
+}
+.dark #_cbhtml .is-modal div.is-modal-bar,
+.dark .is-ui .is-modal div.is-modal-bar {
+  color: white;
+}
+.dark #_cbhtml .is-modal div.is-modal-bar .is-modal-close,
+.dark .is-ui .is-modal div.is-modal-bar .is-modal-close {
+  color: #fafafa;
+}
+.dark #_cbhtml .is-modal.viewhtml textarea,
+.dark .is-ui .is-modal.viewhtml textarea {
+  background-color: #3c3c3c;
+}
+.dark #_cbhtml .is-modal.previewcontent,
+.dark .is-ui .is-modal.previewcontent {
+  background: #e7e7e7;
+}
+.dark #_cbhtml .is-modal.previewcontent .size-control,
+.dark .is-ui .is-modal.previewcontent .size-control {
+  cursor: pointer;
+  background: #474c50;
+  border-left: rgba(255, 255, 255, 0.7) 2px solid;
+  border-right: rgba(255, 255, 255, 0.7) 2px solid;
+}
+.dark #_cbhtml .is-modal.previewcontent .size-control-info,
+.dark .is-ui .is-modal.previewcontent .size-control-info {
+  color: #fafafa;
+}
+.dark #_cbhtml .is-modal.previewcontent .size-control.hover,
+.dark .is-ui .is-modal.previewcontent .size-control.hover {
+  background: #5f666b;
+}
+.dark #_cbhtml .is-modal.previewcontent .is-modal-close svg,
+.dark .is-ui .is-modal.previewcontent .is-modal-close svg {
+  fill: #000;
+}
+.dark #_cbhtml .is-modal.grideditor,
+.dark .is-ui .is-modal.grideditor {
+  background: #474c50;
+}
+.dark #_cbhtml .is-modal.grideditor button.on,
+.dark .is-ui .is-modal.grideditor button.on {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark #_cbhtml .is-modal.grideditor button:hover,
+.dark .is-ui .is-modal.grideditor button:hover {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+}
+.dark #_cbhtml .is-modal.grideditor .is-separator,
+.dark .is-ui .is-modal.grideditor .is-separator {
+  border-top: rgba(255, 255, 255, 0.17) 1px solid;
+}
+.dark #_cbhtml .is-modal.pickgradientcolor div.is-modal-content > div,
+.dark .is-ui .is-modal.pickgradientcolor div.is-modal-content > div {
+  opacity: 0.9;
+}
+.dark #_cbhtml .is-modal.pickgradientcolor .is-settings button.is-btn-color,
+.dark .is-ui .is-modal.pickgradientcolor .is-settings button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.22) 1px solid;
+}
+.dark #_cbhtml .is-modal.pickgradientcolor .is-settings button .is-elmgrad-remove,
+.dark .is-ui .is-modal.pickgradientcolor .is-settings button .is-elmgrad-remove {
+  background: rgba(95, 94, 94, 0.26);
+  color: #fff;
+}
+.dark #_cbhtml .is-modal.edittable .is-modal-bar,
+.dark .is-ui .is-modal.edittable .is-modal-bar {
+  background-color: rgba(146, 153, 158, 0.17);
+}
+.dark #_cbhtml .is-modal.edittable button.is-btn-color,
+.dark .is-ui .is-modal.edittable button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.22) 1px solid;
+}
+.dark #_cbhtml .is-modal.buttoneditor .is-modal-bar,
+.dark .is-ui .is-modal.buttoneditor .is-modal-bar {
+  background-color: rgba(146, 153, 158, 0.17);
+}
+.dark #_cbhtml .is-modal.columnsettings .is-modal-bar, .dark #_cbhtml .is-modal.rowsettings .is-modal-bar,
+.dark .is-ui .is-modal.columnsettings .is-modal-bar,
+.dark .is-ui .is-modal.rowsettings .is-modal-bar {
+  background-color: rgba(146, 153, 158, 0.17);
+}
+.dark #_cbhtml .is-modal.columnsettings button.is-btn-color, .dark #_cbhtml .is-modal.rowsettings button.is-btn-color,
+.dark .is-ui .is-modal.columnsettings button.is-btn-color,
+.dark .is-ui .is-modal.rowsettings button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.22) 1px solid;
+}
+.dark #_cbhtml .is-modal.pickcolor button,
+.dark .is-ui .is-modal.pickcolor button {
+  color: rgba(250, 250, 250, 0.95);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+  background: rgba(255, 255, 255, 0.14);
+}
+.dark #_cbhtml .is-modal.pickcolor button:hover,
+.dark .is-ui .is-modal.pickcolor button:hover {
+  background: rgba(119, 184, 255, 0.68);
+}
+.dark #_cbhtml .is-modal.pickcolor input[type=text],
+.dark .is-ui .is-modal.pickcolor input[type=text] {
+  color: rgba(250, 250, 250, 0.83);
+  background: #404448;
+  border: none;
+  border-bottom: none;
+}
+.dark #_cbhtml .is-modal.pickcolor div.is-modal-content > div,
+.dark .is-ui .is-modal.pickcolor div.is-modal-content > div {
+  opacity: 0.9;
+}
+.dark #_cbhtml .is-modal.pickcolor .rangeSlider,
+.dark .is-ui .is-modal.pickcolor .rangeSlider {
+  outline: 1px solid rgba(0, 0, 0, 0.08);
+}
+.dark #_cbhtml .is-modal.pickcolor .rangeSlider__handle,
+.dark .is-ui .is-modal.pickcolor .rangeSlider__handle {
+  border: 1px solid transparent;
+  background: rgba(146, 153, 158, 0.8);
+}
+.dark #_cbhtml .is-modal.pickcolor .dot-1,
+.dark .is-ui .is-modal.pickcolor .dot-1 {
+  background: rgba(146, 153, 158, 0.4);
+}
+.dark #_cbhtml .is-modal.pickcolor .dot-2,
+.dark .is-ui .is-modal.pickcolor .dot-2 {
+  background: rgba(95, 102, 107, 0.3);
+}
+.dark #_cbhtml .is-modal.pickcolor .dot-3,
+.dark .is-ui .is-modal.pickcolor .dot-3 {
+  background: rgba(146, 153, 158, 0.4);
+}
+.dark #_cbhtml .is-modal.pickcolor .dot-4,
+.dark .is-ui .is-modal.pickcolor .dot-4 {
+  background: rgba(95, 102, 107, 0.3);
+}
+.dark #_cbhtml .is-modal.pickcolor .is-color-preview,
+.dark .is-ui .is-modal.pickcolor .is-color-preview {
+  border: transparent 1px solid;
+}
+.dark #_cbhtml .is-modal.pickcolormore div.is-modal-content > div,
+.dark .is-ui .is-modal.pickcolormore div.is-modal-content > div {
+  opacity: 0.9;
+}
+.dark #_cbhtml .is-modal.pickfontfamily .is-modal-bar,
+.dark .is-ui .is-modal.pickfontfamily .is-modal-bar {
+  background: rgba(146, 153, 158, 0.17);
+}
+.dark #_cbhtml .is-modal.insertimage .is-drop-area,
+.dark .is-ui .is-modal.insertimage .is-drop-area {
+  border: 2px dashed rgba(250, 250, 250, 0.3);
+}
+.dark #_cbhtml .is-modal.insertimage .is-drop-area svg,
+.dark .is-ui .is-modal.insertimage .is-drop-area svg {
+  fill: #fafafa;
+}
+.dark #_cbhtml .is-modal.insertimage .is-drop-area:hover,
+.dark .is-ui .is-modal.insertimage .is-drop-area:hover {
+  background-color: #555b60;
+}
+.dark #_cbhtml .is-modal.insertimage .is-drop-area.image-dropping,
+.dark .is-ui .is-modal.insertimage .is-drop-area.image-dropping {
+  background-color: #555b60;
+}
+.dark #_cbhtml .is-modal.insertimage .is-preview-area,
+.dark .is-ui .is-modal.insertimage .is-preview-area {
+  opacity: 0.8;
+}
+.dark #_cbhtml .is-modal.insertimage .is-preview-area div i,
+.dark .is-ui .is-modal.insertimage .is-preview-area div i {
+  background: rgba(0, 0, 0, 0.23);
+  color: #fff;
+}
+.dark #_cbhtml .is-modal.imageedit .imageedit-crop button,
+.dark .is-ui .is-modal.imageedit .imageedit-crop button {
+  color: #fafafa;
+  border: rgba(250, 250, 250, 0.32) 1px solid;
+}
+.dark #_cbhtml .is-modal ::-webkit-input-placeholder,
+.dark .is-ui .is-modal ::-webkit-input-placeholder {
+  color: rgba(250, 250, 250, 0.3);
+}
+.dark #_cbhtml .is-modal :-ms-input-placeholder,
+.dark .is-ui .is-modal :-ms-input-placeholder {
+  color: rgba(250, 250, 250, 0.3);
+}
+.dark #_cbhtml .is-modal ::placeholder,
+.dark .is-ui .is-modal ::placeholder {
+  color: rgba(250, 250, 250, 0.3);
+}
+.dark #_cbhtml .is-tool#divImageTool,
+.dark .is-ui .is-tool#divImageTool {
+  background: rgba(0, 0, 0, 0.15);
+}
+.dark #_cbhtml .is-tool#divImageTool svg,
+.dark .is-ui .is-tool#divImageTool svg {
+  fill: #fff;
+}
+.dark #_cbhtml .is-tool.is-spacer-tool > button,
+.dark .is-ui .is-tool.is-spacer-tool > button {
+  background: #eaeaea;
+}
+.dark #_cbhtml .is-tool.is-spacer-tool > button svg,
+.dark .is-ui .is-tool.is-spacer-tool > button svg {
+  fill: #000;
+}
+.dark #_cbhtml .is-tool.is-table-tool > button,
+.dark .is-ui .is-tool.is-table-tool > button {
+  background: #eaeaea;
+}
+.dark #_cbhtml .is-tool.is-table-tool > button svg,
+.dark .is-ui .is-tool.is-table-tool > button svg {
+  fill: #000;
+}
+.dark #_cbhtml .is-tool.is-code-tool > button, .dark #_cbhtml .is-tool.is-module-tool > button,
+.dark .is-ui .is-tool.is-code-tool > button,
+.dark .is-ui .is-tool.is-module-tool > button {
+  background: #eaeaea;
+}
+.dark #_cbhtml .is-tool.is-code-tool > button svg, .dark #_cbhtml .is-tool.is-module-tool > button svg,
+.dark .is-ui .is-tool.is-code-tool > button svg,
+.dark .is-ui .is-tool.is-module-tool > button svg {
+  fill: #000;
+}
+.dark #_cbhtml .is-tool#divLinkTool button, .dark #_cbhtml .is-tool#divButtonTool button, .dark #_cbhtml .is-tool#divSvgTool button,
+.dark .is-ui .is-tool#divLinkTool button,
+.dark .is-ui .is-tool#divButtonTool button,
+.dark .is-ui .is-tool#divSvgTool button {
+  background: #eaeaea;
+}
+.dark #_cbhtml .is-tool#divLinkTool button svg, .dark #_cbhtml .is-tool#divButtonTool button svg, .dark #_cbhtml .is-tool#divSvgTool button svg,
+.dark .is-ui .is-tool#divLinkTool button svg,
+.dark .is-ui .is-tool#divButtonTool button svg,
+.dark .is-ui .is-tool#divSvgTool button svg {
+  fill: #000;
+}
+.dark #_cbhtml #divImageProgress,
+.dark .is-ui #divImageProgress {
+  background: rgba(107, 107, 107, 0.15);
+}
+.dark #_cbhtml #divImageProgress .dot,
+.dark .is-ui #divImageProgress .dot {
+  background-color: #fff;
+}
+.dark #_cbhtml .is-side,
+.dark .is-ui .is-side {
+  color: #fafafa;
+  box-shadow: rgba(0, 106, 221, 0.05) 0 0 16px 0px;
+  background: #474c50;
+}
+.dark #_cbhtml .is-side button,
+.dark .is-ui .is-side button {
+  color: #fafafa;
+  background: rgba(119, 127, 134, 0.49);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.dark #_cbhtml .is-side button:hover,
+.dark .is-ui .is-side button:hover {
+  background: rgba(122, 130, 137, 0.49);
+}
+.dark #_cbhtml .is-side button.on,
+.dark .is-ui .is-side button.on {
+  background: rgba(95, 102, 107, 0.49);
+}
+.dark #_cbhtml .is-side svg,
+.dark .is-ui .is-side svg {
+  fill: #fafafa;
+}
+.dark #_cbhtml .is-side.fromleft,
+.dark .is-ui .is-side.fromleft {
+  border-right: 1px solid #474c50;
+}
+.dark #_cbhtml button,
+.dark #_cbhtml .is-btn,
+.dark .is-ui button,
+.dark .is-ui .is-btn {
+  color: rgba(255, 255, 255, 0.95);
+  background: #006add;
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.dark #_cbhtml button:hover,
+.dark #_cbhtml .is-btn:hover,
+.dark .is-ui button:hover,
+.dark .is-ui .is-btn:hover {
+  background: #006fe7;
+}
+.dark #_cbhtml button svg,
+.dark #_cbhtml .is-btn svg,
+.dark .is-ui button svg,
+.dark .is-ui .is-btn svg {
+  fill: rgba(255, 255, 255, 0.95);
+}
+.dark #_cbhtml button.classic,
+.dark #_cbhtml .is-btn.classic,
+.dark .is-ui button.classic,
+.dark .is-ui .is-btn.classic {
+  color: #fafafa;
+  background: rgba(119, 127, 134, 0.49);
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.dark #_cbhtml button.classic:hover,
+.dark #_cbhtml .is-btn.classic:hover,
+.dark .is-ui button.classic:hover,
+.dark .is-ui .is-btn.classic:hover {
+  background: rgba(122, 130, 137, 0.49);
+}
+.dark #_cbhtml button.classic-primary,
+.dark #_cbhtml .is-btn.classic-primary,
+.dark .is-ui button.classic-primary,
+.dark .is-ui .is-btn.classic-primary {
+  color: #fafafa;
+  background: rgba(119, 127, 134, 0.49);
+  border: transparent 1px solid;
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.dark #_cbhtml button.classic-primary:hover,
+.dark #_cbhtml .is-btn.classic-primary:hover,
+.dark .is-ui button.classic-primary:hover,
+.dark .is-ui .is-btn.classic-primary:hover {
+  border: transparent 1px solid;
+  background: rgba(122, 130, 137, 0.49);
+}
+.dark #_cbhtml button.classic-secondary,
+.dark #_cbhtml .is-btn.classic-secondary,
+.dark .is-ui button.classic-secondary,
+.dark .is-ui .is-btn.classic-secondary {
+  color: #fafafa;
+  background: transparent;
+  border: transparent 1px solid;
+  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
+}
+.dark #_cbhtml button.classic-secondary:hover,
+.dark #_cbhtml .is-btn.classic-secondary:hover,
+.dark .is-ui button.classic-secondary:hover,
+.dark .is-ui .is-btn.classic-secondary:hover {
+  border: transparent 1px solid;
+  background: transparent;
+}
+.dark #_cbhtml textarea:not(.monaco-mouse-cursor-text),
+.dark .is-ui textarea:not(.monaco-mouse-cursor-text) {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(250, 250, 250, 0.83);
+}
+.dark #_cbhtml select,
+.dark .is-ui select {
+  color: rgba(250, 250, 250, 0.83);
+  background-color: #53595e;
+}
+.dark #_cbhtml select option,
+.dark .is-ui select option {
+  background: #5a6166;
+}
+.dark #_cbhtml input[type=text],
+.dark .is-ui input[type=text] {
+  color: rgba(250, 250, 250, 0.83);
+  border: none;
+  border-bottom: none;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.dark #_cbhtml input[type=checkbox],
+.dark .is-ui input[type=checkbox] {
+  opacity: 0.7;
+}
+.dark #_cbhtml label,
+.dark .is-ui label {
+  color: #fafafa;
+}
+.dark #_cbhtml .is-tabs,
+.dark .is-ui .is-tabs {
+  background: rgba(146, 153, 158, 0.17);
+}
+.dark #_cbhtml .is-tabs a,
+.dark .is-ui .is-tabs a {
+  color: rgba(250, 250, 250, 0.95);
+  border-bottom: transparent 1px solid;
+}
+.dark #_cbhtml .is-tabs a.active,
+.dark .is-ui .is-tabs a.active {
+  background: transparent;
+  border-bottom: rgba(250, 250, 250, 0.5) 1px solid;
+}
+.dark #_cbhtml .is-tabs a svg,
+.dark .is-ui .is-tabs a svg {
+  fill: rgba(250, 250, 250, 0.95);
+}
+.dark #_cbhtml .is-tabs-more,
+.dark .is-ui .is-tabs-more {
+  background: #5a6166;
+  border: 1px solid #5a6166;
+  box-shadow: 3px 4px 9px 0px rgba(0, 0, 0, 0.07);
+}
+.dark #_cbhtml .is-tabs-more > li,
+.dark .is-ui .is-tabs-more > li {
+  color: rgba(250, 250, 250, 0.95);
+}
+.dark #_cbhtml .is-tabs-more > li:hover, .dark #_cbhtml .is-tabs-more > li.active,
+.dark .is-ui .is-tabs-more > li:hover,
+.dark .is-ui .is-tabs-more > li.active {
+  background: rgba(130, 137, 144, 0.49);
+}
+.dark #_cbhtml #divSnippetList,
+.dark .is-ui #divSnippetList {
+  background: #d3d3d3;
+  border-left: none;
+  box-shadow: none;
+}
+.dark #_cbhtml #divSnippetList #divSnippetHandle,
+.dark .is-ui #divSnippetList #divSnippetHandle {
+  background: #d3d3d3;
+  border: none;
+  box-shadow: none;
+}
+.dark #_cbhtml #divSnippetList #divSnippetHandle svg,
+.dark .is-ui #divSnippetList #divSnippetHandle svg {
+  fill: #000;
+}
+.dark #_cbhtml #divSnippetList.fromleft #divSnippetHandle,
+.dark .is-ui #divSnippetList.fromleft #divSnippetHandle {
+  border-right: none;
+}
+.dark #_cbhtml #divSnippetScrollUp,
+.dark #_cbhtml #divSnippetScrollDown,
+.dark .is-ui #divSnippetScrollUp,
+.dark .is-ui #divSnippetScrollDown {
+  background: rgba(82, 82, 82, 0.6);
+  color: #fff;
+}
+.dark #_cbhtml .is-design-list > div,
+.dark .is-ui .is-design-list > div {
+  outline: rgba(219, 219, 219, 0.35) 1px solid !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+.dark #_cbhtml .is-design-list > div .is-overlay,
+.dark .is-ui .is-design-list > div .is-overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.dark #_cbhtml .is-design-list > div .is-overlay:after,
+.dark .is-ui .is-design-list > div .is-overlay:after {
+  background: rgba(0, 0, 0, 0.03);
+}
+.dark #_cbhtml .is-design-list .snippet-item.sortable-drag:hover,
+.dark .is-ui .is-design-list .snippet-item.sortable-drag:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.dark #_cbhtml .is-selectbox,
+.dark .is-ui .is-selectbox {
+  color: #fff;
+  background: #4c5155;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.04);
+}
+.dark #_cbhtml .is-selectbox:hover,
+.dark .is-ui .is-selectbox:hover {
+  background: #4e5458;
+}
+.dark #_cbhtml .is-selectbox svg,
+.dark .is-ui .is-selectbox svg {
+  fill: #fafafa;
+}
+.dark #_cbhtml .is-selectbox-options,
+.dark .is-ui .is-selectbox-options {
+  border: transparent 1px solid;
+  background-color: #4e5458;
+}
+.dark #_cbhtml .is-selectbox-options > div,
+.dark .is-ui .is-selectbox-options > div {
+  color: #000;
+}
+.dark #_cbhtml .is-selectbox-options > div:hover,
+.dark .is-ui .is-selectbox-options > div:hover {
+  color: #fff;
+  background: rgba(151, 158, 163, 0.55);
+}
+.dark #_cbhtml .is-selectbox-options > div.selected,
+.dark .is-ui .is-selectbox-options > div.selected {
+  color: #fff;
+  background: rgba(151, 158, 163, 0.55);
+}
+.dark #_cbhtml .is-dropdown .dropdown-toggle,
+.dark .is-ui .is-dropdown .dropdown-toggle {
+  color: #fff;
+  background: #4c5155;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.04);
+}
+.dark #_cbhtml .is-dropdown .dropdown-toggle:hover,
+.dark .is-ui .is-dropdown .dropdown-toggle:hover {
+  background: #4e5458;
+}
+.dark #_cbhtml .is-dropdown .dropdown-toggle svg,
+.dark .is-ui .is-dropdown .dropdown-toggle svg {
+  fill: #fafafa;
+}
+.dark #_cbhtml .is-dropdown .dropdown-toggle::after,
+.dark .is-ui .is-dropdown .dropdown-toggle::after {
+  border-top-color: #fafafa;
+  border-bottom-color: transparent;
+}
+.dark #_cbhtml .is-dropdown .dropdown-toggle.active::after,
+.dark .is-ui .is-dropdown .dropdown-toggle.active::after {
+  border-bottom-color: #fafafa;
+  border-top-color: transparent;
+}
+.dark #_cbhtml .is-dropdown .dropdown-menu,
+.dark .is-ui .is-dropdown .dropdown-menu {
+  border: transparent 1px solid;
+  background-color: #4e5458;
+}
+.dark #_cbhtml .is-dropdown .dropdown-menu li,
+.dark .is-ui .is-dropdown .dropdown-menu li {
+  color: #fff;
+  background-color: #4e5458;
+}
+.dark #_cbhtml .is-dropdown .dropdown-menu li:hover, .dark #_cbhtml .is-dropdown .dropdown-menu li:focus,
+.dark .is-ui .is-dropdown .dropdown-menu li:hover,
+.dark .is-ui .is-dropdown .dropdown-menu li:focus {
+  color: #fff;
+  background: rgba(151, 158, 163, 0.55);
+}
+.dark #_cbhtml .is-dropdown .dropdown-menu li.selected,
+.dark .is-ui .is-dropdown .dropdown-menu li.selected {
+  color: #fff;
+  background: rgba(151, 158, 163, 0.55);
+}
+.dark #_cbhtml .elementstyles .elm-list,
+.dark .is-ui .elementstyles .elm-list {
+  color: rgba(250, 250, 250, 0.95);
+  border-bottom: transparent 1px solid;
+}
+.dark #_cbhtml .elementstyles .elm-list a,
+.dark .is-ui .elementstyles .elm-list a {
+  color: rgba(250, 250, 250, 0.95);
+}
+.dark #_cbhtml .elementstyles .elm-list a.active,
+.dark .is-ui .elementstyles .elm-list a.active {
+  color: #fafafa;
+  background: rgba(255, 255, 255, 0.3);
+}
+.dark #_cbhtml .elementstyles .is-settings button.is-btn-color,
+.dark .is-ui .elementstyles .is-settings button.is-btn-color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.22) 1px solid;
+}
+.dark .is-tool {
+  background: #eaeaea;
+}
+.dark .is-tool button {
+  color: #000;
+}
+.dark .is-tool button svg {
+  fill: #000;
+}
+.dark #_cbhtml[gray] .is-tool.is-column-tool {
+  background: #eaeaea;
+}
+.dark #_cbhtml[gray] .is-tool.is-column-tool .cell-add {
+  background: transparent;
+}
+.dark #_cbhtml[gray] .is-tool.is-column-tool .cell-more {
+  background: transparent;
+}
+.dark #_cbhtml[gray] .is-tool.is-column-tool .cell-remove {
+  background: transparent;
+}
+.dark #_cbhtml[gray] .is-tool.is-column-tool svg {
+  fill: #000;
+}
+.dark #_cbhtml .is-tool.is-column-tool .cell-add {
+  background: #0fcc52;
+}
+.dark #_cbhtml .is-tool.is-column-tool .cell-more {
+  background: rgba(216, 200, 6, 0.9);
+}
+.dark #_cbhtml .is-tool.is-column-tool .cell-remove {
+  background: rgba(255, 85, 4, 0.9);
+}
+.dark #_cbhtml .is-tool.is-column-tool svg {
+  fill: #fff;
+}
+.dark #_cbhtml .is-pop.columnmore button.on {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark #_cbhtml .is-pop.columnmore button:hover {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+}
+.dark #_cbhtml .is-pop.columnmore div.is-separator {
+  border-top: rgba(146, 153, 158, 0.22) 1px solid;
+}
+.dark #_cbhtml .is-pop.rowmore button.on {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark #_cbhtml .is-pop.rowmore button:hover {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+}
+.dark #_cbhtml .is-pop.rowmore div.is-separator {
+  border-top: rgba(146, 153, 158, 0.22) 1px solid;
+}
+.dark #_cbhtml .is-pop.rowmore button.on {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark #_cbhtml .is-pop.rowmore button:hover {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+}
+.dark #_cbhtml .is-pop.elmmore button.on {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark #_cbhtml .is-pop.elmmore button:hover {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+}
+.dark #_cbhtml .is-pop.quickadd button.on {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark #_cbhtml .is-pop.quickadd button:hover {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+}
+.dark #_cbhtml .is-pop.quickadd .pop-separator {
+  border-top: rgba(146, 153, 158, 0.22) 1px solid;
+}
+.dark #_cbhtml .is-tool.is-element-tool {
+  background: #eaeaea;
+}
+.dark #_cbhtml .is-tool.is-element-tool button {
+  background: transparent;
+}
+.dark #_cbhtml .is-tool.is-element-tool svg {
+  fill: #000;
+}
+.dark .is-tool.is-row-tool svg {
+  fill: #fff;
+}
+.dark .is-tool.is-row-tool .row-handle {
+  background: #169af7;
+}
+.dark .is-tool.is-row-tool .row-grideditor {
+  background: rgba(216, 200, 6, 0.9);
+}
+.dark .is-tool.is-row-tool .row-more {
+  background: rgba(216, 200, 6, 0.9);
+}
+.dark .is-tool.is-row-tool .row-remove {
+  background: rgba(255, 85, 4, 0.9);
+}
+.dark .is-builder[gray] .is-tool.is-row-tool {
+  background: #eaeaea;
+}
+.dark .is-builder[gray] .is-tool.is-row-tool svg {
+  fill: #000;
+}
+.dark .is-rowadd-tool {
+  border-bottom: 1px solid #ffb784;
+}
+.dark .is-rowadd-tool button {
+  border: 1px solid #ff8e3e;
+}
+.dark .is-builder[gray] .is-rowadd-tool {
+  border-bottom: 1px solid rgba(222, 222, 222, 0.32);
+}
+.dark .is-builder[gray] .is-rowadd-tool button {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+.dark .row-add-initial {
+  color: #333;
+  border: 1px dashed rgba(169, 169, 169, 0.8);
+  background: rgba(255, 255, 255, 0.5);
+}
+.dark .row-add-initial:hover {
+  background: rgba(248, 248, 248, 0.35);
+}
+.dark .is-builder[clean] .is-tool.is-row-tool {
+  background: #eaeaea;
+}
+.dark .is-builder[clean] .is-tool.is-row-tool .row-grideditor {
+  background: transparent;
+}
+.dark .is-builder[clean] .is-tool.is-row-tool .row-grideditor svg {
+  fill: #000;
+}
+.dark .is-builder[clean] .row-outline {
+  outline: none;
+}
+.dark .is-builder[clean] .cell-active {
+  outline: none;
+}
+.dark .is-builder[clean] .row-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.dark .is-builder[rowoutline] .row-outline {
+  outline: none;
+}
+.dark .is-builder[rowoutline] .cell-active {
+  outline: none;
+}
+.dark .is-builder[rowoutline] .row-active:not([data-protected]) {
+  outline: 1px solid #00da89;
+}
+.dark .is-builder[grayoutline] .row-outline {
+  outline: none;
+}
+.dark .is-builder[grayoutline] .cell-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.1);
+}
+.dark .is-builder[grayoutline] .row-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.dark .is-builder[rowoutline][grayoutline] .row-outline {
+  outline: none;
+}
+.dark .is-builder[rowoutline][grayoutline] .cell-active {
+  outline: none;
+}
+.dark .is-builder[rowoutline][grayoutline] .row-active:not([data-protected]) {
+  outline: 1px solid rgba(132, 132, 132, 0.2);
+}
+.dark .is-builder[hideoutline] .row-outline {
+  outline: none !important;
+}
+.dark .is-builder[hideoutline] .cell-active {
+  outline: none !important;
+}
+.dark .is-builder[hideoutline] .row-active {
+  outline: none !important;
+}
+.dark .is-builder[hideoutline] .row-active.row-outline {
+  outline: none !important;
+}
+.dark .is-builder[hidesnippetaddtool] .row-outline .is-rowadd-tool,
+.dark .is-builder[hidesnippetaddtool] .row-active .is-rowadd-tool {
+  display: none;
+}
+.dark .is-builder[hideelementhighlight] .elm-active {
+  background-color: transparent;
+}
+.dark .is-tooltip {
+  background: #333;
+  color: #fefefe;
+}
+.dark .scroll * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) auto;
+}
+.dark .scroll *::-webkit-scrollbar {
+  width: 12px;
+}
+.dark .scroll *::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dark .scroll *::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.dark .scroll-darker * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(78, 78, 78, 0.62) auto;
+}
+.dark .scroll-darker *::-webkit-scrollbar {
+  width: 12px;
+}
+.dark .scroll-darker *::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dark .scroll-darker *::-webkit-scrollbar-thumb {
+  background-color: rgba(78, 78, 78, 0.62);
+}

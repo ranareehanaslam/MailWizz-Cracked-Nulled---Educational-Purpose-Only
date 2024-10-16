@@ -1,0 +1,68 @@
+.skin-blue #builder_CustomerEmailTemplate_content .dropdown-toggle span {
+    color: inherit;
+}
+
+.skin-blue #builder_CustomerEmailTemplate_content .input-group .input-group-btn .btn {
+    line-height: inherit;
+}
+
+.skin-blue #builder_CustomerEmailTemplate_content .btn-default {
+    color: #555555;
+    background-color: #fff;
+    border-color: #cccccc;
+}
+
+.skin-blue.dark #builder_CustomerEmailTemplate_content .form-control {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.skin-blue #builder_CustomerEmailTemplate_content .btn-default:hover,
+.skin-blue #builder_CustomerEmailTemplate_content .btn-default.active {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.skin-blue #builder_CustomerEmailTemplate_content .input-group .input-group-btn .btn {
+    line-height: inherit;
+    height: calc(14px * 1.572 + 11px);
+}
+
+.skin-blue #builder_CustomerEmailTemplate_content input[type="text"],
+.skin-blue #builder_CustomerEmailTemplate_content input[type="password"],
+.skin-blue #builder_CustomerEmailTemplate_content input[type="search"],
+.skin-blue #builder_CustomerEmailTemplate_content input[type="email"],
+.skin-blue #builder_CustomerEmailTemplate_content input[type="number"],
+.skin-blue #builder_CustomerEmailTemplate_content input[type="url"] {
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 17px;
+    border: 1px solid #cccccc !important;
+    margin: inherit;
+    box-shadow: inherit;
+    color: #555555;
+    background-color: #ffffff;
+}
+
+.skin-blue #builder_CustomerEmailTemplate_content .input-group .form-control:last-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.skin-blue #builder_CustomerEmailTemplate_content span {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.skin-blue #builder_CustomerEmailTemplate_content .form-control {
+    height: calc(14px * 1.572 + 11px);
+}
+
+.skin-blue #builder_CustomerEmailTemplate_content input:focus,
+.skin-blue #builder_CustomerEmailTemplate_content .form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+}

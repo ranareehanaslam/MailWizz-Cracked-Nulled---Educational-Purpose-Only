@@ -1,0 +1,42 @@
+[
+  {
+    "category": "lists",
+    "message": "In order to make sure you have requested to subscribe to our list, please confirm the email address you used to subscribe."
+  },
+  {
+    "category": "lists",
+    "message": "Email"
+  },
+  {
+    "category": "lists",
+    "message": "Compare Email"
+  },
+  {
+    "category": "lists",
+    "message": "Please confirm your subscription"
+  },
+  {
+    "category": "lists",
+    "message": "The email address you entered does not match the one on records."
+  },
+  {
+    "category": "lists",
+    "message": "Double opt-in confirmation"
+  },
+  {
+    "category": "lists",
+    "message": "When the list uses double opt-in and this feature is enabled, subscribers will have to enter their email address one more time after clicking the confirmation link from email. This prevents subscribers being confirmed by spam filters."
+  },
+  {
+    "category": "settings",
+    "message": "Force double opt-in confirmation"
+  },
+  {
+    "category": "settings",
+    "message": "Whether to force the customer to double opt-in confirmation. Leave empty to let the customer select the process"
+  },
+  {
+    "category": "lists",
+    "message": "In order to make sure it is you, please enter the email address you used to subscribe to this list"
+  }
+]

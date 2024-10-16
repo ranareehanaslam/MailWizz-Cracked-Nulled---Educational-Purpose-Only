@@ -1,0 +1,13 @@
+diff --git a/framework/web/CUrlManager.php b/framework/web/CUrlManager.php
+index 55fb10763..7baa25ce7 100644
+--- a/framework/web/CUrlManager.php
++++ b/framework/web/CUrlManager.php
+@@ -452,6 +452,8 @@ class CUrlManager extends CApplicationComponent
+ 	 */
+ 	public function removeUrlSuffix($pathInfo,$urlSuffix)
+ 	{
++		$pathInfo = (string)$pathInfo;
++		$urlSuffix = (string)$urlSuffix;
+ 		if($urlSuffix!=='' && substr($pathInfo,-strlen($urlSuffix))===$urlSuffix)
+ 			return substr($pathInfo,0,-strlen($urlSuffix));
+ 		else
